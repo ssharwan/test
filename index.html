@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8 no-js" > <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js" > <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+    <title>Indifi</title>
+
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <meta content="" name="description"/>
+    <meta content="" name="author"/>
+
+    <!-- BEGIN DYMANICLY LOADED CSS FILES(all plugin and page related styles must be loaded between GLOBAL and THEME css files ) -->
+    <link id="ng_load_plugins_before"/>
+    <!-- END DYMANICLY LOADED CSS FILES -->
+
+    <script src="../config/environments/default.js" type="text/javascript"></script>
+
+   <link rel="shortcut icon" href="favicon.ico"/>
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/base.css">
+    <link rel="stylesheet" type="text/css" href="/vendor/semantic-ui/dist/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="/vendor/toastr/toastr.min.css">
+</head>
+
+<body>
+    <!-- BEGIN PAGE SPINNER -->
+    <div ng-spinner-bar class="page-spinner-bar">
+        <div class="bounce1"></div>
+        <div class="bounce2"></div>
+        <div class="bounce3"></div>
+    </div>
+    <!-- END PAGE SPINNER -->
+    <div class="page-header"> 
+      <div class="header-left"> <h2> Indifi</h2></div>
+      <div class="header-center"> 
+       <ul class="app-nav"> 
+           <li class="nav"> 
+            Dashboard
+           </li>
+           <li class="nav"> 
+            Application
+           </li>
+           <li class="nav"> 
+            Reports
+           </li>
+       </ul>
+      </div>
+      <div class="header-right"> 
+        <input type="text">
+      </div>
+    </div>
+
+    <div class="page-container" ui-view></div>
+
+    <!-- BEGIN FOOTER -->
+    <!-- <div data-ng-include="'footer/footer-template.html'" ></div> -->
+    <!-- END FOOTER -->
+
+
+
+
+    <!--<script type="text/javascript" src="/vendor/angular-route/angular-route.min.js"></script>
+    <script type="text/javascript" src="/vendor/satellizer/satellizer.min.js"></script>
+
+    <script type="text/javascript" src="/auth/app.js"></script>
+    <script type="text/javascript" src="/auth/config.js"></script>
+    <script type="text/javascript" src="/auth/routes.js"></script>
+    <script type="text/javascript" src="/auth/AuthService.js"></script>
+    <script type="text/javascript" src="/auth/AuthResource.js"></script>
+    <script type="text/javascript" src="/auth/RouteService.js"></script>
+
+    <script type="text/javascript" src="/auth/auth-content/auth-content.js"></script>-->
+
+
+
+    <script data-main="app/app.main.js" src="../vendor/requirejs/require.js"></script>
+</body>
+</html>

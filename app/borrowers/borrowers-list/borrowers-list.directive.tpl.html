@@ -1,0 +1,46 @@
+
+<div>
+<div class="list-content">
+	<table class="list-table">
+		<tbody>
+			<colgroup>
+				<col class="checkbox">
+				<col class="borrower">
+				<col class="source">
+				<col class="amount">
+				<col class="duration">
+				<col class="next-step">
+				<col class="owner">
+				<col class="complated">
+				<col class="received">
+		    </colgroup>
+			
+			<tr>
+			    <th></th>
+			    <th>Borrower</th>
+			    <th>Source</th>
+			    <th>Loan Amount</th>
+			    <th>Duration</th>
+			    <th>Next Step</th>
+			    <th>Owner</th>
+			    <th>Complated</th>
+			    <th>Received</th>
+			</tr>
+			<tr ng-repeat="borrower in borrowers" ng-click="toggleRow($index)" ng-class="{'selected': borrower.selected}">
+			    <td class="list-checkbox"><label><input type="checkbox" ng-model="borrower.checked"></label></td>
+			    <td class="candidate-name stuck" ng-click="viewItemDetails($index)">
+					<i class="candidate-interaction  has-tip " title="9 days since last interaction"></i>
+					{{borrower.name}}
+				</td>
+				<td>{{borrower.source}}</td>
+				<td>{{borrower.amount}}</td>
+				<td>{{borrower.duration}}</td>
+				<td>{{borrower.nextStep}}</td>
+				<td>{{borrower.owner}}</td>
+				<td>{{borrower.completed}}</td>
+				<td>{{borrower.received}}</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+</div>

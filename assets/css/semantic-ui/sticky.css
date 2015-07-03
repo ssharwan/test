@@ -1,0 +1,41 @@
+/*!
+ * # Semantic UI 1.12.3 - Sticky
+ * http://github.com/semantic-org/semantic-ui/
+ *
+ *
+ * Copyright 2014 Contributors
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+/******************************* Sticky
+*******************************/
+/* line 17, ../../sass/semantic-ui/sticky.scss */
+.ui.sticky { position: static; -webkit-transition: width 0.2s ease, height 0.2s ease, top 0.2s ease, bottom 0.2s ease; transition: width 0.2s ease, height 0.2s ease, top 0.2s ease, bottom 0.2s ease; z-index: 800; }
+
+/******************************* States
+*******************************/
+/* Bound */
+/* line 31, ../../sass/semantic-ui/sticky.scss */
+.ui.sticky.bound { position: absolute; left: auto; right: auto; }
+
+/* Fixed */
+/* line 38, ../../sass/semantic-ui/sticky.scss */
+.ui.sticky.fixed { position: fixed; left: auto; right: auto; }
+
+/* Bound/Fixed Position */
+/* line 45, ../../sass/semantic-ui/sticky.scss */
+.ui.sticky.bound.top, .ui.sticky.fixed.top { top: 0px; bottom: auto; }
+
+/* line 50, ../../sass/semantic-ui/sticky.scss */
+.ui.sticky.bound.bottom, .ui.sticky.fixed.bottom { top: auto; bottom: 0px; }
+
+/******************************* Types
+*******************************/
+/* line 61, ../../sass/semantic-ui/sticky.scss */
+.ui.native.sticky { position: -webkit-sticky; position: -moz-sticky; position: -ms-sticky; position: -o-sticky; position: sticky; }
+
+/******************************* Theme Overrides
+*******************************/
+/******************************* Site Overrides
+*******************************/

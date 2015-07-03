@@ -1,0 +1,357 @@
+/*!
+ * # Semantic UI 1.12.3 - Segment
+ * http://github.com/semantic-org/semantic-ui/
+ *
+ *
+ * Copyright 2014 Contributors
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+/******************************* Segment
+*******************************/
+/* line 17, ../../sass/semantic-ui/segment.scss */
+.ui.segment { position: relative; background-color: #ffffff; box-shadow: 0px 0px 0px 1px rgba(39, 41, 43, 0.15), 0px 1px 2px 0 rgba(0, 0, 0, 0.05); margin: 1rem 0em; padding: 1em 1em; border-radius: 0.2857rem; border: none; }
+
+/* line 26, ../../sass/semantic-ui/segment.scss */
+.ui.segment:first-child { margin-top: 0em; }
+
+/* line 29, ../../sass/semantic-ui/segment.scss */
+.ui.segment:last-child { margin-bottom: 0em; }
+
+/* line 32, ../../sass/semantic-ui/segment.scss */
+.ui.segment:after { content: ''; display: block; height: 0px; clear: both; visibility: hidden; }
+
+/* Vertical */
+/* line 41, ../../sass/semantic-ui/segment.scss */
+.ui[class*="vertical segment"] { margin: 0em; padding-left: 0em; padding-right: 0em; background-color: transparent; border-radius: 0px; border: none; box-shadow: 0px -1px 0px rgba(39, 41, 43, 0.15) inset; }
+
+/* line 50, ../../sass/semantic-ui/segment.scss */
+.ui[class*="vertical segment"]:last-child { box-shadow: none; }
+
+/* Horizontal */
+/* line 55, ../../sass/semantic-ui/segment.scss */
+.ui[class*="horizontal segment"] { margin: 0em; padding-top: 0em; padding-bottom: 0em; background-color: transparent; border-radius: 0px; border: none; box-shadow: 1px 0px 0px rgba(39, 41, 43, 0.15); }
+
+/*------------------- Loose Coupling
+--------------------*/
+/* Header */
+/* line 71, ../../sass/semantic-ui/segment.scss */
+.ui.inverted.segment > .ui.header { color: #ffffff; }
+
+/* Label */
+/* line 76, ../../sass/semantic-ui/segment.scss */
+.ui[class*="bottom attached"].segment > [class*="top attached"].label { border-top-left-radius: 0em; border-top-right-radius: 0em; }
+
+/* line 80, ../../sass/semantic-ui/segment.scss */
+.ui[class*="top attached"].segment > [class*="bottom attached"].label { border-bottom-left-radius: 0em; border-bottom-right-radius: 0em; }
+
+/* line 84, ../../sass/semantic-ui/segment.scss */
+.ui.attached.segment:not(.top):not(.bottom) > [class*="top attached"].label { border-top-left-radius: 0em; border-top-right-radius: 0em; }
+
+/* line 88, ../../sass/semantic-ui/segment.scss */
+.ui.attached.segment:not(.top):not(.bottom) > [class*="bottom attached"].label { border-bottom-left-radius: 0em; border-bottom-right-radius: 0em; }
+
+/* Grid */
+/* line 94, ../../sass/semantic-ui/segment.scss */
+.ui.page.grid.segment, .ui.grid .ui.segment.column { padding-top: 2em; padding-bottom: 2em; }
+
+/* line 99, ../../sass/semantic-ui/segment.scss */
+.ui.grid.segment { margin: 1rem 0rem; border-radius: 0.2857rem; }
+
+/* Table */
+/* line 105, ../../sass/semantic-ui/segment.scss */
+.ui.basic.table.segment { background: #ffffff; border: none; box-shadow: 0px 0px 0px 1px rgba(39, 41, 43, 0.15), 0px 1px 2px 0 rgba(0, 0, 0, 0.05); }
+
+/* line 110, ../../sass/semantic-ui/segment.scss */
+.ui[class*="very basic"].table.segment { padding: 1em 1em; }
+
+/******************************* Types
+*******************************/
+/*------------------- Piled
+--------------------*/
+/* line 124, ../../sass/semantic-ui/segment.scss */
+.ui.piled.segment { margin: 3em 0em; box-shadow: 0px 0px 1px 1px rgba(39, 41, 43, 0.15); z-index: auto; }
+
+/* line 129, ../../sass/semantic-ui/segment.scss */
+.ui.piled.segment:first-child { margin-top: 0em; }
+
+/* line 132, ../../sass/semantic-ui/segment.scss */
+.ui.piled.segment:last-child { margin-bottom: 0em; }
+
+/* line 135, ../../sass/semantic-ui/segment.scss */
+.ui.piled.segment:after, .ui.piled.segment:before { background-color: #ffffff; visibility: visible; content: ''; display: block; height: 100%; left: 0px; position: absolute; width: 100%; box-shadow: 0px 0px 1px 1px rgba(39, 41, 43, 0.15); }
+
+/* line 147, ../../sass/semantic-ui/segment.scss */
+.ui.piled.segment:after { -webkit-transform: rotate(1.2deg); -ms-transform: rotate(1.2deg); transform: rotate(1.2deg); top: 0; z-index: -1; }
+
+/* line 154, ../../sass/semantic-ui/segment.scss */
+.ui.piled.segment:before { -webkit-transform: rotate(-1.2deg); -ms-transform: rotate(-1.2deg); transform: rotate(-1.2deg); top: 0; z-index: -2; }
+
+/* Piled Attached */
+/* line 163, ../../sass/semantic-ui/segment.scss */
+.ui[class*="top attached"].piled.segment { margin-top: 3em; margin-bottom: 0em; }
+
+/* line 167, ../../sass/semantic-ui/segment.scss */
+.ui.piled.segment[class*="top attached"]:first-child { margin-top: 0em; }
+
+/* line 170, ../../sass/semantic-ui/segment.scss */
+.ui.piled.segment[class*="bottom attached"] { margin-top: 0em; margin-bottom: 3em; }
+
+/* line 174, ../../sass/semantic-ui/segment.scss */
+.ui.piled.segment[class*="bottom attached"]:last-child { margin-bottom: 0em; }
+
+/*------------------- Stacked
+--------------------*/
+/* line 182, ../../sass/semantic-ui/segment.scss */
+.ui.stacked.segment { padding-bottom: 1.4em; }
+
+/* line 185, ../../sass/semantic-ui/segment.scss */
+.ui.stacked.segment:after, .ui.stacked.segment:before { content: ''; position: absolute; bottom: -3px; left: 0%; border-top: 1px solid rgba(39, 41, 43, 0.15); background-color: rgba(0, 0, 0, 0.03); width: 100%; height: 6px; visibility: visible; }
+
+/* line 197, ../../sass/semantic-ui/segment.scss */
+.ui.stacked.segment:before { display: none; }
+
+/* Add additional page */
+/* line 202, ../../sass/semantic-ui/segment.scss */
+.ui.tall.stacked.segment:before { display: block; bottom: 0px; }
+
+/* Inverted */
+/* line 208, ../../sass/semantic-ui/segment.scss */
+.ui.stacked.inverted.segment:after, .ui.stacked.inverted.segment:before { background-color: rgba(0, 0, 0, 0.03); border-top: 1px solid rgba(39, 41, 43, 0.3); }
+
+/*------------------- Compact
+--------------------*/
+/* line 218, ../../sass/semantic-ui/segment.scss */
+.ui.compact.segment { display: table; }
+
+/*------------------- Circular
+--------------------*/
+/* line 226, ../../sass/semantic-ui/segment.scss */
+.ui.circular.segment { display: table-cell; padding: 2em; text-align: center; vertical-align: middle; border-radius: 500em; }
+
+/*------------------- Raised
+--------------------*/
+/* line 238, ../../sass/semantic-ui/segment.scss */
+.ui.raised.segment { box-shadow: 0px 0px 0px 1px rgba(39, 41, 43, 0.15), 0px 1px 4px 0px rgba(0, 0, 0, 0.15); }
+
+/******************************* States
+*******************************/
+/*-------------- Disabled
+---------------*/
+/* line 252, ../../sass/semantic-ui/segment.scss */
+.ui.disabled.segment { opacity: 0.3; color: rgba(40, 40, 40, 0.3); }
+
+/*-------------- Loading
+---------------*/
+/* line 261, ../../sass/semantic-ui/segment.scss */
+.ui.loading.segment { position: relative; cursor: default; point-events: none; text-shadow: none !important; color: transparent !important; -webkit-transition: all 0s linear; transition: all 0s linear; }
+
+/* line 270, ../../sass/semantic-ui/segment.scss */
+.ui.loading.segment:before { position: absolute; content: ''; top: 0%; left: 0%; background: rgba(255, 255, 255, 0.8); width: 100%; height: 100%; border-radius: 0.2857rem; z-index: 100; }
+
+/* line 281, ../../sass/semantic-ui/segment.scss */
+.ui.loading.segment:after { position: absolute; content: ''; top: 50%; left: 50%; margin: -1.5em 0em 0em -1.5em; width: 3em; height: 3em; -webkit-animation: segment-spin 0.6s linear; animation: segment-spin 0.6s linear; -webkit-animation-iteration-count: infinite; animation-iteration-count: infinite; border-radius: 500rem; border-color: #aaaaaa rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1); border-style: solid; border-width: 0.2em; box-shadow: 0px 0px 0px 1px transparent; visibility: visible; z-index: 101; }
+
+@-webkit-keyframes segment-spin { from { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  to { -webkit-transform: rotate(360deg); transform: rotate(360deg); } }
+@keyframes segment-spin { from { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  to { -webkit-transform: rotate(360deg); transform: rotate(360deg); } }
+/******************************* Variations
+*******************************/
+/*------------------- Basic
+--------------------*/
+/* line 332, ../../sass/semantic-ui/segment.scss */
+.ui.basic.segment { position: relative; background-color: transparent; box-shadow: none; border-radius: 0px; }
+
+/*------------------- Fittted
+--------------------*/
+/* line 343, ../../sass/semantic-ui/segment.scss */
+.ui.fitted.segment { padding: 0em; }
+
+/*------------------- Colors
+--------------------*/
+/* line 351, ../../sass/semantic-ui/segment.scss */
+.ui.black.segment:not(.inverted) { border-top: 2px solid #1b1c1d; }
+
+/* line 354, ../../sass/semantic-ui/segment.scss */
+.ui.blue.segment:not(.inverted) { border-top: 2px solid #3b83c0; }
+
+/* line 357, ../../sass/semantic-ui/segment.scss */
+.ui.green.segment:not(.inverted) { border-top: 2px solid #5bbd72; }
+
+/* line 360, ../../sass/semantic-ui/segment.scss */
+.ui.orange.segment:not(.inverted) { border-top: 2px solid #e07b53; }
+
+/* line 363, ../../sass/semantic-ui/segment.scss */
+.ui.pink.segment:not(.inverted) { border-top: 2px solid #d9499a; }
+
+/* line 366, ../../sass/semantic-ui/segment.scss */
+.ui.purple.segment:not(.inverted) { border-top: 2px solid #564f8a; }
+
+/* line 369, ../../sass/semantic-ui/segment.scss */
+.ui.red.segment:not(.inverted) { border-top: 2px solid #d95c5c; }
+
+/* line 372, ../../sass/semantic-ui/segment.scss */
+.ui.teal.segment:not(.inverted) { border-top: 2px solid #00b5ad; }
+
+/* line 375, ../../sass/semantic-ui/segment.scss */
+.ui.yellow.segment:not(.inverted) { border-top: 2px solid #f2c61f; }
+
+/* line 378, ../../sass/semantic-ui/segment.scss */
+.ui.black.segment:not(.inverted):not(.attached) { border-top-left-radius: 0.2857rem !important; border-top-right-radius: 0.2857rem !important; }
+
+/* line 382, ../../sass/semantic-ui/segment.scss */
+.ui.blue.segment:not(.inverted):not(.attached) { border-top-left-radius: 0.2857rem !important; border-top-right-radius: 0.2857rem !important; }
+
+/* line 386, ../../sass/semantic-ui/segment.scss */
+.ui.green.segment:not(.inverted):not(.attached) { border-top-left-radius: 0.2857rem !important; border-top-right-radius: 0.2857rem !important; }
+
+/* line 390, ../../sass/semantic-ui/segment.scss */
+.ui.orange.segment:not(.inverted):not(.attached) { border-top-left-radius: 0.2857rem !important; border-top-right-radius: 0.2857rem !important; }
+
+/* line 394, ../../sass/semantic-ui/segment.scss */
+.ui.pink.segment:not(.inverted):not(.attached) { border-top-left-radius: 0.2857rem !important; border-top-right-radius: 0.2857rem !important; }
+
+/* line 398, ../../sass/semantic-ui/segment.scss */
+.ui.purple.segment:not(.inverted):not(.attached) { border-top-left-radius: 0.2857rem !important; border-top-right-radius: 0.2857rem !important; }
+
+/* line 402, ../../sass/semantic-ui/segment.scss */
+.ui.red.segment:not(.inverted):not(.attached) { border-top-left-radius: 0.2857rem !important; border-top-right-radius: 0.2857rem !important; }
+
+/* line 406, ../../sass/semantic-ui/segment.scss */
+.ui.teal.segment:not(.inverted):not(.attached) { border-top-left-radius: 0.2857rem !important; border-top-right-radius: 0.2857rem !important; }
+
+/* line 410, ../../sass/semantic-ui/segment.scss */
+.ui.yellow.segment:not(.inverted):not(.attached) { border-top-left-radius: 0.2857rem !important; border-top-right-radius: 0.2857rem !important; }
+
+/*------------------- Inverted Colors
+--------------------*/
+/* line 419, ../../sass/semantic-ui/segment.scss */
+.ui.inverted.segment, .ui.inverted.black.segment { background-color: #1b1c1d !important; color: #ffffff !important; }
+
+/* line 424, ../../sass/semantic-ui/segment.scss */
+.ui.inverted.blue.segment { background-color: #3b83c0 !important; color: #ffffff !important; }
+
+/* line 428, ../../sass/semantic-ui/segment.scss */
+.ui.inverted.green.segment { background-color: #5bbd72 !important; color: #ffffff !important; }
+
+/* line 432, ../../sass/semantic-ui/segment.scss */
+.ui.inverted.orange.segment { background-color: #e07b53 !important; color: #ffffff !important; }
+
+/* line 436, ../../sass/semantic-ui/segment.scss */
+.ui.inverted.pink.segment { background-color: #d9499a !important; color: #ffffff !important; }
+
+/* line 440, ../../sass/semantic-ui/segment.scss */
+.ui.inverted.purple.segment { background-color: #564f8a !important; color: #ffffff !important; }
+
+/* line 444, ../../sass/semantic-ui/segment.scss */
+.ui.inverted.red.segment { background-color: #d95c5c !important; color: #ffffff !important; }
+
+/* line 448, ../../sass/semantic-ui/segment.scss */
+.ui.inverted.teal.segment { background-color: #00b5ad !important; color: #ffffff !important; }
+
+/* line 452, ../../sass/semantic-ui/segment.scss */
+.ui.inverted.yellow.segment { background-color: #f2c61f !important; color: #ffffff !important; }
+
+/*------------------- Aligned
+--------------------*/
+/* line 461, ../../sass/semantic-ui/segment.scss */
+.ui[class*="left aligned"].segment { text-align: left; }
+
+/* line 464, ../../sass/semantic-ui/segment.scss */
+.ui[class*="right aligned"].segment { text-align: right; }
+
+/* line 467, ../../sass/semantic-ui/segment.scss */
+.ui[class*="center aligned"].segment { text-align: center; }
+
+/*------------------- Floated
+--------------------*/
+/* line 475, ../../sass/semantic-ui/segment.scss */
+.ui.floated.segment, .ui[class*="left floated"].segment { float: left; margin-right: 1rem; }
+
+/* line 480, ../../sass/semantic-ui/segment.scss */
+.ui[class*="right floated"].segment { float: right; margin-left: 1rem; }
+
+/*------------------- Inverted
+--------------------*/
+/* line 489, ../../sass/semantic-ui/segment.scss */
+.ui.inverted.segment { border: none; box-shadow: none; }
+
+/* line 493, ../../sass/semantic-ui/segment.scss */
+.ui.inverted.segment .segment { color: rgba(0, 0, 0, 0.8); }
+
+/* line 496, ../../sass/semantic-ui/segment.scss */
+.ui.inverted.segment .inverted.segment { color: #ffffff; }
+
+/* line 499, ../../sass/semantic-ui/segment.scss */
+.ui.inverted.segment, .ui.primary.inverted.segment { background-color: #1b1c1d; color: #ffffff; }
+
+/* line 504, ../../sass/semantic-ui/segment.scss */
+.ui.inverted.block.segment, .ui.inverted.attached.segment { border-color: #555555; }
+
+/*------------------- Ordinality
+--------------------*/
+/* line 513, ../../sass/semantic-ui/segment.scss */
+.ui.secondary.segment { background: #faf9fa; color: rgba(0, 0, 0, 0.8); }
+
+/* line 517, ../../sass/semantic-ui/segment.scss */
+.ui.tertiary.segment { background: #ebebeb; color: rgba(0, 0, 0, 0.8); }
+
+/* line 521, ../../sass/semantic-ui/segment.scss */
+.ui.secondary.inverted.segment { background: -webkit-linear-gradient(rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.3) 100%); background: linear-gradient(rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.3) 100%); color: #fafafa; }
+
+/* line 526, ../../sass/semantic-ui/segment.scss */
+.ui.tertiary.inverted.segment { background: -webkit-linear-gradient(rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%); background: linear-gradient(rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%); color: #f0f0f0; }
+
+/*------------------- Attached
+--------------------*/
+/* line 536, ../../sass/semantic-ui/segment.scss */
+.ui.segment.attached { top: 0px; bottom: 0px; margin: 0em -1px; width: -webkit-calc(100% +  2px ); width: calc(100% +  2px ); max-width: -webkit-calc(100% +  2px ); max-width: calc(100% +  2px ); border-radius: 0px; box-shadow: none; border: 1px solid #d4d4d5; }
+
+/* line 548, ../../sass/semantic-ui/segment.scss */
+.ui.segment.attached + .ui.segment.attached:not(.top) { border-top: none; }
+
+/* Top */
+/* line 553, ../../sass/semantic-ui/segment.scss */
+.ui[class*="top attached"].segment { top: 0px; bottom: 0px; margin-top: 1rem; margin-bottom: 0em; border-radius: 0.2857rem 0.2857rem 0em 0em; }
+
+/* line 560, ../../sass/semantic-ui/segment.scss */
+.ui.segment[class*="top attached"]:first-child { margin-top: 0em; }
+
+/* Bottom */
+/* line 565, ../../sass/semantic-ui/segment.scss */
+.ui.segment[class*="bottom attached"] { top: 0px; bottom: 0px; margin-top: 0em; margin-bottom: 1rem; box-shadow: none, 0px 1px 2px 0 rgba(0, 0, 0, 0.05); border-radius: 0em 0em 0.2857rem 0.2857rem; }
+
+/* line 573, ../../sass/semantic-ui/segment.scss */
+.ui.segment[class*="bottom attached"]:last-child { margin-bottom: 0em; }
+
+/*------------------- Groups
+--------------------*/
+/* line 581, ../../sass/semantic-ui/segment.scss */
+.ui.segments { margin: 1rem 0em; }
+
+/* line 584, ../../sass/semantic-ui/segment.scss */
+.ui.segments:first-child { margin-top: 0em; }
+
+/* line 587, ../../sass/semantic-ui/segment.scss */
+.ui.segments:last-child { margin-bottom: 0em; }
+
+/* line 590, ../../sass/semantic-ui/segment.scss */
+.ui.segments > .segment { top: 0px; bottom: 0px; margin: 0em -1px; width: -webkit-calc(100% +  2px ); width: calc(100% +  2px ); max-width: -webkit-calc(100% +  2px ); max-width: calc(100% +  2px ); border-radius: 0px; box-shadow: none; border: 1px solid #d4d4d5; }
+
+/* line 602, ../../sass/semantic-ui/segment.scss */
+.ui.segments > .segment:not(:first-child) { border-top: none; }
+
+/* Top */
+/* line 607, ../../sass/semantic-ui/segment.scss */
+.ui.segments > .segment:first-child { margin-top: 0em; bottom: 0px; margin-bottom: 0em; top: 0px; border-radius: 0.2857rem 0.2857rem 0em 0em; }
+
+/* Bottom */
+/* line 616, ../../sass/semantic-ui/segment.scss */
+.ui.segments > .segment:last-child { bottom: 0px; margin-top: 0em; margin-bottom: 0em; top: 0px; box-shadow: none, 0px 1px 2px 0 rgba(0, 0, 0, 0.05); border-radius: 0em 0em 0.2857rem 0.2857rem; }
+
+/******************************* Theme Overrides
+*******************************/
+/******************************* Site Overrides
+*******************************/

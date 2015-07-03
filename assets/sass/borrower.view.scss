@@ -1,0 +1,137 @@
+.content {
+  top: 50px;
+  bottom: 0px;
+}
+.flyover-overlay {
+  position: absolute;
+    left: 0px;
+    background: none repeat scroll 0% 0% #333;
+    transform: translate3d(0px, 0px, 0px);
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 150ms ease 0s, z-index 0.1s linear 150ms;
+}
+.flyover-overlay-show {
+    z-index: 0;
+    right: 0px;
+    opacity: 0.67;
+    transition: opacity 150ms ease 0s;
+}
+
+.flyover {
+    background: none repeat scroll 0% 0% #F9F9F9;
+    max-width: 1280px;
+    width: calc(100% - 230px);
+    right: 0px;
+    z-index: -1;
+    opacity: 0;
+    transform: translate3d(100px, 0px, 0px);
+    transition: opacity 150ms ease 0s, transform 150ms ease-out 0s, z-index 0.1s linear 150ms;
+}
+.flyover-show {
+    z-index: 0;
+    transform: translate3d(0px, 0px, 0px);
+    opacity: 1;
+    filter: none;
+    transition: opacity 150ms ease 0s, transform 150ms ease-out 0s;
+}
+.flyover-controls {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    max-width: 1280px;
+    height: 0px;
+    width: calc(100% - 230px);
+}
+.next-prev-container {
+    top: 0px;
+    position: absolute;
+    max-width: 1280px;
+    width: calc(100% - 230px);
+    height: 0px;
+    right: 0px;
+}
+.next-prev-container, .flyover-controls {
+    animation: 300ms ease-in 0s normal none 1 running lever-fadein;
+    opacity: 1;
+    filter: none;
+}
+.flyover-close-button {
+    position: absolute;
+    left: -80px;
+    top: 0px;
+}
+.flyover-nav-button {
+    display: block;
+    margin: 15px 0px;
+    background-color: #2C2E2F;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    transition: #F2F1F0 150ms ease 0s, color 150ms ease 0s;
+    border-radius: 25px;
+    font-size: 12px;
+    color: #939393;
+    line-height: 50px;
+}
+.next-prev {
+    top: 110px;
+    left: -80px;
+    position: absolute;
+    width: 80px;
+}
+.flyover-nav-button:hover {background: #00a1dc;color: #fff;}
+
+.profile-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 70px;
+  bottom: 0;
+  overflow-y: scroll;
+  background: #fbfbfb;
+}
+.profile-content {
+  top: 0;
+  left: 0;
+  right: 350px;
+}
+.profile-sidebar-wrapper {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  height: 100%;
+  width: 350px;
+  right: 0;
+  background: #f4f4f4;
+}
+.profile-basic-info {
+  margin: 10px;
+}
+.profile-basic-info .profile-name {
+  font-size: 26px;
+}
+.profile-action-bar {
+  background: #f9f9f9;
+  height: 70px;
+  border-bottom: 1px solid #dcdcdc;
+  overflow: hidden;
+  -webkit-transition: height 300ms, background 300ms;
+  -moz-transition: height 300ms, background 300ms;
+  -o-transition: height 300ms, background 300ms;
+  -ms-transition: height 300ms, background 300ms;
+  transition: height 300ms, background 300ms;
+  overflow-y: scroll;
+  width: 200%;
+  padding-right: 100%;
+}
+.stage-tpl-header {
+  background-color: #000;
+  height: 35px;
+  color: #fff;
+}
+.stage-tpl-content {
+  background-color: #fff;
+  padding:10px;
+  height: 400px;
+}

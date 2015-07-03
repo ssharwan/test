@@ -1,0 +1,128 @@
+/* line 2, ../../app/borrowers/borrowers-list/_borrowers-list.directive.scss */
+.list-content { margin: 10px 30px 10px 50px; }
+
+/* line 5, ../../app/borrowers/borrowers-list/_borrowers-list.directive.scss */
+.list-table { width: 100%; margin-bottom: 120px; table-layout: fixed; }
+
+/* line 10, ../../app/borrowers/borrowers-list/_borrowers-list.directive.scss */
+.list-table tr.selected { background: #333; }
+
+/* line 13, ../../app/borrowers/borrowers-list/_borrowers-list.directive.scss */
+.list-table tr:first-child { background-color: #d3d3d3; }
+
+/* line 16, ../../app/borrowers/borrowers-list/_borrowers-list.directive.scss */
+.list-table col.checkbox { width: 40px; }
+
+/* line 19, ../../app/borrowers/borrowers-list/_borrowers-list.directive.scss */
+.list-table col.received { width: 80px; }
+
+/* line 22, ../../app/borrowers/borrowers-list/_borrowers-list.directive.scss */
+.list-table col.complated { width: 80px; }
+
+/* line 25, ../../app/borrowers/borrowers-list/_borrowers-list.directive.scss */
+.list-table col.owner { width: 80px; }
+
+/* line 28, ../../app/borrowers/borrowers-list/_borrowers-list.directive.scss */
+.list-table col.next-step { width: 17%; }
+
+/* line 31, ../../app/borrowers/borrowers-list/_borrowers-list.directive.scss */
+.list-table col.duration { width: 80px; }
+
+/* line 34, ../../app/borrowers/borrowers-list/_borrowers-list.directive.scss */
+.list-table col.amount { width: 100px; }
+
+/* line 37, ../../app/borrowers/borrowers-list/_borrowers-list.directive.scss */
+.list-table col.borrower { width: 20%; }
+
+/* line 40, ../../app/borrowers/borrowers-list/_borrowers-list.directive.scss */
+.list-table col.source { width: 15%; }
+
+/* line 2, ../../app/borrowers/borrowers-pipeline/_borrowers-pipeline.directive.scss */
+.pipeline-wrap { overflow-x: auto; background: #fff; -webkit-box-shadow: inset 0 -1px #dcdcdc; box-shadow: inset 0 -1px #dcdcdc; }
+
+/* line 8, ../../app/borrowers/borrowers-pipeline/_borrowers-pipeline.directive.scss */
+.pipeline { display: block; padding-left: 50px; white-space: nowrap; margin: 0px; -webkit-transition: background 300ms; -moz-transition: background 300ms; -o-transition: background 300ms; -ms-transition: background 300ms; transition: background 300ms; }
+
+/* line 20, ../../app/borrowers/borrowers-pipeline/_borrowers-pipeline.directive.scss */
+.pipeline-stage { list-style-type: none; display: inline-block; vertical-align: top; white-space: normal; width: 135px; height: 90px; position: relative; padding-top: 5px; padding-bottom: 5px; overflow: hidden; -webkit-transition: opacity 150ms; -moz-transition: opacity 150ms; -o-transition: opacity 150ms; -ms-transition: opacity 150ms; transition: opacity 150ms; }
+
+/* line 37, ../../app/borrowers/borrowers-pipeline/_borrowers-pipeline.directive.scss */
+.pipeline-stage .pipeline-single { padding: 0px 0px 0px 10px; height: 80px; border-left: 1px solid #dcdcdc; }
+
+/* line 42, ../../app/borrowers/borrowers-pipeline/_borrowers-pipeline.directive.scss */
+.pipeline-stage .pipeline-border-area { border: 1px dashed transparent; width: 100%; height: 100%; -webkit-border-radius: 3px; padding: 2px 0 2px 6px; border-radius: 3px; margin-left: -5px; }
+
+/* line 52, ../../app/borrowers/borrowers-pipeline/_borrowers-pipeline.directive.scss */
+.pipeline-stage .stage-count { font-size: 30px; line-height: 1.4em; }
+
+/* line 56, ../../app/borrowers/borrowers-pipeline/_borrowers-pipeline.directive.scss */
+.pipeline-stage .stage-title { display: block; color: #7d8f95; -webkit-transition: color 150ms; -moz-transition: color 150ms; -o-transition: color 150ms; -ms-transition: color 150ms; transition: color 150ms; }
+
+/* line 65, ../../app/borrowers/borrowers-pipeline/_borrowers-pipeline.directive.scss */
+.pipeline-stage .icon-caret-right { position: absolute; left: 0; top: 38px; background: #fff; -webkit-transition: background 300ms; -moz-transition: background 300ms; -o-transition: background 300ms; -ms-transition: background 300ms; transition: background 300ms; }
+
+/* line 76, ../../app/borrowers/borrowers-pipeline/_borrowers-pipeline.directive.scss */
+.pipeline-stage.selected .pipeline-selected-border { background: #00a1dc; }
+
+/* line 79, ../../app/borrowers/borrowers-pipeline/_borrowers-pipeline.directive.scss */
+.pipeline-stage.selected:hover .pipeline-selected-border { background: #00a1dc; }
+
+/* line 82, ../../app/borrowers/borrowers-pipeline/_borrowers-pipeline.directive.scss */
+.pipeline-stage:hover .pipeline-selected-border { background: #dcdcdc; }
+
+/* line 83, ../../app/borrowers/borrowers-pipeline/_borrowers-pipeline.directive.scss */
+.pipeline-stage .pipeline-selected-border { position: absolute; height: 3px; width: 125px; bottom: 3px; margin: 0px 3px; background: transparent; -webkit-transition: height 150ms, color 150ms; -moz-transition: height 150ms, color 150ms; -o-transition: height 150ms, color 150ms; -ms-transition: height 150ms, color 150ms; transition: height 150ms, color 150ms; }
+
+/* line 7, ../sass/borrowers.view.scss */
+.list-header { top: 50px; height: 225px; background: none repeat scroll 0% 0% #F9F9F9; }
+
+/* line 12, ../sass/borrowers.view.scss */
+.infinite-scroll { top: 275px; }
+
+/* line 15, ../sass/borrowers.view.scss */
+.borrowers-title { position: relative; height: 70px; }
+
+/* line 19, ../sass/borrowers.view.scss */
+.borrowers-title .borrowers-title-wrapper { position: absolute; left: 0px; right: 0px; top: 0px; padding: 7px 0px 7px 50px; }
+
+/* line 26, ../sass/borrowers.view.scss */
+.borrowers-title .title-text { display: inline-block; margin-top: 15px; float: left; }
+
+/* line 31, ../sass/borrowers.view.scss */
+.borrowers-title .all-mine-control { display: inline-block; margin-top: 15px; margin-left: 10px; float: left; }
+
+/* line 37, ../sass/borrowers.view.scss */
+.borrowers-title .filter-button { display: inline-block; margin-top: 15px; margin-right: 0px; float: right; }
+
+/* line 44, ../sass/borrowers.view.scss */
+.borrowers-title .all-mine-control .all-mine-toggle { display: inline-block; height: 30px; padding: 0px 10px; border: 1px solid #EBEBEB; margin-right: -1px; color: #AFAFAF; background: none repeat scroll 0% 0% #FFF; transition: color 150ms ease 0s, background-color 150ms ease 0s, border-color 150ms ease 0s; min-width: 80px; text-align: center; }
+
+/* line 56, ../sass/borrowers.view.scss */
+.borrowers-title .all-mine-control .all-mine-toggle.active { border-color: #AFAFAF; background: none repeat scroll 0% 0% #AFAFAF; color: #FFF; }
+
+/* line 63, ../sass/borrowers.view.scss */
+.list-controls .title-text { height: auto; padding: 0 30px 0 50px; }
+
+/* line 67, ../sass/borrowers.view.scss */
+.list-controls .checkable-actions { height: auto; padding: 0 30px 0 50px; }
+
+/* line 71, ../sass/borrowers.view.scss */
+.list-controls .checkable-actions li { list-style-type: none; display: inline-block; float: left; }
+
+/* line 76, ../sass/borrowers.view.scss */
+.list-controls .checkable-select-container { position: relative; display: inline-block; }
+
+/* line 80, ../sass/borrowers.view.scss */
+.list-controls .checkable-actions button { margin: 0 10px 0 0; }
+
+/* line 83, ../sass/borrowers.view.scss */
+.list-controls .checkable-select-toggle { width: 60px; }
+
+/* line 86, ../sass/borrowers.view.scss */
+.list-controls .checkable-select-check { position: absolute; left: 16px; top: 7px; margin-left: -5px; }
+
+/* line 94, ../sass/borrowers.view.scss */
+.borrowers-filters .filter-mask { position: absolute; top: 0; left: 0; right: 0; bottom: 0; opacity: 0.67; background-color: rgba(0, 0, 0, 0.85); z-index: 0; }
+
+/* line 104, ../sass/borrowers.view.scss */
+.borrowers-filters .filter-wrapper { position: absolute; top: 20%; left: 30%; height: 400px; width: 400px; z-index: 0; background-color: #fff; border: 1px solid; }

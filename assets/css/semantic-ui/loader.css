@@ -1,0 +1,143 @@
+/*!
+ * # Semantic UI 1.12.3 - Loader
+ * http://github.com/semantic-org/semantic-ui/
+ *
+ *
+ * Copyright 2014 Contributors
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+/******************************* Loader
+*******************************/
+/* Standard Size */
+/* line 19, ../../sass/semantic-ui/loader.scss */
+.ui.loader { display: none; position: absolute; top: 50%; left: 50%; margin: 0px; text-align: center; z-index: 1000; -webkit-transform: translateX(-50%) translateY(-50%); -ms-transform: translateX(-50%) translateY(-50%); transform: translateX(-50%) translateY(-50%); }
+
+/* Static Shape */
+/* line 33, ../../sass/semantic-ui/loader.scss */
+.ui.loader:before { position: absolute; content: ''; top: 0%; left: 50%; width: 100%; height: 100%; border-radius: 500rem; border: 0.2em solid rgba(0, 0, 0, 0.1); }
+
+/* Active Shape */
+/* line 45, ../../sass/semantic-ui/loader.scss */
+.ui.loader:after { position: absolute; content: ''; top: 0%; left: 50%; width: 100%; height: 100%; -webkit-animation: loader 0.6s linear; animation: loader 0.6s linear; -webkit-animation-iteration-count: infinite; animation-iteration-count: infinite; border-radius: 500rem; border-color: #aaaaaa transparent transparent; border-style: solid; border-width: 0.2em; box-shadow: 0px 0px 0px 1px transparent; }
+
+/* Active Animation */
+@-webkit-keyframes loader { from { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  to { -webkit-transform: rotate(360deg); transform: rotate(360deg); } }
+@keyframes loader { from { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  to { -webkit-transform: rotate(360deg); transform: rotate(360deg); } }
+/* Sizes */
+/* line 86, ../../sass/semantic-ui/loader.scss */
+.ui.loader:before, .ui.loader:after { width: 2.2585em; height: 2.2585em; margin: 0em 0em 0em -1.12925em; }
+
+/* line 92, ../../sass/semantic-ui/loader.scss */
+.ui.mini.loader:before, .ui.mini.loader:after { width: 1.2857em; height: 1.2857em; margin: 0em 0em 0em -0.64285em; }
+
+/* line 98, ../../sass/semantic-ui/loader.scss */
+.ui.small.loader:before, .ui.small.loader:after { width: 1.7142em; height: 1.7142em; margin: 0em 0em 0em -0.8571em; }
+
+/* line 104, ../../sass/semantic-ui/loader.scss */
+.ui.large.loader:before, .ui.large.loader:after { width: 4.5714em; height: 4.5714em; margin: 0em 0em 0em -2.2857em; }
+
+/*------------------- Coupling
+--------------------*/
+/* Show inside active dimmer */
+/* line 117, ../../sass/semantic-ui/loader.scss */
+.ui.dimmer .loader { display: block; }
+
+/* Black Dimmer */
+/* line 122, ../../sass/semantic-ui/loader.scss */
+.ui.dimmer .ui.loader { color: #ffffff; }
+
+/* line 125, ../../sass/semantic-ui/loader.scss */
+.ui.dimmer .ui.loader:before { border-color: rgba(255, 255, 255, 0.15); }
+
+/* line 128, ../../sass/semantic-ui/loader.scss */
+.ui.dimmer .ui.loader:after { border-color: #ffffff transparent transparent; }
+
+/* White Dimmer (Inverted) */
+/* line 133, ../../sass/semantic-ui/loader.scss */
+.ui.inverted.dimmer .ui.loader { color: rgba(0, 0, 0, 0.8); }
+
+/* line 136, ../../sass/semantic-ui/loader.scss */
+.ui.inverted.dimmer .ui.loader:before { border-color: rgba(0, 0, 0, 0.1); }
+
+/* line 139, ../../sass/semantic-ui/loader.scss */
+.ui.inverted.dimmer .ui.loader:after { border-color: #aaaaaa transparent transparent; }
+
+/******************************* Types
+*******************************/
+/*------------------- Text
+--------------------*/
+/* line 153, ../../sass/semantic-ui/loader.scss */
+.ui.text.loader { width: auto !important; height: auto !important; text-align: center; font-style: normal; }
+
+/******************************* States
+*******************************/
+/* line 165, ../../sass/semantic-ui/loader.scss */
+.ui.indeterminate.loader:after { -webkit-animation-direction: reverse; animation-direction: reverse; -webkit-animation-duration: 1.2s; animation-duration: 1.2s; }
+
+/* line 171, ../../sass/semantic-ui/loader.scss */
+.ui.loader.active, .ui.loader.visible { display: block; }
+
+/* line 175, ../../sass/semantic-ui/loader.scss */
+.ui.loader.disabled, .ui.loader.hidden { display: none; }
+
+/******************************* Variations
+*******************************/
+/*------------------- Sizes
+--------------------*/
+/* Loader */
+/* line 192, ../../sass/semantic-ui/loader.scss */
+.ui.inverted.dimmer .ui.mini.loader, .ui.mini.loader { width: 1.2857em; height: 1.2857em; font-size: 0.7857em; }
+
+/* line 198, ../../sass/semantic-ui/loader.scss */
+.ui.inverted.dimmer .ui.small.loader, .ui.small.loader { width: 1.7142em; height: 1.7142em; font-size: 0.9285em; }
+
+/* line 204, ../../sass/semantic-ui/loader.scss */
+.ui.inverted.dimmer .ui.loader, .ui.loader { width: 2.2585em; height: 2.2585em; font-size: 1em; }
+
+/* line 210, ../../sass/semantic-ui/loader.scss */
+.ui.inverted.dimmer .ui.loader.large, .ui.loader.large { width: 4.5714em; height: 4.5714em; font-size: 1.1428em; }
+
+/* Text Loader */
+/* line 218, ../../sass/semantic-ui/loader.scss */
+.ui.mini.text.loader { min-width: 1.2857em; padding-top: 1.9857em; }
+
+/* line 222, ../../sass/semantic-ui/loader.scss */
+.ui.small.text.loader { min-width: 1.7142em; padding-top: 2.4142em; }
+
+/* line 226, ../../sass/semantic-ui/loader.scss */
+.ui.text.loader { min-width: 2.2585em; padding-top: 2.9585em; }
+
+/* line 230, ../../sass/semantic-ui/loader.scss */
+.ui.large.text.loader { min-width: 4.5714em; padding-top: 5.2714em; }
+
+/*------------------- Inverted
+--------------------*/
+/* line 239, ../../sass/semantic-ui/loader.scss */
+.ui.inverted.loader { color: #ffffff; }
+
+/* line 242, ../../sass/semantic-ui/loader.scss */
+.ui.inverted.loader:before { border-color: rgba(255, 255, 255, 0.15); }
+
+/* line 245, ../../sass/semantic-ui/loader.scss */
+.ui.inverted.loader:after { border-top-color: #ffffff; }
+
+/*------------------- Inline
+--------------------*/
+/* line 253, ../../sass/semantic-ui/loader.scss */
+.ui.inline.loader { position: relative; vertical-align: middle; margin: 0em; left: 0em; top: 0em; -webkit-transform: none; -ms-transform: none; transform: none; }
+
+/* line 263, ../../sass/semantic-ui/loader.scss */
+.ui.inline.loader.active, .ui.inline.loader.visible { display: inline-block; }
+
+/* Centered Inline */
+/* line 269, ../../sass/semantic-ui/loader.scss */
+.ui.centered.inline.loader.active, .ui.centered.inline.loader.visible { display: block; }
+
+/******************************* Theme Overrides
+*******************************/
+/******************************* Site Overrides
+*******************************/

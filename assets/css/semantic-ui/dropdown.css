@@ -1,0 +1,556 @@
+@charset "UTF-8";
+/*!
+ * # Semantic UI 1.12.3 - Dropdown
+ * http://github.com/semantic-org/semantic-ui/
+ *
+ *
+ * Copyright 2014 Contributors
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+/******************************* Dropdown
+*******************************/
+/* line 17, ../../sass/semantic-ui/dropdown.scss */
+.ui.dropdown { cursor: pointer; position: relative; display: inline-block; line-height: 1em; tap-highlight-color: transparent; outline: none; text-align: left; -webkit-transition: border-radius 0.1s ease, width 0.2s ease; transition: border-radius 0.1s ease, width 0.2s ease; }
+
+/******************************* Content
+*******************************/
+/*-------------- Menu
+---------------*/
+/* line 39, ../../sass/semantic-ui/dropdown.scss */
+.ui.dropdown .menu { cursor: auto; position: absolute; display: none; outline: none; top: 100%; margin: 0em; padding: 0em 0em; background: #ffffff; min-width: 100%; white-space: nowrap; font-size: 1rem; text-shadow: none; text-align: left; box-shadow: 0px 1px 4px 0px rgba(39, 41, 43, 0.15); border: 1px solid rgba(39, 41, 43, 0.15); border-radius: 0em 0em 0.2857rem 0.2857rem; -webkit-transition: opacity 0.2s ease; transition: opacity 0.2s ease; z-index: 11; will-change: transform, opacity; }
+
+/*-------------- Hidden Input
+---------------*/
+/* line 66, ../../sass/semantic-ui/dropdown.scss */
+.ui.dropdown > input:not(.search):first-child, .ui.dropdown > select { display: none !important; }
+
+/*-------------- Dropdown Icon
+---------------*/
+/* line 75, ../../sass/semantic-ui/dropdown.scss */
+.ui.dropdown > .dropdown.icon { width: auto; margin: 0em 0em 0em 1em; }
+
+/* line 79, ../../sass/semantic-ui/dropdown.scss */
+.ui.dropdown .menu > .item .dropdown.icon { width: auto; float: right; margin: 0em 0em 0em 1em; }
+
+/* line 84, ../../sass/semantic-ui/dropdown.scss */
+.ui.dropdown .menu > .item .dropdown.icon + .text { margin-right: 1em; }
+
+/*-------------- Text
+---------------*/
+/* line 92, ../../sass/semantic-ui/dropdown.scss */
+.ui.dropdown > .text { display: inline-block; -webkit-transition: color 0.2s ease; transition: color 0.2s ease; }
+
+/*-------------- Menu Item
+---------------*/
+/* line 102, ../../sass/semantic-ui/dropdown.scss */
+.ui.dropdown .menu > .item { position: relative; cursor: pointer; display: block; border: none; height: auto; border-top: none; line-height: 1em; color: rgba(0, 0, 0, 0.8); padding: 0.71428571em 1.14285714em !important; font-size: 1rem; text-transform: none; font-weight: normal; box-shadow: none; -webkit-touch-callout: none; }
+
+/* line 118, ../../sass/semantic-ui/dropdown.scss */
+.ui.dropdown .menu > .item:first-child { border-top-width: 0px; }
+
+/*-------------- Floated Content
+---------------*/
+/* line 126, ../../sass/semantic-ui/dropdown.scss */
+.ui.dropdown > .text > [class*="right floated"], .ui.dropdown .menu .item > [class*="right floated"] { float: right !important; margin-right: 0em !important; margin-left: 1em !important; }
+
+/* line 132, ../../sass/semantic-ui/dropdown.scss */
+.ui.dropdown > .text > [class*="left floated"], .ui.dropdown .menu .item > [class*="left floated"] { float: left !important; margin-left: 0em !important; margin-right: 1em !important; }
+
+/* line 138, ../../sass/semantic-ui/dropdown.scss */
+.ui.dropdown .menu .item > .icon.floated, .ui.dropdown .menu .item > .flag.floated, .ui.dropdown .menu .item > .image.floated, .ui.dropdown .menu .item > img.floated { margin-top: 0em; }
+
+/*-------------- Menu Divider
+---------------*/
+/* line 149, ../../sass/semantic-ui/dropdown.scss */
+.ui.dropdown .menu > .header { margin: 1rem 0rem 0.75rem; padding: 0em 1.14285714em; color: rgba(0, 0, 0, 0.85); font-size: 0.7857rem; font-weight: bold; text-transform: uppercase; }
+
+/* line 157, ../../sass/semantic-ui/dropdown.scss */
+.ui.dropdown .menu > .divider { border-top: 1px solid rgba(0, 0, 0, 0.05); height: 0em; margin: 0.5em 0em; }
+
+/* line 162, ../../sass/semantic-ui/dropdown.scss */
+.ui.dropdown .menu > .input { margin: 0.75rem 1.14285714em; min-width: 200px; }
+
+/* line 166, ../../sass/semantic-ui/dropdown.scss */
+.ui.dropdown .menu > .header + .input { margin-top: 0em; }
+
+/* line 169, ../../sass/semantic-ui/dropdown.scss */
+.ui.dropdown .menu > .input:not(.transparent) input { padding: 0.5em 1em; }
+
+/* line 172, ../../sass/semantic-ui/dropdown.scss */
+.ui.dropdown .menu > .input:not(.transparent) .button, .ui.dropdown .menu > .input:not(.transparent) .icon, .ui.dropdown .menu > .input:not(.transparent) .label { padding-top: 0.5em; padding-bottom: 0.5em; }
+
+/*----------------- Item Description
+-------------------*/
+/* line 183, ../../sass/semantic-ui/dropdown.scss */
+.ui.dropdown > .text > .description, .ui.dropdown .menu > .item > .description { margin: 0em 0em 0em 1em; color: rgba(0, 0, 0, 0.4); }
+
+/*-------------- Sub Menu
+---------------*/
+/* line 193, ../../sass/semantic-ui/dropdown.scss */
+.ui.dropdown .menu .menu { top: 0% !important; left: 100% !important; right: auto !important; margin: 0em 0em 0em -0.5em !important; border-radius: 0em 0.2857rem 0.2857rem 0em !important; z-index: 21 !important; }
+
+/* Hide Arrow */
+/* line 203, ../../sass/semantic-ui/dropdown.scss */
+.ui.dropdown .menu .menu:after { display: none; }
+
+/******************************* Coupling
+*******************************/
+/*-------------- Sub Elements
+---------------*/
+/* Icons / Flags / Labels / Image */
+/* line 219, ../../sass/semantic-ui/dropdown.scss */
+.ui.dropdown > .text > .icon, .ui.dropdown > .text > .label, .ui.dropdown > .text > .flag, .ui.dropdown > .text > img, .ui.dropdown > .text > .image { margin-top: 0em; }
+
+/* line 226, ../../sass/semantic-ui/dropdown.scss */
+.ui.dropdown .menu > .item > .icon, .ui.dropdown .menu > .item > .label, .ui.dropdown .menu > .item > .flag, .ui.dropdown .menu > .item > .image, .ui.dropdown .menu > .item > img { margin-top: 0em; }
+
+/* line 233, ../../sass/semantic-ui/dropdown.scss */
+.ui.dropdown > .text > .icon, .ui.dropdown > .text > .label, .ui.dropdown > .text > .flag, .ui.dropdown > .text > img, .ui.dropdown > .text > .image, .ui.dropdown .menu > .item > .icon, .ui.dropdown .menu > .item > .label, .ui.dropdown .menu > .item > .flag, .ui.dropdown .menu > .item > .image, .ui.dropdown .menu > .item > img { margin-left: 0em; float: none; margin-right: 0.75em; }
+
+/*-------------- Image
+---------------*/
+/* line 252, ../../sass/semantic-ui/dropdown.scss */
+.ui.dropdown > .text > img, .ui.dropdown > .text > .image, .ui.dropdown .menu > .item > .image, .ui.dropdown .menu > .item > img { display: inline-block; vertical-align: middle; width: auto; max-height: 2.5em; }
+
+/*-------------- Menu
+---------------*/
+/* Remove Menu Item Divider */
+/* line 268, ../../sass/semantic-ui/dropdown.scss */
+.ui.dropdown .ui.menu > .item:before, .ui.menu .ui.dropdown .menu > .item:before { display: none; }
+
+/* Prevent Menu Item Border */
+/* line 274, ../../sass/semantic-ui/dropdown.scss */
+.ui.menu .ui.dropdown .menu .active.item { border-left: none; }
+
+/* Automatically float dropdown menu right on last menu item */
+/* line 279, ../../sass/semantic-ui/dropdown.scss */
+.ui.menu .right.menu .dropdown:last-child .menu, .ui.menu .right.dropdown.item .menu, .ui.buttons > .ui.dropdown:last-child .menu { left: auto; right: 0em; }
+
+/*-------------- Button
+---------------*/
+/* No Margin On Icon Button */
+/* line 292, ../../sass/semantic-ui/dropdown.scss */
+.ui.dropdown.icon.button > .dropdown.icon { margin: 0em; }
+
+/* line 295, ../../sass/semantic-ui/dropdown.scss */
+.ui.dropdown.button:not(.pointing):not(.floating).active, .ui.dropdown.button:not(.pointing):not(.floating).visible { border-bottom-left-radius: 0em; border-bottom-right-radius: 0em; }
+
+/******************************* Types
+*******************************/
+/*-------------- Selection
+---------------*/
+/* Displays like a select box */
+/* line 313, ../../sass/semantic-ui/dropdown.scss */
+.ui.selection.dropdown { cursor: pointer; word-wrap: break-word; white-space: normal; outline: 0; -webkit-transform: rotateZ(0deg); transform: rotateZ(0deg); min-width: 180px; background: #ffffff; display: inline-block; padding: 0.8em 1.1em; color: rgba(0, 0, 0, 0.8); box-shadow: none; border: 1px solid rgba(39, 41, 43, 0.15); border-radius: 0.2857rem; -webkit-transition: border-radius 0.1s ease, width 0.2s ease, box-shadow 0.2s ease, border 0.2s ease; transition: border-radius 0.1s ease, width 0.2s ease, box-shadow 0.2s ease, border 0.2s ease; }
+
+/* line 331, ../../sass/semantic-ui/dropdown.scss */
+.ui.selection.dropdown.visible, .ui.selection.dropdown.active { z-index: 10; }
+
+/* line 335, ../../sass/semantic-ui/dropdown.scss */
+select.ui.dropdown { height: 38px; padding: 0.5em; border: 1px solid rgba(39, 41, 43, 0.15); visibility: visible; }
+
+/* line 341, ../../sass/semantic-ui/dropdown.scss */
+.ui.selection.dropdown > .text { margin-right: 2em; }
+
+/* line 344, ../../sass/semantic-ui/dropdown.scss */
+.ui.selection.dropdown > .search.icon, .ui.selection.dropdown > .delete.icon, .ui.selection.dropdown > .dropdown.icon { cursor: pointer; position: absolute; top: auto; width: auto; margin: -0.8em; padding: 0.8em; right: 1.1em; opacity: 0.8; -webkit-transition: opacity 0.2s ease; transition: opacity 0.2s ease; }
+
+/* Compact */
+/* line 360, ../../sass/semantic-ui/dropdown.scss */
+.ui.compact.selection.dropdown { min-width: 0px; }
+
+/*  Selection Menu */
+/* line 365, ../../sass/semantic-ui/dropdown.scss */
+.ui.selection.dropdown .menu { overflow-x: hidden; overflow-y: auto; -webkit-backface-visibility: hidden; backface-visibility: hidden; -webkit-overflow-scrolling: touch; border-top-width: 0px !important; width: auto; margin: 0px -1px; min-width: -webkit-calc(100% +  2px ); min-width: calc(100% +  2px ); outline: none; box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08); -webkit-transition: box-shadow 0.2s ease, border 0.2s ease; transition: box-shadow 0.2s ease, border 0.2s ease; }
+
+/* line 381, ../../sass/semantic-ui/dropdown.scss */
+.ui.selection.dropdown .menu:after, .ui.selection.dropdown .menu:before { display: none; }
+
+/* Scrollbar in IE */
+@media all and (-ms-high-contrast: none) { /* line 388, ../../sass/semantic-ui/dropdown.scss */
+  .ui.selection.dropdown .menu { min-width: -webkit-calc(100% -  15px ); min-width: calc(100% -  15px ); } }
+@media only screen and (max-width: 767px) { /* line 394, ../../sass/semantic-ui/dropdown.scss */
+  .ui.selection.dropdown .menu { max-height: 7.49991429em; } }
+@media only screen and (min-width: 768px) { /* line 399, ../../sass/semantic-ui/dropdown.scss */
+  .ui.selection.dropdown .menu { max-height: 9.99988571em; } }
+@media only screen and (min-width: 992px) { /* line 404, ../../sass/semantic-ui/dropdown.scss */
+  .ui.selection.dropdown .menu { max-height: 14.99982857em; } }
+@media only screen and (min-width: 1920px) { /* line 409, ../../sass/semantic-ui/dropdown.scss */
+  .ui.selection.dropdown .menu { max-height: 19.99977143em; } }
+/* Menu Item */
+/* line 415, ../../sass/semantic-ui/dropdown.scss */
+.ui.selection.dropdown .menu > .item { border-top: 1px solid rgba(0, 0, 0, 0.05); padding: 0.71428571em 1.14285714em !important; white-space: normal; word-wrap: normal; }
+
+/* Hover */
+/* line 423, ../../sass/semantic-ui/dropdown.scss */
+.ui.selection.dropdown:hover { border-color: rgba(39, 41, 43, 0.3); box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.05); }
+
+/* Disabled */
+/* line 429, ../../sass/semantic-ui/dropdown.scss */
+.ui.selection.dropdown.disabled, .ui.selection.dropdown.disabled:hover { cursor: default; box-shadow: none; color: rgba(0, 0, 0, 0.8); border: 1px solid rgba(39, 41, 43, 0.15); opacity: 0.3 !important; }
+
+/* Visible */
+/* line 439, ../../sass/semantic-ui/dropdown.scss */
+.ui.selection.dropdown.visible { border-color: rgba(39, 41, 43, 0.3); box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.08); }
+
+/* line 443, ../../sass/semantic-ui/dropdown.scss */
+.ui.selection.visible.dropdown .menu { border-color: rgba(39, 41, 43, 0.3); box-shadow: 0px 2px 6px 0px rgba(39, 41, 43, 0.15); }
+
+/* Visible Hover */
+/* line 449, ../../sass/semantic-ui/dropdown.scss */
+.ui.selection.visible.dropdown:hover { border-color: rgba(39, 41, 43, 0.3); box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.08); }
+
+/* line 453, ../../sass/semantic-ui/dropdown.scss */
+.ui.selection.visible.dropdown .menu { border-color: rgba(39, 41, 43, 0.3); box-shadow: 0px 2px 6px 0px rgba(39, 41, 43, 0.15); }
+
+/* Active Item */
+/* line 459, ../../sass/semantic-ui/dropdown.scss */
+.ui.selection.active.dropdown > .text:not(.default), .ui.selection.visible.dropdown > .text:not(.default) { font-weight: normal; color: rgba(0, 0, 0, 0.8); }
+
+/* Dropdown Icon */
+/* line 466, ../../sass/semantic-ui/dropdown.scss */
+.ui.active.selection.dropdown > .dropdown.icon, .ui.visible.selection.dropdown > .dropdown.icon { opacity: 1; z-index: 3; }
+
+/* Connecting Border */
+/* line 473, ../../sass/semantic-ui/dropdown.scss */
+.ui.active.selection.dropdown, .ui.visible.selection.dropdown { border-bottom-left-radius: 0em !important; border-bottom-right-radius: 0em !important; }
+
+/*-------------- Searchable
+---------------*/
+/* Search Selection */
+/* line 485, ../../sass/semantic-ui/dropdown.scss */
+.ui.search.dropdown { min-width: ''; }
+
+/* Search Dropdown */
+/* line 490, ../../sass/semantic-ui/dropdown.scss */
+.ui.search.dropdown > input.search { background: none transparent !important; border: none !important; box-shadow: none !important; border-radius: 0em !important; cursor: pointer; top: 0em; left: 0em; width: 100%; outline: none; -webkit-tap-highlight-color: rgba(255, 255, 255, 0); padding: inherit; }
+
+/* Text Layering */
+/* line 505, ../../sass/semantic-ui/dropdown.scss */
+.ui.search.dropdown > input.search { position: absolute; z-index: 2; }
+
+/* line 509, ../../sass/semantic-ui/dropdown.scss */
+.ui.search.dropdown > .text { cursor: text; position: relative; z-index: 3; }
+
+/* Search Selection */
+/* line 516, ../../sass/semantic-ui/dropdown.scss */
+.ui.search.selection.dropdown > input.search { line-height: 1.2142em; padding: 0.6929em 1.1em; }
+
+/* Active/Visible Search */
+/* line 522, ../../sass/semantic-ui/dropdown.scss */
+.ui.search.dropdown.active > input.search, .ui.search.dropdown.visible > input.search { cursor: auto; }
+
+/* line 526, ../../sass/semantic-ui/dropdown.scss */
+.ui.search.dropdown.active > .text, .ui.search.dropdown.visible > .text { pointer-events: none; }
+
+/* line 530, ../../sass/semantic-ui/dropdown.scss */
+.ui.active.search.dropdown > input.search:focus + .text { color: rgba(0, 0, 0, 0.4) !important; }
+
+/* Search Menu */
+/* line 535, ../../sass/semantic-ui/dropdown.scss */
+.ui.search.dropdown .menu { overflow-x: hidden; overflow-y: auto; -webkit-backface-visibility: hidden; backface-visibility: hidden; -webkit-overflow-scrolling: touch; }
+
+@media only screen and (max-width: 767px) { /* line 543, ../../sass/semantic-ui/dropdown.scss */
+  .ui.search.dropdown .menu { max-height: 7.49991429em; } }
+@media only screen and (min-width: 768px) { /* line 548, ../../sass/semantic-ui/dropdown.scss */
+  .ui.search.dropdown .menu { max-height: 9.99988571em; } }
+@media only screen and (min-width: 992px) { /* line 553, ../../sass/semantic-ui/dropdown.scss */
+  .ui.search.dropdown .menu { max-height: 14.99982857em; } }
+@media only screen and (min-width: 1920px) { /* line 558, ../../sass/semantic-ui/dropdown.scss */
+  .ui.search.dropdown .menu { max-height: 19.99977143em; } }
+/*-------------- Inline
+---------------*/
+/* line 567, ../../sass/semantic-ui/dropdown.scss */
+.ui.inline.dropdown { cursor: pointer; display: inline-block; color: inherit; }
+
+/* line 572, ../../sass/semantic-ui/dropdown.scss */
+.ui.inline.dropdown .dropdown.icon { margin: 0em 0.5em 0em 0.25em; vertical-align: top; }
+
+/* line 576, ../../sass/semantic-ui/dropdown.scss */
+.ui.inline.dropdown > .text { font-weight: bold; }
+
+/* line 579, ../../sass/semantic-ui/dropdown.scss */
+.ui.inline.dropdown .menu { cursor: auto; margin-top: 0.25em; border-radius: 0.2857rem; }
+
+/******************************* States
+*******************************/
+/*-------------------- Hover
+----------------------*/
+/* Menu Item Hover */
+/* line 597, ../../sass/semantic-ui/dropdown.scss */
+.ui.dropdown .menu > .item:hover { background: rgba(0, 0, 0, 0.05); color: rgba(0, 0, 0, 0.8); z-index: 13; }
+
+/*-------------------- Active
+----------------------*/
+/* Menu Item Active */
+/* line 609, ../../sass/semantic-ui/dropdown.scss */
+.ui.dropdown .menu .active.item { background: transparent; font-weight: bold; color: rgba(0, 0, 0, 0.8); box-shadow: none; z-index: 12; }
+
+/*-------------------- Default Text
+----------------------*/
+/* line 621, ../../sass/semantic-ui/dropdown.scss */
+.ui.dropdown > .default.text, .ui.default.dropdown > .text { color: rgba(179, 179, 179, 0.7); }
+
+/* line 625, ../../sass/semantic-ui/dropdown.scss */
+.ui.dropdown:hover > .default.text, .ui.default.dropdown:hover > .text { color: rgba(140, 140, 140, 0.7); }
+
+/*-------------------- Loading
+----------------------*/
+/* line 634, ../../sass/semantic-ui/dropdown.scss */
+.ui.loading.dropdown > .text { -webkit-transition: none; transition: none; }
+
+/* line 638, ../../sass/semantic-ui/dropdown.scss */
+.ui.dropdown > .loading.menu { display: block; visibility: hidden; z-index: -1; }
+
+/*-------------------- Keyboard Select
+----------------------*/
+/* Selected Item */
+/* line 650, ../../sass/semantic-ui/dropdown.scss */
+.ui.dropdown.selected, .ui.dropdown .menu .selected.item { background: rgba(0, 0, 0, 0.03); color: rgba(0, 0, 0, 0.8); }
+
+/*-------------------- Search Filtered
+----------------------*/
+/* Filtered Item */
+/* line 662, ../../sass/semantic-ui/dropdown.scss */
+.ui.dropdown > .filtered.text { visibility: hidden; }
+
+/* line 665, ../../sass/semantic-ui/dropdown.scss */
+.ui.dropdown .filtered.item { display: none !important; }
+
+/*-------------------- Error
+----------------------*/
+/* line 673, ../../sass/semantic-ui/dropdown.scss */
+.ui.dropdown.error, .ui.dropdown.error > .text, .ui.dropdown.error > .default.text { color: #a94442; }
+
+/* line 678, ../../sass/semantic-ui/dropdown.scss */
+.ui.selection.dropdown.error { background: #fff0f0; border-color: #dbb1b1; }
+
+/* line 682, ../../sass/semantic-ui/dropdown.scss */
+.ui.selection.dropdown.error:hover { border-color: #dbb1b1; }
+
+/* line 685, ../../sass/semantic-ui/dropdown.scss */
+.ui.dropdown.error > .menu, .ui.dropdown.error > .menu .menu { border-color: #dbb1b1; }
+
+/* line 689, ../../sass/semantic-ui/dropdown.scss */
+.ui.dropdown.error > .menu > .item { color: #d95c5c; }
+
+/* Item Hover */
+/* line 694, ../../sass/semantic-ui/dropdown.scss */
+.ui.dropdown.error > .menu > .item:hover { background-color: #fff2f2; }
+
+/* Item Active */
+/* line 699, ../../sass/semantic-ui/dropdown.scss */
+.ui.dropdown.error > .menu .active.item { background-color: #fdcfcf; }
+
+/*-------------------- Disabled
+----------------------*/
+/* Disabled */
+/* line 709, ../../sass/semantic-ui/dropdown.scss */
+.ui.disabled.dropdown { cursor: default; pointer-events: none; opacity: 0.3; }
+
+/******************************* Variations
+*******************************/
+/*-------------- Direction
+---------------*/
+/* Flyout Direction */
+/* line 727, ../../sass/semantic-ui/dropdown.scss */
+.ui.dropdown .menu { left: 0px; }
+
+/* Default Side (Right) */
+/* line 732, ../../sass/semantic-ui/dropdown.scss */
+.ui.dropdown .right.menu > .menu, .ui.dropdown .menu .right.menu { left: 100% !important; right: auto !important; }
+
+/* Left Flyout Menu */
+/* line 739, ../../sass/semantic-ui/dropdown.scss */
+.ui.dropdown > .left.menu .menu, .ui.dropdown .menu .left.menu { left: auto !important; right: 100% !important; }
+
+/* line 744, ../../sass/semantic-ui/dropdown.scss */
+.ui.dropdown .item .left.dropdown.icon, .ui.dropdown .left.menu .item .dropdown.icon { width: auto; float: left; margin: 0em 0.75em 0em 0em; }
+
+/* line 750, ../../sass/semantic-ui/dropdown.scss */
+.ui.dropdown .item .left.dropdown.icon, .ui.dropdown .left.menu .item .dropdown.icon { width: auto; float: left; margin: 0em 0.75em 0em 0em; }
+
+/* line 756, ../../sass/semantic-ui/dropdown.scss */
+.ui.dropdown .item .left.dropdown.icon + .text, .ui.dropdown .left.menu .item .dropdown.icon + .text { margin-left: 1em; }
+
+/*-------------- Upward
+---------------*/
+/* line 765, ../../sass/semantic-ui/dropdown.scss */
+.ui.upward.dropdown > .menu { top: auto; bottom: 100%; box-shadow: 0px 0px 4px 0px rgba(39, 41, 43, 0.15); border-radius: 0.2857rem 0.2857rem 0em 0em; }
+
+/* Active Upward */
+/* line 773, ../../sass/semantic-ui/dropdown.scss */
+.ui.simple.upward.active.dropdown, .ui.simple.upward.dropdown:hover { border-radius: 0.2857rem 0.2857rem 0em 0em !important; }
+
+/* line 777, ../../sass/semantic-ui/dropdown.scss */
+.ui.upward.dropdown.button:not(.pointing):not(.floating).active, .ui.upward.dropdown.button:not(.pointing):not(.floating).visible { border-radius: 0.2857rem 0.2857rem 0em 0em; }
+
+/* Selection */
+/* line 783, ../../sass/semantic-ui/dropdown.scss */
+.ui.upward.selection.dropdown .menu { border-top-width: 1px !important; border-bottom-width: 0px !important; }
+
+/* line 787, ../../sass/semantic-ui/dropdown.scss */
+.ui.upward.selection.dropdown:hover { box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.05); }
+
+/* line 790, ../../sass/semantic-ui/dropdown.scss */
+.ui.upward.selection.visible.dropdown:hover { box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.05); }
+
+/* line 793, ../../sass/semantic-ui/dropdown.scss */
+.ui.active.upward.selection.dropdown, .ui.visible.upward.selection.dropdown { border-radius: 0em 0em 0.2857rem 0.2857rem !important; }
+
+/* line 797, ../../sass/semantic-ui/dropdown.scss */
+.ui.upward.selection.dropdown.visible { box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.08); }
+
+/* line 800, ../../sass/semantic-ui/dropdown.scss */
+.ui.upward.selection.visible.dropdown:hover .menu { box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.08); }
+
+/*-------------- Simple
+---------------*/
+/* Displays without javascript */
+/* line 810, ../../sass/semantic-ui/dropdown.scss */
+.ui.simple.dropdown .menu:before, .ui.simple.dropdown .menu:after { display: none; }
+
+/* line 814, ../../sass/semantic-ui/dropdown.scss */
+.ui.simple.dropdown .menu { position: absolute; display: block; overflow: hidden; top: -9999px !important; opacity: 0; width: 0; height: 0; -webkit-transition: opacity 0.2s ease; transition: opacity 0.2s ease; }
+
+/* line 825, ../../sass/semantic-ui/dropdown.scss */
+.ui.simple.active.dropdown, .ui.simple.dropdown:hover { border-bottom-left-radius: 0em !important; border-bottom-right-radius: 0em !important; }
+
+/* line 830, ../../sass/semantic-ui/dropdown.scss */
+.ui.simple.active.dropdown > .menu, .ui.simple.dropdown:hover > .menu { overflow: visible; width: auto; height: auto; top: 100% !important; opacity: 1; }
+
+/* line 838, ../../sass/semantic-ui/dropdown.scss */
+.ui.simple.dropdown > .menu > .item:active > .menu, .ui.simple.dropdown:hover > .menu > .item:hover > .menu { overflow: visible; width: auto; height: auto; top: 0% !important; left: 100% !important; opacity: 1; }
+
+/* line 847, ../../sass/semantic-ui/dropdown.scss */
+.ui.simple.disabled.dropdown:hover .menu { display: none; height: 0px; width: 0px; overflow: hidden; }
+
+/* Visible */
+/* line 855, ../../sass/semantic-ui/dropdown.scss */
+.ui.simple.visible.dropdown > .menu { display: block; }
+
+/*-------------- Fluid
+---------------*/
+/* line 863, ../../sass/semantic-ui/dropdown.scss */
+.ui.fluid.dropdown { display: block; width: 100%; min-width: 0em; }
+
+/* line 868, ../../sass/semantic-ui/dropdown.scss */
+.ui.fluid.dropdown > .dropdown.icon { float: right; }
+
+/*-------------- Floating
+---------------*/
+/* line 876, ../../sass/semantic-ui/dropdown.scss */
+.ui.floating.dropdown .menu { left: 0; right: auto; box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15); border-radius: 0.2857rem; }
+
+/* line 882, ../../sass/semantic-ui/dropdown.scss */
+.ui.floating.dropdown > .menu { margin-top: 0.5em !important; }
+
+/*-------------- Pointing
+---------------*/
+/* line 890, ../../sass/semantic-ui/dropdown.scss */
+.ui.pointing.dropdown > .menu { top: 100%; margin-top: 0.75em; border-radius: 0.2857rem; }
+
+/* line 895, ../../sass/semantic-ui/dropdown.scss */
+.ui.pointing.dropdown > .menu:after { display: block; position: absolute; pointer-events: none; content: ''; visibility: visible; -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); width: 0.5em; height: 0.5em; box-shadow: -1px -1px 0px 1px rgba(0, 0, 0, 0.1); background: #ffffff; z-index: 2; }
+
+/* line 910, ../../sass/semantic-ui/dropdown.scss */
+.ui.pointing.dropdown > .menu:after { top: -0.25em; left: 50%; margin: 0em 0em 0em -0.25em; }
+
+/* Top Left Pointing */
+/* line 917, ../../sass/semantic-ui/dropdown.scss */
+.ui.top.left.pointing.dropdown > .menu { top: 100%; bottom: auto; left: 0%; right: auto; margin: 1em 0em 0em; }
+
+/* line 924, ../../sass/semantic-ui/dropdown.scss */
+.ui.top.left.pointing.dropdown > .menu { top: 100%; bottom: auto; left: 0%; right: auto; margin: 1em 0em 0em; }
+
+/* line 931, ../../sass/semantic-ui/dropdown.scss */
+.ui.top.left.pointing.dropdown > .menu:after { top: -0.25em; left: 1em; right: auto; margin: 0em; -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); }
+
+/* Top Right  Pointing */
+/* line 942, ../../sass/semantic-ui/dropdown.scss */
+.ui.top.right.pointing.dropdown > .menu { top: 100%; bottom: auto; right: 0%; left: auto; margin: 1em 0em 0em; }
+
+/* line 949, ../../sass/semantic-ui/dropdown.scss */
+.ui.top.right.pointing.dropdown > .menu:after { top: -0.25em; left: auto; right: 1em; margin: 0em; -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); }
+
+/* Left Pointing */
+/* line 960, ../../sass/semantic-ui/dropdown.scss */
+.ui.left.pointing.dropdown > .menu { top: 0%; left: 100%; right: auto; margin: 0em 0em 0em 1em; }
+
+/* line 966, ../../sass/semantic-ui/dropdown.scss */
+.ui.left.pointing.dropdown > .menu:after { top: 1em; left: -0.25em; margin: 0em 0em 0em 0em; -webkit-transform: rotate(-45deg); -ms-transform: rotate(-45deg); transform: rotate(-45deg); }
+
+/* Right Pointing */
+/* line 976, ../../sass/semantic-ui/dropdown.scss */
+.ui.right.pointing.dropdown > .menu { top: 0%; left: auto; right: 100%; margin: 0em 1em 0em 0em; }
+
+/* line 982, ../../sass/semantic-ui/dropdown.scss */
+.ui.right.pointing.dropdown > .menu:after { top: 1em; left: auto; right: -0.25em; margin: 0em 0em 0em 0em; -webkit-transform: rotate(135deg); -ms-transform: rotate(135deg); transform: rotate(135deg); }
+
+/* Bottom Pointing */
+/* line 993, ../../sass/semantic-ui/dropdown.scss */
+.ui.bottom.pointing.dropdown > .menu { top: auto; bottom: 100%; left: 0%; right: auto; margin: 0em 0em 1em; }
+
+/* line 1000, ../../sass/semantic-ui/dropdown.scss */
+.ui.bottom.pointing.dropdown > .menu:after { top: auto; bottom: -0.25em; right: auto; margin: 0em; -webkit-transform: rotate(-135deg); -ms-transform: rotate(-135deg); transform: rotate(-135deg); }
+
+/* Reverse Sub-Menu Direction */
+/* line 1011, ../../sass/semantic-ui/dropdown.scss */
+.ui.bottom.pointing.dropdown > .menu .menu { top: auto !important; bottom: 0px !important; }
+
+/* Bottom Left */
+/* line 1017, ../../sass/semantic-ui/dropdown.scss */
+.ui.bottom.left.pointing.dropdown > .menu { left: 0%; right: auto; }
+
+/* line 1021, ../../sass/semantic-ui/dropdown.scss */
+.ui.bottom.left.pointing.dropdown > .menu:after { left: 1em; right: auto; }
+
+/* Bottom Right */
+/* line 1027, ../../sass/semantic-ui/dropdown.scss */
+.ui.bottom.right.pointing.dropdown > .menu { right: 0%; left: auto; }
+
+/* line 1031, ../../sass/semantic-ui/dropdown.scss */
+.ui.bottom.right.pointing.dropdown > .menu:after { left: auto; right: 1em; }
+
+/******************************* Theme Overrides
+*******************************/
+/* Dropdown Carets */
+@font-face { font-family: 'Dropdown'; src: url(data:application/x-font-ttf;charset=utf-8;base64,AAEAAAALAIAAAwAwT1MvMggjB5AAAAC8AAAAYGNtYXAPfuIIAAABHAAAAExnYXNwAAAAEAAAAWgAAAAIZ2x5Zjo82LgAAAFwAAABVGhlYWQAQ88bAAACxAAAADZoaGVhAwcB6QAAAvwAAAAkaG10eAS4ABIAAAMgAAAAIGxvY2EBNgDeAAADQAAAABJtYXhwAAoAFgAAA1QAAAAgbmFtZVcZpu4AAAN0AAABRXBvc3QAAwAAAAAEvAAAACAAAwIAAZAABQAAAUwBZgAAAEcBTAFmAAAA9QAZAIQAAAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAAAAAAAABAAADw2gHg/+D/4AHgACAAAAABAAAAAAAAAAAAAAAgAAAAAAACAAAAAwAAABQAAwABAAAAFAAEADgAAAAKAAgAAgACAAEAIPDa//3//wAAAAAAIPDX//3//wAB/+MPLQADAAEAAAAAAAAAAAAAAAEAAf//AA8AAQAAAAAAAAAAAAIAADc5AQAAAAABAAAAAAAAAAAAAgAANzkBAAAAAAEAAAAAAAAAAAACAAA3OQEAAAAAAQAAAIABJQElABMAABM0NzY3BTYXFhUUDwEGJwYvASY1AAUGBwEACAUGBoAFCAcGgAUBEgcGBQEBAQcECQYHfwYBAQZ/BwYAAQAAAG4BJQESABMAADc0PwE2MzIfARYVFAcGIyEiJyY1AAWABgcIBYAGBgUI/wAHBgWABwaABQWABgcHBgUFBgcAAAABABIASQC3AW4AEwAANzQ/ATYXNhcWHQEUBwYnBi8BJjUSBoAFCAcFBgYFBwgFgAbbBwZ/BwEBBwQJ/wgEBwEBB38GBgAAAAABAAAASQClAW4AEwAANxE0NzYzMh8BFhUUDwEGIyInJjUABQYHCAWABgaABQgHBgVbAQAIBQYGgAUIBwWABgYFBwAAAAEAAAABAADZuaKOXw889QALAgAAAAAA0ABHWAAAAADQAEdYAAAAAAElAW4AAAAIAAIAAAAAAAAAAQAAAeD/4AAAAgAAAAAAASUAAQAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAABAAAAASUAAAElAAAAtwASALcAAAAAAAAACgAUAB4AQgBkAIgAqgAAAAEAAAAIABQAAQAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAOAK4AAQAAAAAAAQAOAAAAAQAAAAAAAgAOAEcAAQAAAAAAAwAOACQAAQAAAAAABAAOAFUAAQAAAAAABQAWAA4AAQAAAAAABgAHADIAAQAAAAAACgA0AGMAAwABBAkAAQAOAAAAAwABBAkAAgAOAEcAAwABBAkAAwAOACQAAwABBAkABAAOAFUAAwABBAkABQAWAA4AAwABBAkABgAOADkAAwABBAkACgA0AGMAaQBjAG8AbQBvAG8AbgBWAGUAcgBzAGkAbwBuACAAMQAuADAAaQBjAG8AbQBvAG8Abmljb21vb24AaQBjAG8AbQBvAG8AbgBSAGUAZwB1AGwAYQByAGkAYwBvAG0AbwBvAG4ARgBvAG4AdAAgAGcAZQBuAGUAcgBhAHQAZQBkACAAYgB5ACAASQBjAG8ATQBvAG8AbgAuAAAAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=) format("truetype"), url(data:application/font-woff;charset=utf-8;base64,d09GRk9UVE8AAAVwAAoAAAAABSgAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABDRkYgAAAA9AAAAdkAAAHZLDXE/09TLzIAAALQAAAAYAAAAGAIIweQY21hcAAAAzAAAABMAAAATA9+4ghnYXNwAAADfAAAAAgAAAAIAAAAEGhlYWQAAAOEAAAANgAAADYAQ88baGhlYQAAA7wAAAAkAAAAJAMHAelobXR4AAAD4AAAACAAAAAgBLgAEm1heHAAAAQAAAAABgAAAAYACFAAbmFtZQAABAgAAAFFAAABRVcZpu5wb3N0AAAFUAAAACAAAAAgAAMAAAEABAQAAQEBCGljb21vb24AAQIAAQA6+BwC+BsD+BgEHgoAGVP/i4seCgAZU/+LiwwHi2v4lPh0BR0AAACIDx0AAACNER0AAAAJHQAAAdASAAkBAQgPERMWGyAlKmljb21vb25pY29tb29udTB1MXUyMHVGMEQ3dUYwRDh1RjBEOXVGMERBAAACAYkABgAIAgABAAQABwAKAA0AVgCfAOgBL/yUDvyUDvyUDvuUDvtvi/emFYuQjZCOjo+Pj42Qiwj3lIsFkIuQiY6Hj4iNhouGi4aJh4eHCPsU+xQFiIiGiYaLhouHjYeOCPsU9xQFiI+Jj4uQCA77b4v3FBWLkI2Pjo8I9xT3FAWPjo+NkIuQi5CJjogI9xT7FAWPh42Hi4aLhomHh4eIiIaJhosI+5SLBYaLh42HjoiPiY+LkAgO+92d928Vi5CNkI+OCPcU9xQFjo+QjZCLkIuPiY6Hj4iNhouGCIv7lAWLhomHh4iIh4eJhouGi4aNiI8I+xT3FAWHjomPi5AIDvvdi+YVi/eUBYuQjZCOjo+Pj42Qi5CLkImOhwj3FPsUBY+IjYaLhouGiYeHiAj7FPsUBYiHhomGi4aLh42Hj4iOiY+LkAgO+JQU+JQViwwKAAAAAAMCAAGQAAUAAAFMAWYAAABHAUwBZgAAAPUAGQCEAAAAAAAAAAAAAAAAAAAAARAAAAAAAAAAAAAAAAAAAAAAQAAA8NoB4P/g/+AB4AAgAAAAAQAAAAAAAAAAAAAAIAAAAAAAAgAAAAMAAAAUAAMAAQAAABQABAA4AAAACgAIAAIAAgABACDw2v/9//8AAAAAACDw1//9//8AAf/jDy0AAwABAAAAAAAAAAAAAAABAAH//wAPAAEAAAABAAA5emozXw889QALAgAAAAAA0ABHWAAAAADQAEdYAAAAAAElAW4AAAAIAAIAAAAAAAAAAQAAAeD/4AAAAgAAAAAAASUAAQAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAABAAAAASUAAAElAAAAtwASALcAAAAAUAAACAAAAAAADgCuAAEAAAAAAAEADgAAAAEAAAAAAAIADgBHAAEAAAAAAAMADgAkAAEAAAAAAAQADgBVAAEAAAAAAAUAFgAOAAEAAAAAAAYABwAyAAEAAAAAAAoANABjAAMAAQQJAAEADgAAAAMAAQQJAAIADgBHAAMAAQQJAAMADgAkAAMAAQQJAAQADgBVAAMAAQQJAAUAFgAOAAMAAQQJAAYADgA5AAMAAQQJAAoANABjAGkAYwBvAG0AbwBvAG4AVgBlAHIAcwBpAG8AbgAgADEALgAwAGkAYwBvAG0AbwBvAG5pY29tb29uAGkAYwBvAG0AbwBvAG4AUgBlAGcAdQBsAGEAcgBpAGMAbwBtAG8AbwBuAEYAbwBuAHQAIABnAGUAbgBlAHIAYQB0AGUAZAAgAGIAeQAgAEkAYwBvAE0AbwBvAG4ALgAAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA) format("woff"); font-weight: normal; font-style: normal; }
+/* line 1049, ../../sass/semantic-ui/dropdown.scss */
+.ui.dropdown > .dropdown.icon { font-family: 'Dropdown'; line-height: 1; height: 1em; width: 1.23em; -webkit-backface-visibility: hidden; backface-visibility: hidden; font-weight: normal; font-style: normal; text-align: center; }
+
+/* line 1060, ../../sass/semantic-ui/dropdown.scss */
+.ui.dropdown > .dropdown.icon { width: auto; }
+
+/* line 1063, ../../sass/semantic-ui/dropdown.scss */
+.ui.dropdown > .dropdown.icon:before { content: '\f0d7'; }
+
+/* Sub Menu */
+/* line 1068, ../../sass/semantic-ui/dropdown.scss */
+.ui.dropdown .menu .item .dropdown.icon:before { content: ""; }
+
+/* line 1071, ../../sass/semantic-ui/dropdown.scss */
+.ui.dropdown .item .left.dropdown.icon:before, .ui.dropdown .left.menu .item .dropdown.icon:before { content: ""; }
+
+/* Upward Dropdown */
+/* line 1077, ../../sass/semantic-ui/dropdown.scss */
+.ui.upward.dropdown > .dropdown.icon:before { content: "\f0d8"; }
+
+/* Vertical Menu Dropdown */
+/* line 1082, ../../sass/semantic-ui/dropdown.scss */
+.ui.vertical.menu .dropdown.item > .dropdown.icon:before { content: ""; }
+
+/* Icons for Reference
+.dropdown.down.icon { content: "\f0d7";
+}
+.dropdown.up.icon { content: "\f0d8";
+}
+.dropdown.left.icon { content: "\f0d9";
+}
+.dropdown.icon.icon { content: "\f0da";
+}
+*/
+/******************************* User Overrides
+*******************************/

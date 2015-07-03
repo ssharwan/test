@@ -1,0 +1,201 @@
+/*!
+ * # Semantic UI 1.12.3 - Modal
+ * http://github.com/semantic-org/semantic-ui/
+ *
+ *
+ * Copyright 2014 Contributors
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+/******************************* Modal
+*******************************/
+/* line 17, ../../sass/semantic-ui/modal.scss */
+.ui.modal { display: none; position: fixed; z-index: 1001; top: 50%; left: 50%; text-align: left; width: 90%; margin-left: -45%; background: #ffffff; border: none; box-shadow: 0 1px 4px 1px rgba(0, 0, 0, 0.3); border-radius: 0.2857rem; -webkit-user-select: text; -moz-user-select: text; -ms-user-select: text; user-select: text; will-change: top, left, margin, transform, opacity; }
+
+/* line 36, ../../sass/semantic-ui/modal.scss */
+.ui.modal > :first-child:not(.icon), .ui.modal > .icon:first-child + * { border-top-left-radius: 0.2857rem; border-top-right-radius: 0.2857rem; }
+
+/* line 41, ../../sass/semantic-ui/modal.scss */
+.ui.modal > :last-child { border-bottom-left-radius: 0.2857rem; border-bottom-right-radius: 0.2857rem; }
+
+/******************************* Content
+*******************************/
+/*-------------- Close
+---------------*/
+/* line 56, ../../sass/semantic-ui/modal.scss */
+.ui.modal > .close { cursor: pointer; position: absolute; top: -2.5rem; right: -2.5rem; z-index: 1; opacity: 0.8; font-size: 1.25em; color: #ffffff; width: 2.25rem; height: 2.25rem; padding: 0.625rem 0rem 0rem 0rem; }
+
+/* line 69, ../../sass/semantic-ui/modal.scss */
+.ui.modal > .close:hover { opacity: 1; }
+
+/*-------------- Header
+---------------*/
+/* line 77, ../../sass/semantic-ui/modal.scss */
+.ui.modal > .header { display: block; font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif; background: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.05)) #ffffff; background: linear-gradient(transparent, rgba(0, 0, 0, 0.05)) #ffffff; margin: 0em; padding: 1.2rem 2rem; box-shadow: 0px 1px 2px 0 rgba(0, 0, 0, 0.05); font-size: 1.6em; line-height: 1.3em; font-weight: bold; color: rgba(0, 0, 0, 0.85); border-bottom: 1px solid rgba(39, 41, 43, 0.15); }
+
+/*-------------- Content
+---------------*/
+/* line 96, ../../sass/semantic-ui/modal.scss */
+.ui.modal > .content { display: table; table-layout: fixed; width: 100%; font-size: 1em; line-height: 1.4; padding: 2rem; background: #ffffff; }
+
+/* Image */
+/* line 107, ../../sass/semantic-ui/modal.scss */
+.ui.modal > .content > .image { display: table-cell; width: ''; vertical-align: top; }
+
+/* line 112, ../../sass/semantic-ui/modal.scss */
+.ui.modal > .content > .image[class*="top aligned"] { vertical-align: top; }
+
+/* line 115, ../../sass/semantic-ui/modal.scss */
+.ui.modal > .content > .image[class*="middle aligned"] { vertical-align: middle; }
+
+/* Description */
+/* line 120, ../../sass/semantic-ui/modal.scss */
+.ui.modal > .content > .description { display: table-cell; vertical-align: top; }
+
+/* line 124, ../../sass/semantic-ui/modal.scss */
+.ui.modal > .content > .icon + .description, .ui.modal > .content > .image + .description { min-width: ''; width: 80%; padding-left: 2em; }
+
+/*rtl:ignore*/
+/* line 131, ../../sass/semantic-ui/modal.scss */
+.ui.modal > .content > .image > i.icon { font-size: 8rem; margin: 0em; opacity: 1; width: auto; }
+
+/*-------------- Actions
+---------------*/
+/* line 142, ../../sass/semantic-ui/modal.scss */
+.ui.modal .actions { background: #efefef; padding: 1rem 2rem; border-top: 1px solid rgba(39, 41, 43, 0.15); text-align: right; }
+
+/* line 148, ../../sass/semantic-ui/modal.scss */
+.ui.modal .actions > .button { margin-left: 0.75em; }
+
+/*------------------- Responsive
+--------------------*/
+/* Modal Width */
+@media only screen and (max-width: 767px) { /* line 159, ../../sass/semantic-ui/modal.scss */
+  .ui.modal { width: 95%; margin: 0em 0em 0em -47.5%; } }
+@media only screen and (min-width: 768px) { /* line 165, ../../sass/semantic-ui/modal.scss */
+  .ui.modal { width: 88%; margin: 0em 0em 0em -44%; } }
+@media only screen and (min-width: 992px) { /* line 171, ../../sass/semantic-ui/modal.scss */
+  .ui.modal { width: 74%; margin: 0em 0em 0em -37%; } }
+@media only screen and (min-width: 1400px) { /* line 177, ../../sass/semantic-ui/modal.scss */
+  .ui.modal { width: 56%; margin: 0em 0em 0em -28%; } }
+@media only screen and (min-width: 1920px) { /* line 183, ../../sass/semantic-ui/modal.scss */
+  .ui.modal { width: 42%; margin: 0em 0em 0em -21%; } }
+/* Tablet and Mobile */
+@media only screen and (max-width: 992px) { /* line 191, ../../sass/semantic-ui/modal.scss */
+  .ui.modal > .header { padding-right: 2.25rem; }
+  /* line 194, ../../sass/semantic-ui/modal.scss */
+  .ui.modal > .close { top: 0.905rem; right: 1rem; color: rgba(0, 0, 0, 0.8); } }
+/* Mobile */
+@media only screen and (max-width: 767px) { /* line 203, ../../sass/semantic-ui/modal.scss */
+  .ui.modal > .header { padding: 0.75rem 1rem !important; padding-right: 2.25rem !important; }
+  /* line 207, ../../sass/semantic-ui/modal.scss */
+  .ui.modal > .content { display: block; padding: 1rem !important; }
+  /* line 211, ../../sass/semantic-ui/modal.scss */
+  .ui.modal > .close { top: 0.5rem !important; right: 0.5rem !important; }
+  /*rtl:ignore*/
+  /* line 216, ../../sass/semantic-ui/modal.scss */
+  .ui.modal .content > .image { display: block; max-width: 100%; margin: 0em auto !important; text-align: center; padding: 0rem 0rem 1rem !important; }
+  /* line 223, ../../sass/semantic-ui/modal.scss */
+  .ui.modal > .content > .image > i.icon { font-size: 5rem; text-align: center; }
+  /*rtl:ignore*/
+  /* line 228, ../../sass/semantic-ui/modal.scss */
+  .ui.modal .content > .description { display: block; width: 100% !important; margin: 0em !important; padding: 1rem 0rem !important; box-shadow: none; }
+  /* Let Buttons Stack */
+  /* line 237, ../../sass/semantic-ui/modal.scss */
+  .ui.modal > .actions { padding: 1rem 1rem 0rem !important; }
+  /* line 240, ../../sass/semantic-ui/modal.scss */
+  .ui.modal .actions > .buttons, .ui.modal .actions > .button { margin-bottom: 1rem; } }
+/******************************* Types
+*******************************/
+/* line 251, ../../sass/semantic-ui/modal.scss */
+.ui.basic.modal { background-color: transparent; border: none; border-radius: 0em; box-shadow: 0px 0px 0px 0px; color: #ffffff; }
+
+/* line 258, ../../sass/semantic-ui/modal.scss */
+.ui.basic.modal > .header, .ui.basic.modal > .content, .ui.basic.modal > .actions { background-color: transparent; }
+
+/* line 263, ../../sass/semantic-ui/modal.scss */
+.ui.basic.modal > .header { color: #ffffff; }
+
+/* line 266, ../../sass/semantic-ui/modal.scss */
+.ui.basic.modal > .close { top: 1rem; right: 1.5rem; }
+
+/* Tablet and Mobile */
+@media only screen and (max-width: 992px) { /* line 273, ../../sass/semantic-ui/modal.scss */
+  .ui.basic.modal > .close { color: #ffffff; } }
+/******************************* Variations
+*******************************/
+/* A modal that cannot fit on the page */
+/* line 285, ../../sass/semantic-ui/modal.scss */
+.scrolling.dimmable.dimmed { overflow: hidden; }
+
+/* line 288, ../../sass/semantic-ui/modal.scss */
+.scrolling.dimmable.dimmed > .dimmer { overflow: auto; -webkit-overflow-scrolling: touch; }
+
+/* line 292, ../../sass/semantic-ui/modal.scss */
+.scrolling.dimmable > .dimmer { position: fixed; }
+
+/* line 295, ../../sass/semantic-ui/modal.scss */
+.ui.scrolling.modal { position: static; margin: 3.5rem auto !important; }
+
+@media only screen and (max-width: 992px) { /* line 300, ../../sass/semantic-ui/modal.scss */
+  .ui.scrolling.modal { margin-top: 1rem; margin-bottom: 1rem; } }
+/******************************* States
+*******************************/
+/* line 311, ../../sass/semantic-ui/modal.scss */
+.ui.active.modal { display: block; }
+
+/******************************* Variations
+*******************************/
+/*-------------- Full Screen
+---------------*/
+/* line 325, ../../sass/semantic-ui/modal.scss */
+.ui.fullscreen.modal { width: 95% !important; left: 2.5% !important; margin: 1em auto; }
+
+/* line 330, ../../sass/semantic-ui/modal.scss */
+.ui.fullscreen.scrolling.modal { left: 0em !important; }
+
+/* line 333, ../../sass/semantic-ui/modal.scss */
+.ui.fullscreen.modal > .header { padding-right: 2.25rem; }
+
+/* line 336, ../../sass/semantic-ui/modal.scss */
+.ui.fullscreen.modal > .close { top: 0.905rem; right: 1rem; color: rgba(0, 0, 0, 0.8); }
+
+/*-------------- Size
+---------------*/
+/* line 346, ../../sass/semantic-ui/modal.scss */
+.ui.modal { font-size: 1rem; }
+
+/* Small */
+/* line 351, ../../sass/semantic-ui/modal.scss */
+.ui.small.modal > .header { font-size: 1.3em; }
+
+/* Small Modal Width */
+@media only screen and (max-width: 767px) { /* line 357, ../../sass/semantic-ui/modal.scss */
+  .ui.small.modal { width: 95%; margin: 0em 0em 0em -47.5%; } }
+@media only screen and (min-width: 768px) { /* line 363, ../../sass/semantic-ui/modal.scss */
+  .ui.small.modal { width: 52.8%; margin: 0em 0em 0em -26.4%; } }
+@media only screen and (min-width: 992px) { /* line 369, ../../sass/semantic-ui/modal.scss */
+  .ui.small.modal { width: 44.4%; margin: 0em 0em 0em -22.2%; } }
+@media only screen and (min-width: 1400px) { /* line 375, ../../sass/semantic-ui/modal.scss */
+  .ui.small.modal { width: 33.6%; margin: 0em 0em 0em -16.8%; } }
+@media only screen and (min-width: 1920px) { /* line 381, ../../sass/semantic-ui/modal.scss */
+  .ui.small.modal { width: 25.2%; margin: 0em 0em 0em -12.6%; } }
+/* Large Modal Width */
+/* line 388, ../../sass/semantic-ui/modal.scss */
+.ui.large.modal > .header { font-size: 1.6em; }
+
+@media only screen and (max-width: 767px) { /* line 392, ../../sass/semantic-ui/modal.scss */
+  .ui.large.modal { width: 95%; margin: 0em 0em 0em -47.5%; } }
+@media only screen and (min-width: 768px) { /* line 398, ../../sass/semantic-ui/modal.scss */
+  .ui.large.modal { width: 88%; margin: 0em 0em 0em -44%; } }
+@media only screen and (min-width: 992px) { /* line 404, ../../sass/semantic-ui/modal.scss */
+  .ui.large.modal { width: 88.8%; margin: 0em 0em 0em -44.4%; } }
+@media only screen and (min-width: 1400px) { /* line 410, ../../sass/semantic-ui/modal.scss */
+  .ui.large.modal { width: 67.2%; margin: 0em 0em 0em -33.6%; } }
+@media only screen and (min-width: 1920px) { /* line 416, ../../sass/semantic-ui/modal.scss */
+  .ui.large.modal { width: 50.4%; margin: 0em 0em 0em -25.2%; } }
+/******************************* Theme Overrides
+*******************************/
+/******************************* Site Overrides
+*******************************/

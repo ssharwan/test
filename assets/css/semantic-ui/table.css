@@ -1,0 +1,633 @@
+/*!
+ * # Semantic UI 1.12.3 - Table
+ * http://github.com/semantic-org/semantic-ui/
+ *
+ *
+ * Copyright 2014 Contributors
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+/******************************* Table
+*******************************/
+/* Prototype */
+/* line 19, ../../sass/semantic-ui/table.scss */
+.ui.table { width: 100%; background: #ffffff; margin: 1em 0em; border: 1px solid #d0d0d0; box-shadow: none; border-radius: 0.25rem; color: rgba(0, 0, 0, 0.8); border-collapse: separate; border-spacing: 0px; }
+
+/* line 30, ../../sass/semantic-ui/table.scss */
+.ui.table:first-child { margin-top: 0em; }
+
+/* line 33, ../../sass/semantic-ui/table.scss */
+.ui.table:last-child { margin-bottom: 0em; }
+
+/******************************* Parts
+*******************************/
+/* Table Content */
+/* line 44, ../../sass/semantic-ui/table.scss */
+.ui.table th, .ui.table td { -webkit-transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease; transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease; }
+
+/* Headers */
+/* line 51, ../../sass/semantic-ui/table.scss */
+.ui.table thead { box-shadow: none; }
+
+/* line 54, ../../sass/semantic-ui/table.scss */
+.ui.table thead th { cursor: auto; background: #f0f0f0; text-align: left; color: rgba(0, 0, 0, 0.8); padding: 0.7em 0.8em; vertical-align: middle; font-style: none; font-weight: bold; text-transform: none; border-bottom: 1px solid #d4d4d5; border-left: none; }
+
+/* line 67, ../../sass/semantic-ui/table.scss */
+.ui.table thead tr > th:first-child { border-left: none; }
+
+/* line 70, ../../sass/semantic-ui/table.scss */
+.ui.table thead tr:first-child > th:first-child { border-radius: 0.25rem 0em 0em 0em; }
+
+/* line 73, ../../sass/semantic-ui/table.scss */
+.ui.table thead tr:first-child > th:last-child { border-radius: 0em 0.25rem 0em 0em; }
+
+/* line 76, ../../sass/semantic-ui/table.scss */
+.ui.table thead tr:first-child > th:only-child { border-radius: 0.25rem 0.25rem 0em 0em; }
+
+/* Footer */
+/* line 81, ../../sass/semantic-ui/table.scss */
+.ui.table tfoot { box-shadow: none; }
+
+/* line 84, ../../sass/semantic-ui/table.scss */
+.ui.table tfoot th { cursor: auto; border-top: 1px solid #d4d4d5; background: #ffffff; text-align: left; color: rgba(0, 0, 0, 0.8); padding: 0.7em 0.8em; vertical-align: middle; font-style: normal; font-weight: normal; text-transform: none; }
+
+/* line 96, ../../sass/semantic-ui/table.scss */
+.ui.table tfoot tr > th:first-child { border-left: none; }
+
+/* line 99, ../../sass/semantic-ui/table.scss */
+.ui.table tfoot tr:first-child > th:first-child { border-radius: 0em 0em 0em 0.25rem; }
+
+/* line 102, ../../sass/semantic-ui/table.scss */
+.ui.table tfoot tr:first-child > th:last-child { border-radius: 0em 0em 0.25rem 0em; }
+
+/* line 105, ../../sass/semantic-ui/table.scss */
+.ui.table tfoot tr:first-child > th:only-child { border-radius: 0em 0em 0.25rem 0.25rem; }
+
+/* Table Row */
+/* line 110, ../../sass/semantic-ui/table.scss */
+.ui.table tr td { border-top: 1px solid #d4d4d5; }
+
+/* line 113, ../../sass/semantic-ui/table.scss */
+.ui.table tr:first-child td { border-top: none; }
+
+/* Table Cells */
+/* line 118, ../../sass/semantic-ui/table.scss */
+.ui.table td { padding: 0.7em 0.8em; text-align: left; vertical-align: middle; }
+
+/* Icons */
+/* line 125, ../../sass/semantic-ui/table.scss */
+.ui.table > .icon { vertical-align: baseline; }
+
+/* line 128, ../../sass/semantic-ui/table.scss */
+.ui.table > .icon:only-child { margin: 0em; }
+
+/* Table Segment */
+/* line 133, ../../sass/semantic-ui/table.scss */
+.ui.table.segment { padding: 0em; }
+
+/* line 136, ../../sass/semantic-ui/table.scss */
+.ui.table.segment:after { display: none; }
+
+/* line 139, ../../sass/semantic-ui/table.scss */
+.ui.table.segment.stacked:after { display: block; }
+
+/* Responsive */
+@media only screen and (max-width: 767px) { /* line 145, ../../sass/semantic-ui/table.scss */
+  .ui.table:not(.unstackable) { width: 100%; }
+  /* line 148, ../../sass/semantic-ui/table.scss */
+  .ui.table:not(.unstackable) tbody, .ui.table:not(.unstackable) tr, .ui.table:not(.unstackable) tr > th, .ui.table:not(.unstackable) tr > td { width: auto !important; display: block !important; }
+  /* line 155, ../../sass/semantic-ui/table.scss */
+  .ui.table:not(.unstackable) { padding: 0em; }
+  /* line 158, ../../sass/semantic-ui/table.scss */
+  .ui.table:not(.unstackable) thead { display: block; }
+  /* line 161, ../../sass/semantic-ui/table.scss */
+  .ui.table:not(.unstackable) tfoot { display: block; }
+  /* line 164, ../../sass/semantic-ui/table.scss */
+  .ui.table:not(.unstackable) tr > th, .ui.table:not(.unstackable) tr > td { background: none; border: none !important; padding: 0.25em 0.75em; box-shadow: none !important; }
+  /* line 171, ../../sass/semantic-ui/table.scss */
+  .ui.table:not(.unstackable) th:first-child, .ui.table:not(.unstackable) td:first-child { font-weight: bold; padding-top: 1em; }
+  /* line 176, ../../sass/semantic-ui/table.scss */
+  .ui.table:not(.unstackable) th:last-child, .ui.table:not(.unstackable) td:last-child { box-shadow: 0px -1px 0px 0px rgba(0, 0, 0, 0.1) inset !important; padding-bottom: 1em; }
+  /* Clear BG Colors */
+  /* line 183, ../../sass/semantic-ui/table.scss */
+  .ui.table:not(.unstackable) tr > td.warning, .ui.table:not(.unstackable) tr > td.error, .ui.table:not(.unstackable) tr > td.active, .ui.table:not(.unstackable) tr > td.positive, .ui.table:not(.unstackable) tr > td.negative { background-color: transparent !important; }
+  /* Definition Table */
+  /* line 192, ../../sass/semantic-ui/table.scss */
+  .ui.definition.table:not(.unstackable) thead th:first-child { box-shadow: none !important; }
+  /* line 195, ../../sass/semantic-ui/table.scss */
+  .ui.definition.table:not(.unstackable) tr td:first-child { padding-bottom: 1em; }
+  /* line 198, ../../sass/semantic-ui/table.scss */
+  .ui.definition.table:not(.unstackable) tr td:nth-child(n+2) { padding-top: 1em; } }
+/******************************* Coupling
+*******************************/
+/* UI Image */
+/* line 210, ../../sass/semantic-ui/table.scss */
+.ui.table th .image, .ui.table th .image img, .ui.table td .image, .ui.table td .image img { max-width: none; }
+
+/******************************* Types
+*******************************/
+/*-------------- Complex
+---------------*/
+/* line 227, ../../sass/semantic-ui/table.scss */
+.ui.structured.table { border-collapse: collapse; }
+
+/* line 230, ../../sass/semantic-ui/table.scss */
+.ui.structured.table thead th { border-left: none; border-right: none; }
+
+/* line 234, ../../sass/semantic-ui/table.scss */
+.ui.structured.sortable.table thead th { border-left: 1px solid #d0d0d0; border-right: 1px solid #d0d0d0; }
+
+/* line 238, ../../sass/semantic-ui/table.scss */
+.ui.structured.basic.table th { border-left: none; border-right: none; }
+
+/* line 242, ../../sass/semantic-ui/table.scss */
+.ui.structured.celled.table tr th, .ui.structured.celled.table tr td { border-left: 1px solid #d4d4d5; border-right: 1px solid #d4d4d5; }
+
+/*-------------- Definition
+---------------*/
+/* line 252, ../../sass/semantic-ui/table.scss */
+.ui.definition.table thead:not(.full-width) th:first-child { pointer-events: none; background: transparent; font-weight: normal; color: rgba(0, 0, 0, 0.4); box-shadow: -1px -1px 0px 1px #ffffff; }
+
+/* line 259, ../../sass/semantic-ui/table.scss */
+.ui.definition.table tfoot:not(.full-width) th:first-child { pointer-events: none; background: transparent; font-weight: rgba(0, 0, 0, 0.4); color: normal; box-shadow: 1px 1px 0px 1px #ffffff; }
+
+/* Remove Border */
+/* line 268, ../../sass/semantic-ui/table.scss */
+.ui.celled.definition.table thead:not(.full-width) th:first-child { box-shadow: 0px -1px 0px 1px #ffffff; }
+
+/* line 271, ../../sass/semantic-ui/table.scss */
+.ui.celled.definition.table tfoot:not(.full-width) th:first-child { box-shadow: 0px 1px 0px 1px #ffffff; }
+
+/* Highlight Defining Column */
+/* line 276, ../../sass/semantic-ui/table.scss */
+.ui.definition.table tr td:first-child { background: rgba(0, 0, 0, 0.03); font-weight: bold; color: rgba(0, 0, 0, 0.8); }
+
+/* Fix 2nd Column */
+/* line 283, ../../sass/semantic-ui/table.scss */
+.ui.definition.table thead:not(.full-width) th:nth-child(2) { border-left: 1px solid #d0d0d0; }
+
+/* line 286, ../../sass/semantic-ui/table.scss */
+.ui.definition.table tfoot:not(.full-width) th:nth-child(2) { border-left: 1px solid #d0d0d0; }
+
+/* line 289, ../../sass/semantic-ui/table.scss */
+.ui.definition.table td:nth-child(2) { border-left: 1px solid #d0d0d0; }
+
+/******************************* States
+*******************************/
+/*-------------- Positive
+---------------*/
+/* line 303, ../../sass/semantic-ui/table.scss */
+.ui.table tr.positive, .ui.table td.positive { box-shadow: 0px 0px 0px #b7caa7 inset; }
+
+/* line 307, ../../sass/semantic-ui/table.scss */
+.ui.table tr.positive td, .ui.table td.positive { background: #eeffe7 !important; color: #3c763d !important; }
+
+/* line 312, ../../sass/semantic-ui/table.scss */
+.ui.celled.table tr.positive:hover td, .ui.celled.table tr:hover td.positive { background: #e3ffd8 !important; color: #376c38 !important; }
+
+/*-------------- Negative
+---------------*/
+/* line 322, ../../sass/semantic-ui/table.scss */
+.ui.table tr.negative, .ui.table td.negative { box-shadow: 0px 0px 0px #dbb1b1 inset; }
+
+/* line 326, ../../sass/semantic-ui/table.scss */
+.ui.table tr.negative td, .ui.table td.negative { background: #fff0f0 !important; color: #cd2929 !important; }
+
+/* line 331, ../../sass/semantic-ui/table.scss */
+.ui.celled.table tr.negative:hover td, .ui.celled.table tr:hover td.negative { background: #ffe1e1 !important; color: #c02626 !important; }
+
+/*-------------- Error
+---------------*/
+/* line 341, ../../sass/semantic-ui/table.scss */
+.ui.table tr.error, .ui.table td.error { box-shadow: 0px 0px 0px #dbb1b1 inset; }
+
+/* line 345, ../../sass/semantic-ui/table.scss */
+.ui.table tr.error td, .ui.table td.error { background: #fff0f0 !important; color: #cd2929 !important; }
+
+/* line 350, ../../sass/semantic-ui/table.scss */
+.ui.celled.table tr.error:hover td, .ui.celled.table tr:hover td.error { background: #ffe1e1 !important; color: #c02626 !important; }
+
+/*-------------- Warning
+---------------*/
+/* line 360, ../../sass/semantic-ui/table.scss */
+.ui.table tr.warning, .ui.table td.warning { box-shadow: 0px 0px 0px #d9caab inset; }
+
+/* line 364, ../../sass/semantic-ui/table.scss */
+.ui.table tr.warning td, .ui.table td.warning { background: #fffbe6 !important; color: #7d6c00 !important; }
+
+/* line 369, ../../sass/semantic-ui/table.scss */
+.ui.celled.table tr.warning:hover td, .ui.celled.table tr:hover td.warning { background: #fff9d7 !important; color: #6e5f00 !important; }
+
+/*-------------- Active
+---------------*/
+/* line 379, ../../sass/semantic-ui/table.scss */
+.ui.table tr.active, .ui.table td.active { box-shadow: 0px 0px 0px rgba(50, 50, 50, 0.9) inset; }
+
+/* line 383, ../../sass/semantic-ui/table.scss */
+.ui.table tr.active td, .ui.table td.active { background: #e0e0e0 !important; color: rgba(50, 50, 50, 0.9) !important; }
+
+/* line 388, ../../sass/semantic-ui/table.scss */
+.ui.celled.table tr.active:hover td, .ui.celled.table tr:hover td.active { background: #e0e0e0 !important; color: rgba(50, 50, 50, 0.9) !important; }
+
+/*-------------- Disabled
+---------------*/
+/* line 398, ../../sass/semantic-ui/table.scss */
+.ui.table tr.disabled td, .ui.table tr td.disabled, .ui.table tr.disabled:hover td, .ui.table tr:hover td.disabled { pointer-events: none; color: rgba(40, 40, 40, 0.3); }
+
+/******************************* Variations
+*******************************/
+/*-------------- Stackable
+---------------*/
+@media only screen and (max-width: 991px) { /* line 417, ../../sass/semantic-ui/table.scss */
+  .ui[class*="tablet stackable"].table, .ui[class*="tablet stackable"].table tbody, .ui[class*="tablet stackable"].table tr, .ui[class*="tablet stackable"].table tr > th, .ui[class*="tablet stackable"].table tr > td { width: 100% !important; display: block !important; }
+  /* line 425, ../../sass/semantic-ui/table.scss */
+  .ui[class*="tablet stackable"].table { padding: 0em; }
+  /* line 428, ../../sass/semantic-ui/table.scss */
+  .ui[class*="tablet stackable"].table thead { display: block; }
+  /* line 431, ../../sass/semantic-ui/table.scss */
+  .ui[class*="tablet stackable"].table tfoot { display: block; }
+  /* line 434, ../../sass/semantic-ui/table.scss */
+  .ui[class*="tablet stackable"].table tr > th, .ui[class*="tablet stackable"].table tr > td { background: none; border: none !important; padding: 0.25em 0.75em; box-shadow: none !important; }
+  /* line 441, ../../sass/semantic-ui/table.scss */
+  .ui[class*="tablet stackable"].table th:first-child, .ui[class*="tablet stackable"].table td:first-child { font-weight: bold; padding-top: 1em; }
+  /* line 446, ../../sass/semantic-ui/table.scss */
+  .ui[class*="tablet stackable"].table th:last-child, .ui[class*="tablet stackable"].table td:last-child { box-shadow: 0px -1px 0px 0px rgba(0, 0, 0, 0.1) inset !important; padding-bottom: 1em; }
+  /* Clear BG Colors */
+  /* line 453, ../../sass/semantic-ui/table.scss */
+  .ui[class*="tablet stackable"].table tr > td.warning, .ui[class*="tablet stackable"].table tr > td.error, .ui[class*="tablet stackable"].table tr > td.active, .ui[class*="tablet stackable"].table tr > td.positive, .ui[class*="tablet stackable"].table tr > td.negative { background-color: transparent !important; }
+  /* Definition Table */
+  /* line 462, ../../sass/semantic-ui/table.scss */
+  .ui.definition[class*="tablet stackable"].table thead th:first-child { box-shadow: none !important; }
+  /* line 465, ../../sass/semantic-ui/table.scss */
+  .ui.definition[class*="tablet stackable"].table tr td:first-child { padding-bottom: 1em; }
+  /* line 468, ../../sass/semantic-ui/table.scss */
+  .ui.definition[class*="tablet stackable"].table tr td:nth-child(n+2) { padding-top: 1em; } }
+/*-------------- Aligned
+---------------*/
+/* line 477, ../../sass/semantic-ui/table.scss */
+.ui.table[class*="left aligned"], .ui.table [class*="left aligned"] { text-align: left; }
+
+/* line 481, ../../sass/semantic-ui/table.scss */
+.ui.table[class*="center aligned"], .ui.table [class*="center aligned"] { text-align: center; }
+
+/* line 485, ../../sass/semantic-ui/table.scss */
+.ui.table[class*="right aligned"], .ui.table [class*="right aligned"] { text-align: right; }
+
+/*-------------- Collapsing
+---------------*/
+/* line 494, ../../sass/semantic-ui/table.scss */
+.ui.table th.collapsing, .ui.table td.collapsing { width: 1px; white-space: nowrap; }
+
+/*-------------- Attached
+---------------*/
+/* All */
+/* line 506, ../../sass/semantic-ui/table.scss */
+.ui.attached.table { width: -webkit-calc(100% +  2px ); width: calc(100% +  2px ); margin: 0em -1px; border-radius: 0px; box-shadow: none; }
+
+/* Top */
+/* line 515, ../../sass/semantic-ui/table.scss */
+.ui[class*="top attached"].table { margin-top: 1em 0em; border-radius: 0.25rem 0.25rem 0em 0em; }
+
+/* line 519, ../../sass/semantic-ui/table.scss */
+.ui.table[class*="top attached"]:first-child { margin-top: 0em; }
+
+/* Bottom */
+/* line 524, ../../sass/semantic-ui/table.scss */
+.ui.table[class*="bottom attached"] { margin-top: 0em; margin-bottom: 1em 0em; border-radius: 0em 0em 0.25rem 0.25rem; }
+
+/* line 529, ../../sass/semantic-ui/table.scss */
+.ui.table[class*="bottom attached"]:last-child { margin-bottom: 0em; }
+
+/*-------------- Striped
+---------------*/
+/* Table Striping */
+/* line 539, ../../sass/semantic-ui/table.scss */
+.ui.striped.table > tr:nth-child(2n), .ui.striped.table tbody tr:nth-child(2n) { background-color: rgba(0, 0, 50, 0.03); }
+
+/* Stripes */
+/* line 545, ../../sass/semantic-ui/table.scss */
+.ui.inverted.striped.table > tr:nth-child(2n), .ui.inverted.striped.table tbody tr:nth-child(2n) { background-color: rgba(255, 255, 255, 0.06); }
+
+/*------------------- Colors
+--------------------*/
+/* line 554, ../../sass/semantic-ui/table.scss */
+.ui.black.table { border-top: 0.2em solid #1b1c1d; }
+
+/* line 557, ../../sass/semantic-ui/table.scss */
+.ui.blue.table { border-top: 0.2em solid #3b83c0; }
+
+/* line 560, ../../sass/semantic-ui/table.scss */
+.ui.green.table { border-top: 0.2em solid #5bbd72; }
+
+/* line 563, ../../sass/semantic-ui/table.scss */
+.ui.orange.table { border-top: 0.2em solid #e07b53; }
+
+/* line 566, ../../sass/semantic-ui/table.scss */
+.ui.pink.table { border-top: 0.2em solid #d9499a; }
+
+/* line 569, ../../sass/semantic-ui/table.scss */
+.ui.purple.table { border-top: 0.2em solid #564f8a; }
+
+/* line 572, ../../sass/semantic-ui/table.scss */
+.ui.red.table { border-top: 0.2em solid #d95c5c; }
+
+/* line 575, ../../sass/semantic-ui/table.scss */
+.ui.teal.table { border-top: 0.2em solid #00b5ad; }
+
+/* line 578, ../../sass/semantic-ui/table.scss */
+.ui.yellow.table { border-top: 0.2em solid #f2c61f; }
+
+/*------------------- Inverted Colors
+--------------------*/
+/* line 586, ../../sass/semantic-ui/table.scss */
+.ui.inverted.table, .ui.inverted.black.table { background-color: #1b1c1d !important; color: #ffffff !important; }
+
+/* line 591, ../../sass/semantic-ui/table.scss */
+.ui.inverted.blue.table { background-color: #3b83c0 !important; color: #ffffff !important; }
+
+/* line 595, ../../sass/semantic-ui/table.scss */
+.ui.inverted.green.table { background-color: #5bbd72 !important; color: #ffffff !important; }
+
+/* line 599, ../../sass/semantic-ui/table.scss */
+.ui.inverted.orange.table { background-color: #e07b53 !important; color: #ffffff !important; }
+
+/* line 603, ../../sass/semantic-ui/table.scss */
+.ui.inverted.pink.table { background-color: #d9499a !important; color: #ffffff !important; }
+
+/* line 607, ../../sass/semantic-ui/table.scss */
+.ui.inverted.purple.table { background-color: #564f8a !important; color: #ffffff !important; }
+
+/* line 611, ../../sass/semantic-ui/table.scss */
+.ui.inverted.red.table { background-color: #d95c5c !important; color: #ffffff !important; }
+
+/* line 615, ../../sass/semantic-ui/table.scss */
+.ui.inverted.teal.table { background-color: #00b5ad !important; color: #ffffff !important; }
+
+/* line 619, ../../sass/semantic-ui/table.scss */
+.ui.inverted.yellow.table { background-color: #f2c61f !important; color: #ffffff !important; }
+
+/*-------------- Column Count
+---------------*/
+/* Grid Based */
+/* line 630, ../../sass/semantic-ui/table.scss */
+.ui.one.column.table td { width: 100%; }
+
+/* line 633, ../../sass/semantic-ui/table.scss */
+.ui.two.column.table td { width: 50%; }
+
+/* line 636, ../../sass/semantic-ui/table.scss */
+.ui.three.column.table td { width: 33.33333333%; }
+
+/* line 639, ../../sass/semantic-ui/table.scss */
+.ui.four.column.table td { width: 25%; }
+
+/* line 642, ../../sass/semantic-ui/table.scss */
+.ui.five.column.table td { width: 20%; }
+
+/* line 645, ../../sass/semantic-ui/table.scss */
+.ui.six.column.table td { width: 16.66666667%; }
+
+/* line 648, ../../sass/semantic-ui/table.scss */
+.ui.seven.column.table td { width: 14.28571429%; }
+
+/* line 651, ../../sass/semantic-ui/table.scss */
+.ui.eight.column.table td { width: 12.5%; }
+
+/* line 654, ../../sass/semantic-ui/table.scss */
+.ui.nine.column.table td { width: 11.11111111%; }
+
+/* line 657, ../../sass/semantic-ui/table.scss */
+.ui.ten.column.table td { width: 10%; }
+
+/* line 660, ../../sass/semantic-ui/table.scss */
+.ui.eleven.column.table td { width: 9.09090909%; }
+
+/* line 663, ../../sass/semantic-ui/table.scss */
+.ui.twelve.column.table td { width: 8.33333333%; }
+
+/* line 666, ../../sass/semantic-ui/table.scss */
+.ui.thirteen.column.table td { width: 7.69230769%; }
+
+/* line 669, ../../sass/semantic-ui/table.scss */
+.ui.fourteen.column.table td { width: 7.14285714%; }
+
+/* line 672, ../../sass/semantic-ui/table.scss */
+.ui.fifteen.column.table td { width: 6.66666667%; }
+
+/* line 675, ../../sass/semantic-ui/table.scss */
+.ui.sixteen.column.table td { width: 6.25%; }
+
+/* Column Width */
+/* line 680, ../../sass/semantic-ui/table.scss */
+.ui.table th.one.wide, .ui.table td.one.wide { width: 6.25%; }
+
+/* line 684, ../../sass/semantic-ui/table.scss */
+.ui.table th.two.wide, .ui.table td.two.wide { width: 12.5%; }
+
+/* line 688, ../../sass/semantic-ui/table.scss */
+.ui.table th.three.wide, .ui.table td.three.wide { width: 18.75%; }
+
+/* line 692, ../../sass/semantic-ui/table.scss */
+.ui.table th.four.wide, .ui.table td.four.wide { width: 25%; }
+
+/* line 696, ../../sass/semantic-ui/table.scss */
+.ui.table th.five.wide, .ui.table td.five.wide { width: 31.25%; }
+
+/* line 700, ../../sass/semantic-ui/table.scss */
+.ui.table th.six.wide, .ui.table td.six.wide { width: 37.5%; }
+
+/* line 704, ../../sass/semantic-ui/table.scss */
+.ui.table th.seven.wide, .ui.table td.seven.wide { width: 43.75%; }
+
+/* line 708, ../../sass/semantic-ui/table.scss */
+.ui.table th.eight.wide, .ui.table td.eight.wide { width: 50%; }
+
+/* line 712, ../../sass/semantic-ui/table.scss */
+.ui.table th.nine.wide, .ui.table td.nine.wide { width: 56.25%; }
+
+/* line 716, ../../sass/semantic-ui/table.scss */
+.ui.table th.ten.wide, .ui.table td.ten.wide { width: 62.5%; }
+
+/* line 720, ../../sass/semantic-ui/table.scss */
+.ui.table th.eleven.wide, .ui.table td.eleven.wide { width: 68.75%; }
+
+/* line 724, ../../sass/semantic-ui/table.scss */
+.ui.table th.twelve.wide, .ui.table td.twelve.wide { width: 75%; }
+
+/* line 728, ../../sass/semantic-ui/table.scss */
+.ui.table th.thirteen.wide, .ui.table td.thirteen.wide { width: 81.25%; }
+
+/* line 732, ../../sass/semantic-ui/table.scss */
+.ui.table th.fourteen.wide, .ui.table td.fourteen.wide { width: 87.5%; }
+
+/* line 736, ../../sass/semantic-ui/table.scss */
+.ui.table th.fifteen.wide, .ui.table td.fifteen.wide { width: 93.75%; }
+
+/* line 740, ../../sass/semantic-ui/table.scss */
+.ui.table th.sixteen.wide, .ui.table td.sixteen.wide { width: 100%; }
+
+/*-------------- Sortable
+---------------*/
+/* line 749, ../../sass/semantic-ui/table.scss */
+.ui.sortable.table thead th { cursor: pointer; white-space: nowrap; border-left: 1px solid #d0d0d0; color: rgba(0, 0, 0, 0.8); }
+
+/* line 755, ../../sass/semantic-ui/table.scss */
+.ui.sortable.table thead th:first-child { border-left: none; }
+
+/* line 758, ../../sass/semantic-ui/table.scss */
+.ui.sortable.table thead th.sorted, .ui.sortable.table thead th.sorted:hover { -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+
+/* line 765, ../../sass/semantic-ui/table.scss */
+.ui.sortable.table thead th:after { display: inline-block; content: ''; width: 1em; height: 1em; opacity: 0.8; margin: 0em 0em 0em 0.5em; font-family: 'Icons'; font-style: normal; font-weight: normal; text-decoration: inherit; }
+
+/* line 777, ../../sass/semantic-ui/table.scss */
+.ui.sortable.table thead th.ascending:after { content: '\f0d7'; }
+
+/* line 780, ../../sass/semantic-ui/table.scss */
+.ui.sortable.table thead th.descending:after { content: '\f0d8'; }
+
+/* Hover */
+/* line 785, ../../sass/semantic-ui/table.scss */
+.ui.sortable.table th.disabled:hover { cursor: auto; color: rgba(40, 40, 40, 0.3); }
+
+/* line 789, ../../sass/semantic-ui/table.scss */
+.ui.sortable.table thead th:hover { background: rgba(0, 0, 0, 0.05); color: rgba(0, 0, 0, 0.8); }
+
+/* Sorted */
+/* line 795, ../../sass/semantic-ui/table.scss */
+.ui.sortable.table thead th.sorted { background: rgba(0, 0, 0, 0.05); color: rgba(0, 0, 0, 0.8); }
+
+/* Sorted Hover */
+/* line 801, ../../sass/semantic-ui/table.scss */
+.ui.sortable.table thead th.sorted:hover { background: rgba(0, 0, 0, 0.05); color: rgba(0, 0, 0, 0.8); }
+
+/* Inverted */
+/* line 807, ../../sass/semantic-ui/table.scss */
+.ui.inverted.sortable.table thead th.sorted { background: rgba(255, 255, 255, 0.07) -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.05)); background: rgba(255, 255, 255, 0.07) linear-gradient(transparent, rgba(0, 0, 0, 0.05)); color: #ffffff; }
+
+/* line 812, ../../sass/semantic-ui/table.scss */
+.ui.inverted.sortable.table thead th:hover { background: rgba(255, 255, 255, 0.05) -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.05)); background: rgba(255, 255, 255, 0.05) linear-gradient(transparent, rgba(0, 0, 0, 0.05)); color: #ffffff; }
+
+/* line 817, ../../sass/semantic-ui/table.scss */
+.ui.inverted.sortable.table thead th { border-left-color: transparent; border-right-color: transparent; }
+
+/*-------------- Inverted
+---------------*/
+/* Text Color */
+/* line 828, ../../sass/semantic-ui/table.scss */
+.ui.inverted.table { background: #333333; color: #ffffff; border: none; }
+
+/* line 833, ../../sass/semantic-ui/table.scss */
+.ui.inverted.table th { background-color: rgba(0, 0, 0, 0.15); border-color: rgba(0, 0, 0, 0.2) !important; color: rgba(255, 255, 255, 0.9); }
+
+/* line 838, ../../sass/semantic-ui/table.scss */
+.ui.inverted.table tr td { border-color: rgba(0, 0, 0, 0.2) !important; }
+
+/* line 841, ../../sass/semantic-ui/table.scss */
+.ui.inverted.table tr.disabled td, .ui.inverted.table tr td.disabled, .ui.inverted.table tr.disabled:hover td, .ui.inverted.table tr:hover td.disabled { pointer-events: none; color: rgba(225, 225, 225, 0.3); }
+
+/* Definition */
+/* line 850, ../../sass/semantic-ui/table.scss */
+.ui.inverted.definition.table tfoot:not(.full-width) th:first-child, .ui.inverted.definition.table thead:not(.full-width) th:first-child { background: #ffffff; }
+
+/* line 854, ../../sass/semantic-ui/table.scss */
+.ui.inverted.definition.table tr td:first-child { background: rgba(255, 255, 255, 0.02); color: #ffffff; }
+
+/*-------------- Collapsing
+---------------*/
+/* line 863, ../../sass/semantic-ui/table.scss */
+.ui.collapsing.table { width: auto; }
+
+/*-------------- Basic
+---------------*/
+/* line 871, ../../sass/semantic-ui/table.scss */
+.ui.basic.table { background: transparent; border: 1px solid #d0d0d0; box-shadow: none; }
+
+/* line 876, ../../sass/semantic-ui/table.scss */
+.ui.basic.table thead, .ui.basic.table tfoot { box-shadow: none; }
+
+/* line 880, ../../sass/semantic-ui/table.scss */
+.ui.basic.table th { background: transparent; border-left: none; }
+
+/* line 884, ../../sass/semantic-ui/table.scss */
+.ui.basic.table tbody tr { border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+
+/* line 887, ../../sass/semantic-ui/table.scss */
+.ui.basic.table td { background: transparent; }
+
+/* line 890, ../../sass/semantic-ui/table.scss */
+.ui.basic.striped.table tbody tr:nth-child(2n) { background-color: rgba(0, 0, 0, 0.05) !important; }
+
+/* Very Basic */
+/* line 895, ../../sass/semantic-ui/table.scss */
+.ui[class*="very basic"].table { border: none; }
+
+/* line 898, ../../sass/semantic-ui/table.scss */
+.ui[class*="very basic"].table:not(.sortable):not(.striped) th, .ui[class*="very basic"].table:not(.sortable):not(.striped) td { padding: 0.7em 0.8em; }
+
+/* line 902, ../../sass/semantic-ui/table.scss */
+.ui[class*="very basic"].table:not(.sortable):not(.striped) th:first-child, .ui[class*="very basic"].table:not(.sortable):not(.striped) td:first-child { padding-left: 0em; }
+
+/* line 906, ../../sass/semantic-ui/table.scss */
+.ui[class*="very basic"].table:not(.sortable):not(.striped) th:last-child, .ui[class*="very basic"].table:not(.sortable):not(.striped) td:last-child { padding-right: 0em; }
+
+/* line 910, ../../sass/semantic-ui/table.scss */
+.ui[class*="very basic"].table:not(.sortable):not(.striped) thead tr:first-child th { padding-top: 0em; }
+
+/*-------------- Celled
+---------------*/
+/* line 918, ../../sass/semantic-ui/table.scss */
+.ui.celled.table tr th, .ui.celled.table tr td { border-left: 1px solid #d4d4d5; }
+
+/* line 922, ../../sass/semantic-ui/table.scss */
+.ui.celled.table tr th:first-child, .ui.celled.table tr td:first-child { border-left: none; }
+
+/*-------------- Padded
+---------------*/
+/* line 931, ../../sass/semantic-ui/table.scss */
+.ui.padded.table th { padding-left: 1em; padding-right: 1em; }
+
+/* line 935, ../../sass/semantic-ui/table.scss */
+.ui.padded.table th, .ui.padded.table td { padding: 1em 1em; }
+
+/* Very */
+/* line 941, ../../sass/semantic-ui/table.scss */
+.ui[class*="very padded"].table th { padding-left: 1.5em; padding-right: 1.5em; }
+
+/* line 945, ../../sass/semantic-ui/table.scss */
+.ui[class*="very padded"].table td { padding: 1.5em 1.5em; }
+
+/*-------------- Compact
+---------------*/
+/* line 953, ../../sass/semantic-ui/table.scss */
+.ui.compact.table th { padding-left: 0.7em; padding-right: 0.7em; }
+
+/* line 957, ../../sass/semantic-ui/table.scss */
+.ui.compact.table td { padding: 0.5em 0.7em; }
+
+/* Very */
+/* line 962, ../../sass/semantic-ui/table.scss */
+.ui[class*="very compact"].table th { padding-left: 0.6em; padding-right: 0.6em; }
+
+/* line 966, ../../sass/semantic-ui/table.scss */
+.ui[class*="very compact"].table td { padding: 0.4em 0.6em; }
+
+/*-------------- Sizes
+---------------*/
+/* Small */
+/* line 976, ../../sass/semantic-ui/table.scss */
+.ui.small.table { font-size: 0.9em; }
+
+/* Standard */
+/* line 981, ../../sass/semantic-ui/table.scss */
+.ui.table { font-size: 1em; }
+
+/* Large */
+/* line 986, ../../sass/semantic-ui/table.scss */
+.ui.large.table { font-size: 1.1em; }
+
+/******************************* Theme Overrides
+*******************************/
+/******************************* Site Overrides
+*******************************/

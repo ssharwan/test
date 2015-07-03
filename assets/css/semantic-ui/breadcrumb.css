@@ -1,0 +1,84 @@
+/*!
+ * # Semantic UI 1.12.3 - Breadcrumb
+ * http://github.com/semantic-org/semantic-ui/
+ *
+ *
+ * Copyright 2014 Contributors
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+/******************************* Breadcrumb
+*******************************/
+/* line 17, ../../sass/semantic-ui/breadcrumb.scss */
+.ui.breadcrumb { margin: 1em 0em; display: inline-block; vertical-align: middle; }
+
+/* line 22, ../../sass/semantic-ui/breadcrumb.scss */
+.ui.breadcrumb:first-child { margin-top: 0em; }
+
+/* line 25, ../../sass/semantic-ui/breadcrumb.scss */
+.ui.breadcrumb:last-child { margin-bottom: 0em; }
+
+/******************************* Content
+*******************************/
+/* Divider */
+/* line 36, ../../sass/semantic-ui/breadcrumb.scss */
+.ui.breadcrumb .divider { display: inline-block; opacity: 0.5; margin: 0em 0.2rem 0em; font-size: 0.9em; color: rgba(0, 0, 0, 0.4); vertical-align: baseline; }
+
+/* Link */
+/* line 46, ../../sass/semantic-ui/breadcrumb.scss */
+.ui.breadcrumb a { color: #009fda; }
+
+/* line 49, ../../sass/semantic-ui/breadcrumb.scss */
+.ui.breadcrumb a:hover { color: #00b2f3; }
+
+/* Icon Divider */
+/* line 54, ../../sass/semantic-ui/breadcrumb.scss */
+.ui.breadcrumb .icon.divider { font-size: 0.85714286em; vertical-align: baseline; }
+
+/* Section */
+/* line 60, ../../sass/semantic-ui/breadcrumb.scss */
+.ui.breadcrumb a.section { cursor: pointer; }
+
+/* line 63, ../../sass/semantic-ui/breadcrumb.scss */
+.ui.breadcrumb .section { display: inline-block; margin: 0em; padding: 0em; }
+
+/* Loose Coupling */
+/* line 70, ../../sass/semantic-ui/breadcrumb.scss */
+.ui.breadcrumb.segment { display: inline-block; padding: 0.5em 1em; }
+
+/******************************* States
+*******************************/
+/* line 80, ../../sass/semantic-ui/breadcrumb.scss */
+.ui.breadcrumb .active.section { font-weight: bold; }
+
+/******************************* Variations
+*******************************/
+/* line 89, ../../sass/semantic-ui/breadcrumb.scss */
+.ui.mini.breadcrumb { font-size: 0.65em; }
+
+/* line 92, ../../sass/semantic-ui/breadcrumb.scss */
+.ui.tiny.breadcrumb { font-size: 0.7em; }
+
+/* line 95, ../../sass/semantic-ui/breadcrumb.scss */
+.ui.small.breadcrumb { font-size: 0.75em; }
+
+/* line 98, ../../sass/semantic-ui/breadcrumb.scss */
+.ui.breadcrumb { font-size: 1em; }
+
+/* line 101, ../../sass/semantic-ui/breadcrumb.scss */
+.ui.large.breadcrumb { font-size: 1.1em; }
+
+/* line 104, ../../sass/semantic-ui/breadcrumb.scss */
+.ui.big.breadcrumb { font-size: 1.05em; }
+
+/* line 107, ../../sass/semantic-ui/breadcrumb.scss */
+.ui.huge.breadcrumb { font-size: 1.3em; }
+
+/* line 110, ../../sass/semantic-ui/breadcrumb.scss */
+.ui.massive.breadcrumb { font-size: 1.5em; }
+
+/******************************* Theme Overrides
+*******************************/
+/******************************* Site Overrides
+*******************************/

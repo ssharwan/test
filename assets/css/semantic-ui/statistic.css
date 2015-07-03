@@ -1,0 +1,241 @@
+/*!
+ * # Semantic UI 1.12.3 - Statistic
+ * http://github.com/semantic-org/semantic-ui/
+ *
+ *
+ * Copyright 2014 Contributorss
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+/******************************* Statistic
+*******************************/
+/* Standalone */
+/* line 19, ../../sass/semantic-ui/statistic.scss */
+.ui.statistic { display: inline-block; margin: 1em 0em; max-width: 175px; }
+
+/* line 24, ../../sass/semantic-ui/statistic.scss */
+.ui.statistic + .ui.statistic { margin: 0em 0em 0em 1em; }
+
+/* line 27, ../../sass/semantic-ui/statistic.scss */
+.ui.statistic:first-child { margin-top: 0em; }
+
+/* line 30, ../../sass/semantic-ui/statistic.scss */
+.ui.statistic:last-child { margin-bottom: 0em; }
+
+/* Grouped */
+/* line 35, ../../sass/semantic-ui/statistic.scss */
+.ui.statistics > .statistic { display: block; float: left; margin: 0em 1em 2em; max-width: 175px; }
+
+/******************************* Group
+*******************************/
+/* line 47, ../../sass/semantic-ui/statistic.scss */
+.ui.statistics { display: block; margin: 1em -1em; }
+
+/* Clearing */
+/* line 53, ../../sass/semantic-ui/statistic.scss */
+.ui.statistics:after { display: block; content: ' '; height: 0px; clear: both; overflow: hidden; visibility: hidden; }
+
+/* line 61, ../../sass/semantic-ui/statistic.scss */
+.ui.statistics:first-child { margin-top: 0em; }
+
+/* line 64, ../../sass/semantic-ui/statistic.scss */
+.ui.statistics:last-child { margin-bottom: 0em; }
+
+/******************************* Content
+*******************************/
+/*-------------- Value
+---------------*/
+/* line 78, ../../sass/semantic-ui/statistic.scss */
+.ui.statistics .statistic > .value, .ui.statistic > .value { font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif; font-size: 4rem; font-weight: normal; line-height: 1em; color: #1b1c1d; text-transform: uppercase; text-align: center; }
+
+/*-------------- Label
+---------------*/
+/* line 93, ../../sass/semantic-ui/statistic.scss */
+.ui.statistics .statistic > .label, .ui.statistic > .label { font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif; font-size: 1rem; font-weight: normal; color: rgba(0, 0, 0, 0.4); text-transform: none; text-align: center; }
+
+/* Top Label */
+/* line 104, ../../sass/semantic-ui/statistic.scss */
+.ui.statistics .statistic > .label ~ .value, .ui.statistic > .label ~ .value { margin-top: 0rem; }
+
+/* Bottom Label */
+/* line 110, ../../sass/semantic-ui/statistic.scss */
+.ui.statistics .statistic > .value ~ .label, .ui.statistic > .value ~ .label { margin-top: 0.25rem; }
+
+/******************************* Types
+*******************************/
+/*-------------- Icon Value
+---------------*/
+/* line 125, ../../sass/semantic-ui/statistic.scss */
+.ui.statistics .statistic > .value .icon, .ui.statistic > .value .icon { opacity: 1; width: auto; margin: 0em; }
+
+/*-------------- Text Value
+---------------*/
+/* line 136, ../../sass/semantic-ui/statistic.scss */
+.ui.statistics .statistic > .text.value, .ui.statistic > .text.value { line-height: 1em; min-height: 2em; text-align: center; }
+
+/* line 142, ../../sass/semantic-ui/statistic.scss */
+.ui.statistics .statistic > .text.value + .label, .ui.statistic > .text.value + .label { text-align: center; }
+
+/*-------------- Image Value
+---------------*/
+/* line 151, ../../sass/semantic-ui/statistic.scss */
+.ui.statistics .statistic > .value img, .ui.statistic > .value img { max-height: 3rem; vertical-align: baseline; }
+
+/******************************* Variations
+*******************************/
+/*-------------- Horizontal
+---------------*/
+/* line 167, ../../sass/semantic-ui/statistic.scss */
+.ui.horizontal.statistics, .ui.horizontal.statistic { display: block; margin: 0em; max-width: 9999px; }
+
+/* line 173, ../../sass/semantic-ui/statistic.scss */
+.ui.horizontal.statistics .statistic { float: none; margin: 1em 0em; max-width: 9999px; }
+
+/* line 178, ../../sass/semantic-ui/statistic.scss */
+.ui.horizontal.statistic > .text.value, .ui.horizontal.statistics > .statistic > .text.value { min-height: 0em !important; }
+
+/* line 182, ../../sass/semantic-ui/statistic.scss */
+.ui.horizontal.statistics .statistic > .value .icon, .ui.horizontal.statistic > .value .icon { width: 1.18em; }
+
+/* line 186, ../../sass/semantic-ui/statistic.scss */
+.ui.horizontal.statistics .statistic > .value, .ui.horizontal.statistic > .value { display: inline-block; vertical-align: middle; }
+
+/* line 191, ../../sass/semantic-ui/statistic.scss */
+.ui.horizontal.statistics .statistic > .label, .ui.horizontal.statistic > .label { display: inline-block; vertical-align: middle; margin: 0em 0em 0em 0.75em; }
+
+/*-------------- Colors
+---------------*/
+/* line 202, ../../sass/semantic-ui/statistic.scss */
+.ui.blue.statistics .statistic > .value, .ui.statistics .blue.statistic > .value, .ui.blue.statistic > .value { color: #3b83c0; }
+
+/* line 207, ../../sass/semantic-ui/statistic.scss */
+.ui.green.statistics .statistic > .value, .ui.statistics .green.statistic > .value, .ui.green.statistic > .value { color: #5bbd72; }
+
+/* line 212, ../../sass/semantic-ui/statistic.scss */
+.ui.orange.statistics .statistic > .value, .ui.statistics .orange.statistic > .value, .ui.orange.statistic > .value { color: #e07b53; }
+
+/* line 217, ../../sass/semantic-ui/statistic.scss */
+.ui.pink.statistics .statistic > .value, .ui.statistics .pink.statistic > .value, .ui.pink.statistic > .value { color: #d9499a; }
+
+/* line 222, ../../sass/semantic-ui/statistic.scss */
+.ui.purple.statistics .statistic > .value, .ui.statistics .purple.statistic > .value, .ui.purple.statistic > .value { color: #564f8a; }
+
+/* line 227, ../../sass/semantic-ui/statistic.scss */
+.ui.red.statistics .statistic > .value, .ui.statistics .red.statistic > .value, .ui.red.statistic > .value { color: #d95c5c; }
+
+/* line 232, ../../sass/semantic-ui/statistic.scss */
+.ui.teal.statistics .statistic > .value, .ui.statistics .teal.statistic > .value, .ui.teal.statistic > .value { color: #00b5ad; }
+
+/* line 237, ../../sass/semantic-ui/statistic.scss */
+.ui.yellow.statistics .statistic > .value, .ui.statistics .yellow.statistic > .value, .ui.yellow.statistic > .value { color: #f2c61f; }
+
+/*-------------- Floated
+---------------*/
+/* line 247, ../../sass/semantic-ui/statistic.scss */
+.ui[class*="left floated"].statistic { float: left; margin: 0em 2em 1em 0em; }
+
+/* line 251, ../../sass/semantic-ui/statistic.scss */
+.ui[class*="right floated"].statistic { float: right; margin: 0em 0em 1em 2em; }
+
+/* line 255, ../../sass/semantic-ui/statistic.scss */
+.ui.floated.statistic:last-child { margin-bottom: 0em; }
+
+/*-------------- Inverted
+---------------*/
+/* line 263, ../../sass/semantic-ui/statistic.scss */
+.ui.inverted.statistic .value { color: #ffffff; }
+
+/* line 266, ../../sass/semantic-ui/statistic.scss */
+.ui.inverted.statistic .label { color: rgba(255, 255, 255, 0.8); }
+
+/* line 269, ../../sass/semantic-ui/statistic.scss */
+.ui.inverted.blue.statistics .statistic > .value, .ui.statistics .inverted.blue.statistic > .value, .ui.inverted.blue.statistic > .value { color: #54c8ff; }
+
+/* line 274, ../../sass/semantic-ui/statistic.scss */
+.ui.inverted.green.statistics .statistic > .value, .ui.statistics .inverted.green.statistic > .value, .ui.inverted.green.statistic > .value { color: #2ecc40; }
+
+/* line 279, ../../sass/semantic-ui/statistic.scss */
+.ui.inverted.orange.statistics .statistic > .value, .ui.statistics .inverted.orange.statistic > .value, .ui.inverted.orange.statistic > .value { color: #ff851b; }
+
+/* line 284, ../../sass/semantic-ui/statistic.scss */
+.ui.inverted.pink.statistics .statistic > .value, .ui.statistics .inverted.pink.statistic > .value, .ui.inverted.pink.statistic > .value { color: #ff8edf; }
+
+/* line 289, ../../sass/semantic-ui/statistic.scss */
+.ui.inverted.purple.statistics .statistic > .value, .ui.statistics .inverted.purple.statistic > .value, .ui.inverted.purple.statistic > .value { color: #cdc6ff; }
+
+/* line 294, ../../sass/semantic-ui/statistic.scss */
+.ui.inverted.red.statistics .statistic > .value, .ui.statistics .inverted.red.statistic > .value, .ui.inverted.red.statistic > .value { color: #ff695e; }
+
+/* line 299, ../../sass/semantic-ui/statistic.scss */
+.ui.inverted.teal.statistics .statistic > .value, .ui.statistics .inverted.teal.statistic > .value, .ui.inverted.teal.statistic > .value { color: #6dffff; }
+
+/* line 304, ../../sass/semantic-ui/statistic.scss */
+.ui.inverted.yellow.statistics .statistic > .value, .ui.statistics .inverted.yellow.statistic > .value, .ui.inverted.yellow.statistic > .value { color: #ffe21f; }
+
+/*-------------- Sizes
+---------------*/
+/* Mini */
+/* line 316, ../../sass/semantic-ui/statistic.scss */
+.ui.mini.statistics .statistic > .value, .ui.mini.statistic > .value { font-size: 1.5rem; }
+
+/* line 320, ../../sass/semantic-ui/statistic.scss */
+.ui.mini.horizontal.statistics .statistic > .value, .ui.mini.horizontal.statistic > .value { font-size: 1.5rem; }
+
+/* line 324, ../../sass/semantic-ui/statistic.scss */
+.ui.mini.statistics .statistic > .text.value, .ui.mini.statistic > .text.value { font-size: 1rem; }
+
+/* Tiny */
+/* line 330, ../../sass/semantic-ui/statistic.scss */
+.ui.tiny.statistics .statistic > .value, .ui.tiny.statistic > .value { font-size: 2rem; }
+
+/* line 334, ../../sass/semantic-ui/statistic.scss */
+.ui.tiny.horizontal.statistics .statistic > .value, .ui.tiny.horizontal.statistic > .value { font-size: 2rem; }
+
+/* line 338, ../../sass/semantic-ui/statistic.scss */
+.ui.tiny.statistics .statistic > .text.value, .ui.tiny.statistic > .text.value { font-size: 1rem; }
+
+/* Small */
+/* line 344, ../../sass/semantic-ui/statistic.scss */
+.ui.small.statistics .statistic > .value, .ui.small.statistic > .value { font-size: 3rem; }
+
+/* line 348, ../../sass/semantic-ui/statistic.scss */
+.ui.small.horizontal.statistics .statistic > .value, .ui.small.horizontal.statistic > .value { font-size: 2rem; }
+
+/* line 352, ../../sass/semantic-ui/statistic.scss */
+.ui.small.statistics .statistic > .text.value, .ui.small.statistic > .text.value { font-size: 1.5rem; }
+
+/* Medium */
+/* line 358, ../../sass/semantic-ui/statistic.scss */
+.ui.statistics .statistic > .value, .ui.statistic > .value { font-size: 4rem; }
+
+/* line 362, ../../sass/semantic-ui/statistic.scss */
+.ui.horizontal.statistics .statistic > .value, .ui.horizontal.statistic > .value { font-size: 3rem; }
+
+/* line 366, ../../sass/semantic-ui/statistic.scss */
+.ui.statistics .statistic > .text.value, .ui.statistic > .text.value { font-size: 2rem; }
+
+/* Large */
+/* line 372, ../../sass/semantic-ui/statistic.scss */
+.ui.large.statistics .statistic > .value, .ui.large.statistic > .value { font-size: 5rem; }
+
+/* line 376, ../../sass/semantic-ui/statistic.scss */
+.ui.large.horizontal.statistics .statistic > .value, .ui.large.horizontal.statistic > .value { font-size: 4rem; }
+
+/* line 380, ../../sass/semantic-ui/statistic.scss */
+.ui.large.statistics .statistic > .text.value, .ui.large.statistic > .text.value { font-size: 2.5rem; }
+
+/* Huge */
+/* line 386, ../../sass/semantic-ui/statistic.scss */
+.ui.huge.statistics .statistic > .value, .ui.huge.statistic > .value { font-size: 6rem; }
+
+/* line 390, ../../sass/semantic-ui/statistic.scss */
+.ui.huge.horizontal.statistics .statistic > .value, .ui.huge.horizontal.statistic > .value { font-size: 5rem; }
+
+/* line 394, ../../sass/semantic-ui/statistic.scss */
+.ui.huge.statistics .statistic > .text.value, .ui.huge.statistic > .text.value { font-size: 2.5rem; }
+
+/******************************* Theme Overrides
+*******************************/
+/******************************* User Variable Overrides
+*******************************/

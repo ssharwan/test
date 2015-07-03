@@ -1,0 +1,67 @@
+
+<div class="content" >
+<div class="flyover-container">
+   
+    <div class="flyover-overlay flyover-overlay-show" ng-click="close();">
+        Close
+    </div>
+    
+
+    <div class="flyover flyover-show">
+      <div class="profile" ng-show="borrower">
+        <div class="profile-container ">
+          <div class="profile-content">
+            <div class="profile-basic-info">
+              <div> <div> Last Updated on: </div></div>
+              <div><span class="profile-name"> {{borrower.name}}</span> </div>
+              <div> Originated from <b> {{borrower.source}}</b></div>
+            </div>
+
+            <div>
+              
+           
+
+              <div indifi-template="app/borrowers/borrower/stages/borrower.stage.funded.tpl.html" ng-if="borrower.stageId >= 7"></div>
+              <div indifi-template="app/borrowers/borrower/stages/borrower.stage.sanctioned.tpl.html" ng-if="borrower.stageId >= 6"></div>
+              <div indifi-template="app/borrowers/borrower/stages/borrower.stage.documentation.tpl.htm" ng-if="borrower.stageId >= 5"></div>
+              <div indifi-template="app/borrowers/borrower/stages/borrower.stage.underwritting.tpl.html" ng-if="borrower.stageId >= 4"></div>
+              <div indifi-template="app/borrowers/borrower/stages/borrower.stage.application.tpl.html" ng-if="borrower.stageId >= 3"></div>
+              <div indifi-template="app/borrowers/borrower/stages/borrower.stage.contacted.tpl.html" ng-if="borrower.stageId >= 2"></div>
+            </div>
+          </div>
+          <div class="profile-sidebar-wrapper" style="top: 0px;">
+            side bar
+          </div>
+        </div>
+        <div class="profile-action-bar">
+          Action Bar
+        </div>
+      </div>
+    </div>
+
+  
+
+  
+       <h1> TODO:  show details of :  {{borrower.name}}</h1>
+    </div>
+
+    <div class="flyover-controls">
+        <span class="flyover-nav-button flyover-close-button" title="Close" ng-click="close();" >
+            <svg class=" icon icon-close-large" width="16px" height="16px" viewBox="0 0 16 16">
+                <path d="M0 1.6L1.6 0 8 6.4 14.4 0 16 1.6 9.6 8 16 14.4 14.4 16 8 9.6 1.6 16 0 14.4 6.4 8 0 1.6z"></path>
+            </svg>
+        </span>
+    </div>
+   <div class="next-prev-container">
+        <div class="next-prev">
+            <div class="flyover-nav-button prev" ng-click="previous();">
+                Prev
+            </div>
+            <div class="flyover-nav-button next" ng-click="next();">
+            	Next
+            </div>
+        </div>
+    </div>
+   
+</div>
+</div>

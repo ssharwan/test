@@ -1,0 +1,432 @@
+/*!
+ * # Semantic UI 1.12.3 - Header
+ * http://github.com/semantic-org/semantic-ui/
+ *
+ *
+ * Copyright 2014 Contributors
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+/******************************* Header
+*******************************/
+/* Standard */
+/* line 19, ../../sass/semantic-ui/header.scss */
+.ui.header { border: none; margin: -webkit-calc(2rem -  0.165em ) 0em 1rem; margin: calc(2rem -  0.165em ) 0em 1rem; padding: 0em 0em; font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif; font-weight: bold; line-height: 1.33em; text-transform: none; color: rgba(0, 0, 0, 0.8); }
+
+/* line 30, ../../sass/semantic-ui/header.scss */
+.ui.header:first-child { margin-top: -0.165em; }
+
+/* line 33, ../../sass/semantic-ui/header.scss */
+.ui.header:last-child { margin-bottom: 0em; }
+
+/*-------------- Sub Header
+---------------*/
+/* line 41, ../../sass/semantic-ui/header.scss */
+.ui.header .sub.header { font-weight: normal; margin: 0em; padding: 0em; font-size: 1.1428rem; line-height: 1.2em; color: rgba(0, 0, 0, 0.5); }
+
+/*-------------- Icon
+---------------*/
+/* line 54, ../../sass/semantic-ui/header.scss */
+.ui.header > .icon { display: table-cell; opacity: 1; font-size: 1.5em; padding-top: 0.165em; vertical-align: middle; }
+
+/* With Text Node */
+/* line 63, ../../sass/semantic-ui/header.scss */
+.ui.header .icon:only-child { display: inline-block; padding: 0em; margin-right: 0.75rem; }
+
+/*------------------- Image
+--------------------*/
+/* line 73, ../../sass/semantic-ui/header.scss */
+.ui.header > .image, .ui.header > img { display: inline-block; margin-top: 0.165em; width: 2.5em; height: auto; vertical-align: middle; }
+
+/* line 81, ../../sass/semantic-ui/header.scss */
+.ui.header > .image:only-child, .ui.header > img:only-child { margin-right: 0.75rem; }
+
+/*-------------- Content
+---------------*/
+/* line 90, ../../sass/semantic-ui/header.scss */
+.ui.header .content { display: inline-block; vertical-align: top; }
+
+/* After Image */
+/* line 96, ../../sass/semantic-ui/header.scss */
+.ui.header > img + .content, .ui.header > .image + .content { padding-left: 0.75rem; vertical-align: middle; }
+
+/* After Icon */
+/* line 103, ../../sass/semantic-ui/header.scss */
+.ui.header > .icon + .content { padding-left: 0.75rem; display: table-cell; vertical-align: middle; }
+
+/*-------------- Loose Coupling
+---------------*/
+/* line 113, ../../sass/semantic-ui/header.scss */
+.ui.header .ui.label { font-size: ''; margin: 0em 0em 0em 0.5rem; vertical-align: middle; }
+
+/* Positioning */
+/* line 120, ../../sass/semantic-ui/header.scss */
+.ui.header + p { margin-top: 0em; }
+
+/******************************* Types
+*******************************/
+/*-------------- Page
+---------------*/
+/* line 134, ../../sass/semantic-ui/header.scss */
+h1.ui.header { font-size: 2rem; }
+
+/* line 137, ../../sass/semantic-ui/header.scss */
+h2.ui.header { font-size: 1.714rem; }
+
+/* line 140, ../../sass/semantic-ui/header.scss */
+h3.ui.header { font-size: 1.28rem; }
+
+/* line 143, ../../sass/semantic-ui/header.scss */
+h4.ui.header { font-size: 1.071rem; }
+
+/* line 146, ../../sass/semantic-ui/header.scss */
+h5.ui.header { font-size: 1rem; }
+
+/* Sub Header */
+/* line 151, ../../sass/semantic-ui/header.scss */
+h1.ui.header .sub.header { font-size: 1.4285rem; }
+
+/* line 154, ../../sass/semantic-ui/header.scss */
+h2.ui.header .sub.header { font-size: 1.1428rem; }
+
+/* line 157, ../../sass/semantic-ui/header.scss */
+h3.ui.header .sub.header { font-size: 1.1428rem; }
+
+/* line 160, ../../sass/semantic-ui/header.scss */
+h4.ui.header .sub.header { font-size: 1rem; }
+
+/* line 163, ../../sass/semantic-ui/header.scss */
+h5.ui.header .sub.header { font-size: 0.9285rem; }
+
+/*-------------- Content Heading
+---------------*/
+/* line 171, ../../sass/semantic-ui/header.scss */
+.ui.huge.header { min-height: 1em; font-size: 2em; }
+
+/* line 175, ../../sass/semantic-ui/header.scss */
+.ui.large.header { font-size: 1.714em; }
+
+/* line 178, ../../sass/semantic-ui/header.scss */
+.ui.medium.header { font-size: 1.28em; }
+
+/* line 181, ../../sass/semantic-ui/header.scss */
+.ui.small.header { font-size: 1.071em; }
+
+/* line 184, ../../sass/semantic-ui/header.scss */
+.ui.tiny.header { font-size: 1em; }
+
+/* Sub Header */
+/* line 189, ../../sass/semantic-ui/header.scss */
+.ui.huge.header .sub.header { font-size: 1.4285rem; }
+
+/* line 192, ../../sass/semantic-ui/header.scss */
+.ui.large.header .sub.header { font-size: 1.4285rem; }
+
+/* line 195, ../../sass/semantic-ui/header.scss */
+.ui.header .sub.header { font-size: 1.1428rem; }
+
+/* line 198, ../../sass/semantic-ui/header.scss */
+.ui.small.header .sub.header { font-size: 1rem; }
+
+/* line 201, ../../sass/semantic-ui/header.scss */
+.ui.tiny.header .sub.header { font-size: 0.9285rem; }
+
+/*------------------- Icon
+--------------------*/
+/* line 209, ../../sass/semantic-ui/header.scss */
+.ui.icon.header { display: inline-block; text-align: center; margin: 2rem 0em 1rem; }
+
+/* line 214, ../../sass/semantic-ui/header.scss */
+.ui.icon.header:after { content: ''; display: block; height: 0px; clear: both; visibility: hidden; }
+
+/* line 221, ../../sass/semantic-ui/header.scss */
+.ui.icon.header:first-child { margin-top: 0em; }
+
+/* line 224, ../../sass/semantic-ui/header.scss */
+.ui.icon.header .icon { float: none; display: block; width: auto; height: auto; padding: 0em; font-size: 3em; margin: 0em auto 0.25rem; opacity: 1; }
+
+/* line 234, ../../sass/semantic-ui/header.scss */
+.ui.icon.header .content { display: block; }
+
+/* line 237, ../../sass/semantic-ui/header.scss */
+.ui.icon.header .circular.icon { font-size: 2em; }
+
+/* line 240, ../../sass/semantic-ui/header.scss */
+.ui.icon.header .square.icon { font-size: 2em; }
+
+/* line 243, ../../sass/semantic-ui/header.scss */
+.ui.block.icon.header .icon { margin-bottom: 0em; }
+
+/* line 246, ../../sass/semantic-ui/header.scss */
+.ui.icon.header.aligned { margin-left: auto; margin-right: auto; display: block; }
+
+/******************************* States
+*******************************/
+/* line 257, ../../sass/semantic-ui/header.scss */
+.ui.disabled.header { opacity: 0.3; }
+
+/******************************* Variations
+*******************************/
+/*------------------- Colors
+--------------------*/
+/* line 271, ../../sass/semantic-ui/header.scss */
+.ui.black.header { color: #1b1c1d !important; }
+
+/* line 274, ../../sass/semantic-ui/header.scss */
+a.ui.black.header:hover { color: #1b1c1d !important; }
+
+/* line 277, ../../sass/semantic-ui/header.scss */
+.ui.blue.header { color: #3b83c0 !important; }
+
+/* line 280, ../../sass/semantic-ui/header.scss */
+a.ui.blue.header:hover { color: #458ac6 !important; }
+
+/* line 283, ../../sass/semantic-ui/header.scss */
+.ui.green.header { color: #5bbd72 !important; }
+
+/* line 286, ../../sass/semantic-ui/header.scss */
+a.ui.green.header:hover { color: #66c17b !important; }
+
+/* line 289, ../../sass/semantic-ui/header.scss */
+.ui.orange.header { color: #e07b53 !important; }
+
+/* line 292, ../../sass/semantic-ui/header.scss */
+a.ui.orange.header:hover { color: #e28560 !important; }
+
+/* line 295, ../../sass/semantic-ui/header.scss */
+.ui.pink.header { color: #d9499a !important; }
+
+/* line 298, ../../sass/semantic-ui/header.scss */
+a.ui.pink.header:hover { color: #dc56a1 !important; }
+
+/* line 301, ../../sass/semantic-ui/header.scss */
+.ui.purple.header { color: #564f8a !important; }
+
+/* line 304, ../../sass/semantic-ui/header.scss */
+a.ui.purple.header:hover { color: #5c5594 !important; }
+
+/* line 307, ../../sass/semantic-ui/header.scss */
+.ui.red.header { color: #d95c5c !important; }
+
+/* line 310, ../../sass/semantic-ui/header.scss */
+a.ui.red.header:hover { color: #dc6868 !important; }
+
+/* line 313, ../../sass/semantic-ui/header.scss */
+.ui.teal.header { color: #00b5ad !important; }
+
+/* line 316, ../../sass/semantic-ui/header.scss */
+a.ui.teal.header:hover { color: #00c4bc !important; }
+
+/* line 319, ../../sass/semantic-ui/header.scss */
+.ui.yellow.header { color: #f2c61f !important; }
+
+/* line 322, ../../sass/semantic-ui/header.scss */
+a.ui.yellow.header:hover { color: #f3ca2d !important; }
+
+/* line 325, ../../sass/semantic-ui/header.scss */
+.ui.black.dividing.header { border-bottom: 2px solid #1b1c1d; }
+
+/* line 328, ../../sass/semantic-ui/header.scss */
+.ui.blue.dividing.header { border-bottom: 2px solid #3b83c0; }
+
+/* line 331, ../../sass/semantic-ui/header.scss */
+.ui.green.dividing.header { border-bottom: 2px solid #5bbd72; }
+
+/* line 334, ../../sass/semantic-ui/header.scss */
+.ui.orange.dividing.header { border-bottom: 2px solid #e07b53; }
+
+/* line 337, ../../sass/semantic-ui/header.scss */
+.ui.pink.dividing.header { border-bottom: 2px solid #d9499a; }
+
+/* line 340, ../../sass/semantic-ui/header.scss */
+.ui.purple.dividing.header { border-bottom: 2px solid #564f8a; }
+
+/* line 343, ../../sass/semantic-ui/header.scss */
+.ui.red.dividing.header { border-bottom: 2px solid #d95c5c; }
+
+/* line 346, ../../sass/semantic-ui/header.scss */
+.ui.teal.dividing.header { border-bottom: 2px solid #00b5ad; }
+
+/* line 349, ../../sass/semantic-ui/header.scss */
+.ui.yellow.dividing.header { border-bottom: 2px solid #f2c61f; }
+
+/*------------------- Inverted
+--------------------*/
+/* line 357, ../../sass/semantic-ui/header.scss */
+.ui.inverted.header { color: #ffffff; }
+
+/* line 360, ../../sass/semantic-ui/header.scss */
+.ui.inverted.header .sub.header { color: rgba(255, 255, 255, 0.85); }
+
+/* line 363, ../../sass/semantic-ui/header.scss */
+.ui.inverted.attached.header { background: #333333 -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.05)); background: #333333 linear-gradient(transparent, rgba(0, 0, 0, 0.05)); box-shadow: none; }
+
+/* line 368, ../../sass/semantic-ui/header.scss */
+.ui.inverted.block.header { background: #333333 -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.05)); background: #333333 linear-gradient(transparent, rgba(0, 0, 0, 0.05)); box-shadow: none; }
+
+/*------------------- Inverted Colors
+--------------------*/
+/* line 378, ../../sass/semantic-ui/header.scss */
+.ui.inverted.black.header { color: #aaaaaa !important; }
+
+/* line 381, ../../sass/semantic-ui/header.scss */
+a.ui.inverted.black.header:hover { color: #b2b2b2 !important; }
+
+/* line 384, ../../sass/semantic-ui/header.scss */
+.ui.inverted.blue.header { color: #54c8ff !important; }
+
+/* line 387, ../../sass/semantic-ui/header.scss */
+a.ui.inverted.blue.header:hover { color: #63cdff !important; }
+
+/* line 390, ../../sass/semantic-ui/header.scss */
+.ui.inverted.green.header { color: #2ecc40 !important; }
+
+/* line 393, ../../sass/semantic-ui/header.scss */
+a.ui.inverted.green.header:hover { color: #37d249 !important; }
+
+/* line 396, ../../sass/semantic-ui/header.scss */
+.ui.inverted.orange.header { color: #ff851b !important; }
+
+/* line 399, ../../sass/semantic-ui/header.scss */
+a.ui.inverted.orange.header:hover { color: #ff8d2a !important; }
+
+/* line 402, ../../sass/semantic-ui/header.scss */
+.ui.inverted.pink.header { color: #ff8edf !important; }
+
+/* line 405, ../../sass/semantic-ui/header.scss */
+a.ui.inverted.pink.header:hover { color: #ff9de3 !important; }
+
+/* line 408, ../../sass/semantic-ui/header.scss */
+.ui.inverted.purple.header { color: #cdc6ff !important; }
+
+/* line 411, ../../sass/semantic-ui/header.scss */
+a.ui.inverted.purple.header:hover { color: #dad5ff !important; }
+
+/* line 414, ../../sass/semantic-ui/header.scss */
+.ui.inverted.red.header { color: #ff695e !important; }
+
+/* line 417, ../../sass/semantic-ui/header.scss */
+a.ui.inverted.red.header:hover { color: #ff776d !important; }
+
+/* line 420, ../../sass/semantic-ui/header.scss */
+.ui.inverted.teal.header { color: #6dffff !important; }
+
+/* line 423, ../../sass/semantic-ui/header.scss */
+a.ui.inverted.teal.header:hover { color: #7cffff !important; }
+
+/* line 426, ../../sass/semantic-ui/header.scss */
+.ui.inverted.yellow.header { color: #ffe21f !important; }
+
+/* line 429, ../../sass/semantic-ui/header.scss */
+a.ui.inverted.yellow.header:hover { color: #ffe42e !important; }
+
+/* line 432, ../../sass/semantic-ui/header.scss */
+.ui.inverted.block.header { border-bottom: none; }
+
+/*------------------- Aligned
+--------------------*/
+/* line 440, ../../sass/semantic-ui/header.scss */
+.ui.left.aligned.header { text-align: left; }
+
+/* line 443, ../../sass/semantic-ui/header.scss */
+.ui.right.aligned.header { text-align: right; }
+
+/* line 446, ../../sass/semantic-ui/header.scss */
+.ui.centered.header, .ui.center.aligned.header { text-align: center; }
+
+/* line 450, ../../sass/semantic-ui/header.scss */
+.ui.justified.header { text-align: justify; }
+
+/* line 453, ../../sass/semantic-ui/header.scss */
+.ui.justified.header:after { display: inline-block; content: ''; width: 100%; }
+
+/*------------------- Floated
+--------------------*/
+/* line 463, ../../sass/semantic-ui/header.scss */
+.ui.floated.header, .ui[class*="left floated"].header { float: left; margin-top: 0em; margin-right: 0.5em; }
+
+/* line 469, ../../sass/semantic-ui/header.scss */
+.ui[class*="right floated"].header { float: right; margin-top: 0em; margin-left: 0.5em; }
+
+/*------------------- Fittted
+--------------------*/
+/* line 479, ../../sass/semantic-ui/header.scss */
+.ui.fitted.header { padding: 0em; }
+
+/*------------------- Dividing
+--------------------*/
+/* line 487, ../../sass/semantic-ui/header.scss */
+.ui.dividing.header { padding-bottom: 0.25rem; border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+
+/* line 491, ../../sass/semantic-ui/header.scss */
+.ui.dividing.header .sub.header { padding-bottom: 0.25rem; }
+
+/* line 494, ../../sass/semantic-ui/header.scss */
+.ui.dividing.header .icon { margin-bottom: 0em; }
+
+/* line 497, ../../sass/semantic-ui/header.scss */
+.ui.inverted.dividing.header { border-bottom-color: rgba(255, 255, 255, 0.2); }
+
+/*------------------- Block
+--------------------*/
+/* line 505, ../../sass/semantic-ui/header.scss */
+.ui.block.header { background: #f0f0f0; padding: 0.75rem 1rem; box-shadow: none; border: 1px solid #d4d4d5; border-radius: 0.3125rem; }
+
+/* line 512, ../../sass/semantic-ui/header.scss */
+.ui.tiny.block.header { font-size: 1em; }
+
+/* line 515, ../../sass/semantic-ui/header.scss */
+.ui.small.block.header { font-size: 1.071em; }
+
+/* line 518, ../../sass/semantic-ui/header.scss */
+.ui.block.header:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) { font-size: 1.28em; }
+
+/* line 521, ../../sass/semantic-ui/header.scss */
+.ui.large.block.header { font-size: 1.714em; }
+
+/* line 524, ../../sass/semantic-ui/header.scss */
+.ui.huge.block.header { font-size: 2em; }
+
+/*------------------- Attached
+--------------------*/
+/* line 532, ../../sass/semantic-ui/header.scss */
+.ui.attached.header { background: #ffffff; padding: 0.75rem 1rem; margin-left: -1px; margin-right: -1px; box-shadow: none; border: 1px solid #d4d4d5; }
+
+/* line 540, ../../sass/semantic-ui/header.scss */
+.ui.attached.block.header { background: #f0f0f0; }
+
+/* line 543, ../../sass/semantic-ui/header.scss */
+.ui.attached:not(.top):not(.bottom).header { margin-top: 0em; margin-bottom: 0em; border-top: none; border-bottom: none; border-radius: 0em; }
+
+/* line 550, ../../sass/semantic-ui/header.scss */
+.ui.top.attached.header { margin-bottom: 0em; border-bottom: none; border-radius: 0.3125rem 0.3125rem 0em 0em; }
+
+/* line 555, ../../sass/semantic-ui/header.scss */
+.ui.bottom.attached.header { margin-top: 0em; border-top: none; border-radius: 0em 0em 0.3125rem 0.3125rem; }
+
+/* Attached Sizes */
+/* line 562, ../../sass/semantic-ui/header.scss */
+.ui.tiny.attached.header { font-size: 0.8571em; }
+
+/* line 565, ../../sass/semantic-ui/header.scss */
+.ui.small.attached.header { font-size: 0.9285em; }
+
+/* line 568, ../../sass/semantic-ui/header.scss */
+.ui.attached.header:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) { font-size: 1em; }
+
+/* line 571, ../../sass/semantic-ui/header.scss */
+.ui.large.attached.header { font-size: 1.0714em; }
+
+/* line 574, ../../sass/semantic-ui/header.scss */
+.ui.huge.attached.header { font-size: 1.1428em; }
+
+/*------------------- Sizing
+--------------------*/
+/* line 582, ../../sass/semantic-ui/header.scss */
+.ui.header:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) { font-size: 1.28em; }
+
+/******************************* Theme Overrides
+*******************************/
+/******************************* Site Overrides
+*******************************/

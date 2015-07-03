@@ -1,0 +1,51 @@
+<div class="borrowers">
+	<div class="list-header">
+	    <div class="borrowers-title ">
+		    <div class="borrowers-title-wrapper">
+		    	<div class="title-text"> <h2> Loan Applications</h2></div>
+		        <div class="all-mine-control">
+		          <span class="all-mine-toggle" ng-repeat="view in topLevelViews" ng-class="{'active': $index == selectedTopLevelViewIndex}" ng-click="selectTopLevelView($index)">{{view}}</span>
+		        </div>
+		        <div class="filter-button">
+		        	<span ng-click="toggleFilters()">filter</span>
+		        </div>
+		    </div>
+	    </div>
+		<indifi-borrowers-pipeline pipeline="pipeline" selected="selectedPipelineIndex" on-stage-change="loadPipelineStage(index)"> </indifi-borrowers-pipeline>
+	    <div class="list-controls">
+	    	<div class="title-text"> <h3> {{pipeline[selectedPipelineIndex].name}}</h3> </div>
+			<ul class="checkable-actions">
+				<li>
+					<span class="checkable-select-container">
+						<button class="btn icon-only checkable-select-toggle">
+							<svg class=" icon icon-caret-down" width="16px" height="16px" viewBox="0 0 16 16">
+								<path d="M7.6741598,11.3413318 L8.03952616,11.7324251 L8.40489252,11.3413318 L14.8653664,4.42595055 L14.1346336,3.74328687 L7.6741598,10.6586682 L8.40489252,10.6586682 L1.86536636,3.65866816 L1.13463364,4.34133184 L7.6741598,11.3413318 Z M7.6741598,11.3413318" fill="#979797">
+								</path>
+							</svg>
+						</button>
+						<input type="checkbox" class="checkable-select-check">
+					</span>
+				</li>
+				<li ng-show="ss">
+					<button class="btn icon-only checkable-select-toggle">Archive</button>
+				</li>
+				<li ng-show="ss">
+					<button class="btn icon-only checkable-select-toggle">Assign</button>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!--End of list-header-->
+
+	<div class="infinite-scroll" when-scrolled="loadMore()">
+		<indifi-borrowers-list borrowers="borrowers" open-list-item ="openBorrower(id);"> </indifi-borrowers-list>
+	</div>
+	
+
+	<div class="borrowers-filters" ng-class="{'hidden': !filterState}">
+		<div class="filter-mask"> </div>
+		<div class="filter-wrapper">  <span ng-click="toggleFilters()">close</span> </div>	
+	</div>
+   <!--SHOW THE SELECTED BORROWERS DETAILS-->
+	<div ui-view></div>
+</div>

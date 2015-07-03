@@ -1,0 +1,21 @@
+
+<div class="pipeline-wrap ">
+	<ul class="pipeline all-active">
+		<li  class="pipeline-stage stage-target" ng-repeat="model in pipeline" ng-class="{'selected': $index == selected}">
+			<div ng-click="selectIt($index)" ng-class="{'pipeline-single': !$first}">
+				<div class="pipeline-border-area">
+					    <span title="{{model.count}}" class="stage-count">{{model.count}}<small></small>
+						</span>
+						<span class="stage-title"> 
+							{{model.name}}
+						</span>
+				</div>
+				
+				<svg ng-if="!$first" class=" icon icon-caret-right" width="7px" height="16px" viewBox="0 0 7 16"><path d="M0.456054688,-0.360057188 L6,8.02441406 L0.456054688,16.1682129" stroke="#DCDCDC" fill="none"></path>
+				</svg>
+			</div>
+			<div class="pipeline-selected-border">
+			</div>
+		</li>
+	</ul>
+</div>

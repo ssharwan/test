@@ -1,0 +1,113 @@
+@import "header.directive";
+@import "borrowers-list.directive";
+@import "borrowers-pipeline.directive";
+
+.borrowers {
+}
+.list-header {
+    top: 50px;
+    height: 225px;
+    background: none repeat scroll 0% 0% #F9F9F9;
+}
+.infinite-scroll {
+  top:275px;
+}
+.borrowers-title {
+    position: relative;
+    height: 70px;
+}
+.borrowers-title .borrowers-title-wrapper {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    padding: 7px 0px 7px 50px;
+}
+.borrowers-title .title-text {
+    display: inline-block;
+    margin-top: 15px;
+    float: left;
+}
+.borrowers-title .all-mine-control {
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: 10px;
+    float: left;
+}
+.borrowers-title .filter-button {
+    display: inline-block;
+    margin-top: 15px;
+    margin-right: 0px;
+    float: right;
+}
+
+.borrowers-title .all-mine-control .all-mine-toggle {
+    display: inline-block;
+    height: 30px;
+    padding: 0px 10px;
+    border: 1px solid #EBEBEB;
+    margin-right: -1px;
+    color: #AFAFAF;
+    background: none repeat scroll 0% 0% #FFF;
+    transition: color 150ms ease 0s, background-color 150ms ease 0s, border-color 150ms ease 0s;
+    min-width: 80px;
+    text-align: center;
+}
+.borrowers-title .all-mine-control .all-mine-toggle.active {
+    border-color: #AFAFAF;
+    background: none repeat scroll 0% 0% #AFAFAF;
+    color: #FFF;
+}
+
+
+.list-controls .title-text {
+  height: auto;
+  padding: 0 30px 0 50px;
+}
+.list-controls .checkable-actions {
+  height: auto;
+  padding: 0 30px 0 50px;
+}
+.list-controls .checkable-actions li {
+  list-style-type: none;
+  display: inline-block;
+  float: left;
+}
+.list-controls .checkable-select-container {
+  position: relative;
+  display: inline-block;
+}
+.list-controls .checkable-actions button {
+  margin: 0 10px 0 0;
+}
+.list-controls .checkable-select-toggle {
+  width: 60px;
+}
+.list-controls .checkable-select-check {
+  position: absolute;
+  left: 16px;
+  top: 7px;
+  margin-left: -5px;
+}
+.borrowers-filters {
+}
+.borrowers-filters .filter-mask {
+    position:absolute;
+    top:0;
+    left:0;
+    right: 0;
+    bottom:0;
+    opacity: 0.67;
+    background-color:rgba(0, 0, 0, 0.85);
+    z-index:0;
+}
+.borrowers-filters .filter-wrapper {
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  height: 400px;
+  width: 400px;
+  z-index: 0;
+  background-color: #fff;
+  border: 1px solid;
+}

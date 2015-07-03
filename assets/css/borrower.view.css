@@ -1,0 +1,59 @@
+/* line 1, ../sass/borrower.view.scss */
+.content { top: 50px; bottom: 0px; }
+
+/* line 5, ../sass/borrower.view.scss */
+.flyover-overlay { position: absolute; left: 0px; background: none repeat scroll 0% 0% #333; transform: translate3d(0px, 0px, 0px); z-index: -1; opacity: 0; transition: opacity 150ms ease 0s, z-index 0.1s linear 150ms; }
+
+/* line 14, ../sass/borrower.view.scss */
+.flyover-overlay-show { z-index: 0; right: 0px; opacity: 0.67; transition: opacity 150ms ease 0s; }
+
+/* line 21, ../sass/borrower.view.scss */
+.flyover { background: none repeat scroll 0% 0% #F9F9F9; max-width: 1280px; width: calc(100% - 230px); right: 0px; z-index: -1; opacity: 0; transform: translate3d(100px, 0px, 0px); transition: opacity 150ms ease 0s, transform 150ms ease-out 0s, z-index 0.1s linear 150ms; }
+
+/* line 31, ../sass/borrower.view.scss */
+.flyover-show { z-index: 0; transform: translate3d(0px, 0px, 0px); opacity: 1; filter: none; transition: opacity 150ms ease 0s, transform 150ms ease-out 0s; }
+
+/* line 38, ../sass/borrower.view.scss */
+.flyover-controls { position: absolute; top: 0px; right: 0px; max-width: 1280px; height: 0px; width: calc(100% - 230px); }
+
+/* line 46, ../sass/borrower.view.scss */
+.next-prev-container { top: 0px; position: absolute; max-width: 1280px; width: calc(100% - 230px); height: 0px; right: 0px; }
+
+/* line 54, ../sass/borrower.view.scss */
+.next-prev-container, .flyover-controls { animation: 300ms ease-in 0s normal none 1 running lever-fadein; opacity: 1; filter: none; }
+
+/* line 59, ../sass/borrower.view.scss */
+.flyover-close-button { position: absolute; left: -80px; top: 0px; }
+
+/* line 64, ../sass/borrower.view.scss */
+.flyover-nav-button { display: block; margin: 15px 0px; background-color: #2C2E2F; width: 50px; height: 50px; text-align: center; transition: #F2F1F0 150ms ease 0s, color 150ms ease 0s; border-radius: 25px; font-size: 12px; color: #939393; line-height: 50px; }
+
+/* line 77, ../sass/borrower.view.scss */
+.next-prev { top: 110px; left: -80px; position: absolute; width: 80px; }
+
+/* line 83, ../sass/borrower.view.scss */
+.flyover-nav-button:hover { background: #00a1dc; color: #fff; }
+
+/* line 85, ../sass/borrower.view.scss */
+.profile-container { position: absolute; left: 0; right: 0; top: 70px; bottom: 0; overflow-y: scroll; background: #fbfbfb; }
+
+/* line 94, ../sass/borrower.view.scss */
+.profile-content { top: 0; left: 0; right: 350px; }
+
+/* line 99, ../sass/borrower.view.scss */
+.profile-sidebar-wrapper { position: absolute; overflow: hidden; top: 0; height: 100%; width: 350px; right: 0; background: #f4f4f4; }
+
+/* line 108, ../sass/borrower.view.scss */
+.profile-basic-info { margin: 10px; }
+
+/* line 111, ../sass/borrower.view.scss */
+.profile-basic-info .profile-name { font-size: 26px; }
+
+/* line 114, ../sass/borrower.view.scss */
+.profile-action-bar { background: #f9f9f9; height: 70px; border-bottom: 1px solid #dcdcdc; overflow: hidden; -webkit-transition: height 300ms, background 300ms; -moz-transition: height 300ms, background 300ms; -o-transition: height 300ms, background 300ms; -ms-transition: height 300ms, background 300ms; transition: height 300ms, background 300ms; overflow-y: scroll; width: 200%; padding-right: 100%; }
+
+/* line 128, ../sass/borrower.view.scss */
+.stage-tpl-header { background-color: #000; height: 35px; color: #fff; }
+
+/* line 133, ../sass/borrower.view.scss */
+.stage-tpl-content { background-color: #fff; padding: 10px; height: 400px; }

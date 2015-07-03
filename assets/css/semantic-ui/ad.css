@@ -1,0 +1,162 @@
+/*!
+ * # Semantic UI 1.12.3 - Ad
+ * http://github.com/semantic-org/semantic-ui/
+ *
+ *
+ * Copyright 2013 Contributors
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+/******************************* Advertisement
+*******************************/
+/* line 17, ../../sass/semantic-ui/ad.scss */
+.ui.ad { display: block; overflow: hidden; margin: 1em 0em; }
+
+/* line 22, ../../sass/semantic-ui/ad.scss */
+.ui.ad:first-child { margin: 0em; }
+
+/* line 25, ../../sass/semantic-ui/ad.scss */
+.ui.ad:last-child { margin: 0em; }
+
+/* line 28, ../../sass/semantic-ui/ad.scss */
+.ui.ad iframe { margin: 0em; padding: 0em; border: none; overflow: hidden; }
+
+/*-------------- Common
+---------------*/
+/* Leaderboard */
+/* line 41, ../../sass/semantic-ui/ad.scss */
+.ui.leaderboard.ad { width: 728px; height: 90px; }
+
+/* Medium Rectangle */
+/* line 47, ../../sass/semantic-ui/ad.scss */
+.ui[class*="medium rectangle"].ad { width: 300px; height: 250px; }
+
+/* Large Rectangle */
+/* line 53, ../../sass/semantic-ui/ad.scss */
+.ui[class*="large rectangle"].ad { width: 336px; height: 280px; }
+
+/* Half Page */
+/* line 59, ../../sass/semantic-ui/ad.scss */
+.ui[class*="half page"].ad { width: 300px; height: 600px; }
+
+/*-------------- Square
+---------------*/
+/* Square */
+/* line 70, ../../sass/semantic-ui/ad.scss */
+.ui.square.ad { width: 250px; height: 250px; }
+
+/* Small Square */
+/* line 76, ../../sass/semantic-ui/ad.scss */
+.ui[class*="small square"].ad { width: 200px; height: 200px; }
+
+/*-------------- Rectangle
+---------------*/
+/* Small Rectangle */
+/* line 87, ../../sass/semantic-ui/ad.scss */
+.ui[class*="small rectangle"].ad { width: 180px; height: 150px; }
+
+/* Vertical Rectangle */
+/* line 93, ../../sass/semantic-ui/ad.scss */
+.ui[class*="vertical rectangle"].ad { width: 240px; height: 400px; }
+
+/*-------------- Button
+---------------*/
+/* line 102, ../../sass/semantic-ui/ad.scss */
+.ui.button.ad { width: 120px; height: 90px; }
+
+/* line 106, ../../sass/semantic-ui/ad.scss */
+.ui[class*="square button"].ad { width: 125px; height: 125px; }
+
+/* line 110, ../../sass/semantic-ui/ad.scss */
+.ui[class*="small button"].ad { width: 120px; height: 60px; }
+
+/*-------------- Skyscrapers
+---------------*/
+/* Skyscraper */
+/* line 121, ../../sass/semantic-ui/ad.scss */
+.ui.skyscraper.ad { width: 120px; height: 600px; }
+
+/* Wide Skyscraper */
+/* line 127, ../../sass/semantic-ui/ad.scss */
+.ui[class*="wide skyscraper"].ad { width: 160px; }
+
+/*-------------- Banners
+---------------*/
+/* Banner */
+/* line 137, ../../sass/semantic-ui/ad.scss */
+.ui.banner.ad { width: 468px; height: 60px; }
+
+/* Vertical Banner */
+/* line 143, ../../sass/semantic-ui/ad.scss */
+.ui[class*="vertical banner"].ad { width: 120px; height: 240px; }
+
+/* Top Banner */
+/* line 149, ../../sass/semantic-ui/ad.scss */
+.ui[class*="top banner"].ad { width: 930px; height: 180px; }
+
+/* Half Banner */
+/* line 155, ../../sass/semantic-ui/ad.scss */
+.ui[class*="half banner"].ad { width: 234px; height: 60px; }
+
+/*-------------- Boards
+---------------*/
+/* Leaderboard */
+/* line 166, ../../sass/semantic-ui/ad.scss */
+.ui[class*="large leaderboard"].ad { width: 970px; height: 90px; }
+
+/* Billboard */
+/* line 172, ../../sass/semantic-ui/ad.scss */
+.ui.billboard.ad { width: 970px; height: 250px; }
+
+/*-------------- Panorama
+---------------*/
+/* Panorama */
+/* line 183, ../../sass/semantic-ui/ad.scss */
+.ui.panorama.ad { width: 980px; height: 120px; }
+
+/*-------------- Netboard
+---------------*/
+/* Netboard */
+/* line 194, ../../sass/semantic-ui/ad.scss */
+.ui.netboard.ad { width: 580px; height: 400px; }
+
+/*-------------- Mobile
+---------------*/
+/* Large Mobile Banner */
+/* line 205, ../../sass/semantic-ui/ad.scss */
+.ui[class*="large mobile banner"].ad { width: 320px; height: 100px; }
+
+/* Mobile Leaderboard */
+/* line 211, ../../sass/semantic-ui/ad.scss */
+.ui[class*="mobile leaderboard"].ad { width: 320px; height: 50px; }
+
+/******************************* Types
+*******************************/
+/* Mobile Sizes */
+/* line 223, ../../sass/semantic-ui/ad.scss */
+.ui.mobile.ad { display: none; }
+
+@media only screen and (max-width: 767px) { /* line 227, ../../sass/semantic-ui/ad.scss */
+  .ui.mobile.ad { display: block; } }
+/******************************* Variations
+*******************************/
+/* line 237, ../../sass/semantic-ui/ad.scss */
+.ui.centered.ad { margin-left: auto; margin-right: auto; }
+
+/* line 241, ../../sass/semantic-ui/ad.scss */
+.ui.test.ad { position: relative; background: #333333; }
+
+/* line 245, ../../sass/semantic-ui/ad.scss */
+.ui.test.ad:after { position: absolute; top: 50%; left: 50%; width: 100%; text-align: center; -webkit-transform: translateX(-50%) translateY(-50%); -ms-transform: translateX(-50%) translateY(-50%); transform: translateX(-50%) translateY(-50%); content: 'Ad'; color: #ffffff; font-size: 1em; font-weight: bold; }
+
+/* line 259, ../../sass/semantic-ui/ad.scss */
+.ui.mobile.test.ad:after { font-size: 0.85714em; }
+
+/* line 262, ../../sass/semantic-ui/ad.scss */
+.ui.test.ad[data-text]:after { content: attr(data-text); }
+
+/******************************* Theme Overrides
+*******************************/
+/******************************* User Variable Overrides
+*******************************/

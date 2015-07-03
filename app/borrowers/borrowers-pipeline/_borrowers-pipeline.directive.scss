@@ -1,0 +1,95 @@
+
+.pipeline-wrap {
+  overflow-x: auto;
+  background: #fff;
+  -webkit-box-shadow: inset 0 -1px #dcdcdc;
+  box-shadow: inset 0 -1px #dcdcdc;
+}
+.pipeline {
+  display: block;
+  padding-left: 50px;
+  white-space: nowrap;
+  margin: 0px;
+  -webkit-transition: background 300ms;
+  -moz-transition: background 300ms;
+  -o-transition: background 300ms;
+  -ms-transition: background 300ms;
+  transition: background 300ms;
+
+}
+.pipeline-stage {
+  list-style-type: none;
+  display: inline-block;
+  vertical-align: top;
+  white-space: normal;
+  width: 135px;
+  height: 90px;
+  position: relative;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow: hidden;
+  -webkit-transition: opacity 150ms;
+  -moz-transition: opacity 150ms;
+  -o-transition: opacity 150ms;
+  -ms-transition: opacity 150ms;
+  transition: opacity 150ms;
+}
+.pipeline-stage .pipeline-single {
+  padding: 0px 0px 0px 10px;
+  height: 80px;
+  border-left: 1px solid #dcdcdc;
+}
+.pipeline-stage .pipeline-border-area {
+  border: 1px dashed transparent;
+  width: 100%;
+  height: 100%;
+  -webkit-border-radius: 3px;
+  padding: 2px 0 2px 6px;
+  border-radius: 3px;
+  margin-left: -5px;
+}
+
+.pipeline-stage .stage-count {
+  font-size: 30px;
+  line-height: 1.4em;
+}
+.pipeline-stage .stage-title {
+  display: block;
+  color: #7d8f95;
+  -webkit-transition: color 150ms;
+  -moz-transition: color 150ms;
+  -o-transition: color 150ms;
+  -ms-transition: color 150ms;
+  transition: color 150ms;
+}
+.pipeline-stage .icon-caret-right {
+  position: absolute;
+  left: 0;
+  top: 38px;
+  background: #fff;
+  -webkit-transition: background 300ms;
+  -moz-transition: background 300ms;
+  -o-transition: background 300ms;
+  -ms-transition: background 300ms;
+  transition: background 300ms;
+}
+.pipeline-stage.selected .pipeline-selected-border {
+  background: #00a1dc;
+}
+.pipeline-stage.selected:hover .pipeline-selected-border {
+  background: #00a1dc;
+}
+.pipeline-stage:hover .pipeline-selected-border {background: #dcdcdc;}
+.pipeline-stage .pipeline-selected-border {
+  position: absolute;
+  height: 3px;
+  width: 125px;
+  bottom: 3px;
+  margin: 0px 3px;
+  background: transparent;
+  -webkit-transition: height 150ms, color 150ms;
+  -moz-transition: height 150ms, color 150ms;
+  -o-transition: height 150ms, color 150ms;
+  -ms-transition: height 150ms, color 150ms;
+  transition: height 150ms, color 150ms;
+}

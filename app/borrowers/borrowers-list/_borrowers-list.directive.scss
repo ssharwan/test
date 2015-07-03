@@ -1,0 +1,42 @@
+
+.list-content {
+  margin: 10px 30px 10px 50px;
+}
+.list-table {
+  width: 100%;
+  margin-bottom: 120px;
+  table-layout: fixed;
+}
+.list-table tr.selected {
+  background: #333;
+}
+.list-table tr:first-child {
+  background-color: #d3d3d3;
+}
+.list-table col.checkbox {
+  width: 40px;
+}
+.list-table col.received {
+  width: 80px;
+}
+.list-table col.complated {
+  width: 80px;
+}
+.list-table col.owner {
+  width: 80px;
+}
+.list-table col.next-step {
+  width: 17%;
+}
+.list-table col.duration {
+  width: 80px;
+}
+.list-table col.amount {
+  width: 100px;
+}
+.list-table col.borrower {
+  width: 20%;
+}
+.list-table col.source {
+  width: 15%;
+}

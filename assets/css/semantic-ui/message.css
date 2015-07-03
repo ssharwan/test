@@ -1,0 +1,286 @@
+@charset "UTF-8";
+/*!
+ * # Semantic UI 1.12.3 - Message
+ * http://github.com/semantic-org/semantic-ui/
+ *
+ *
+ * Copyright 2014 Contributors
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+/******************************* Message
+*******************************/
+/* line 17, ../../sass/semantic-ui/message.scss */
+.ui.message { position: relative; min-height: 1em; margin: 1em 0em; background: #efefef; padding: 1em 1.5em; line-height: 1.3; color: rgba(0, 0, 0, 0.8); -webkit-transition: opacity 0.2s ease, color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease; transition: opacity 0.2s ease, color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease; border-radius: 0.2857rem; box-shadow: 0px 0px 0px 1px rgba(39, 41, 43, 0.15) inset, 0px 0px 0px 0px transparent; }
+
+/* line 30, ../../sass/semantic-ui/message.scss */
+.ui.message:first-child { margin-top: 0em; }
+
+/* line 33, ../../sass/semantic-ui/message.scss */
+.ui.message:last-child { margin-bottom: 0em; }
+
+/*-------------- Content
+---------------*/
+/* Header */
+/* line 43, ../../sass/semantic-ui/message.scss */
+.ui.message .header { display: block; font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif; font-weight: bold; margin: 0em 0em 0.5rem 0em; }
+
+/* Default font size */
+/* line 51, ../../sass/semantic-ui/message.scss */
+.ui.message .header:not(.ui) { font-size: 1.1em; }
+
+/* Paragraph */
+/* line 56, ../../sass/semantic-ui/message.scss */
+.ui.message p { opacity: 0.85; margin: 0.75em 0em; }
+
+/* line 60, ../../sass/semantic-ui/message.scss */
+.ui.message p:first-child { margin-top: 0em; }
+
+/* line 63, ../../sass/semantic-ui/message.scss */
+.ui.message p:last-child { margin-bottom: 0em; }
+
+/* line 66, ../../sass/semantic-ui/message.scss */
+.ui.message .header + p { margin-top: 0.25em; }
+
+/* List */
+/* line 71, ../../sass/semantic-ui/message.scss */
+.ui.message ul.list { opacity: 0.85; list-style-position: inside; margin: 0.5em 0em 0em; padding: 0em; }
+
+/* line 77, ../../sass/semantic-ui/message.scss */
+.ui.message ul.list:first-child { margin-top: 0em; }
+
+/* line 80, ../../sass/semantic-ui/message.scss */
+.ui.message ul.list:last-child { margin-bottom: 0em; }
+
+/* line 83, ../../sass/semantic-ui/message.scss */
+.ui.message ul.list li { position: relative; list-style-type: none; margin: 0em 0em 0.3em 1em; padding: 0em; }
+
+/* line 89, ../../sass/semantic-ui/message.scss */
+.ui.message ul.list li:before { position: absolute; content: '•'; left: -1em; height: 100%; vertical-align: baseline; }
+
+/* line 96, ../../sass/semantic-ui/message.scss */
+.ui.message ul.list li:last-child { margin-bottom: 0em; }
+
+/* Icon */
+/* line 101, ../../sass/semantic-ui/message.scss */
+.ui.message > .icon { margin-right: 0.6em; }
+
+/* Close Icon */
+/* line 106, ../../sass/semantic-ui/message.scss */
+.ui.message > .close.icon { cursor: pointer; position: absolute; margin: 0em; top: 1.15em; right: 0.5em; opacity: 0.7; -webkit-transition: opacity 0.1s linear; transition: opacity 0.1s linear; }
+
+/* line 118, ../../sass/semantic-ui/message.scss */
+.ui.message > .close.icon:hover { opacity: 1; }
+
+/* First / Last Element */
+/* line 123, ../../sass/semantic-ui/message.scss */
+.ui.message > :first-child { margin-top: 0em; }
+
+/* line 126, ../../sass/semantic-ui/message.scss */
+.ui.message > :last-child { margin-bottom: 0em; }
+
+/******************************* States
+*******************************/
+/*-------------- Visible
+---------------*/
+/* line 140, ../../sass/semantic-ui/message.scss */
+.ui.visible.visible.visible.visible.message { display: block; }
+
+/* line 143, ../../sass/semantic-ui/message.scss */
+.ui.icon.visible.visible.visible.visible.message { display: table; }
+
+/*-------------- Hidden
+---------------*/
+/* line 151, ../../sass/semantic-ui/message.scss */
+.ui.hidden.hidden.hidden.hidden.message { display: none; }
+
+/******************************* Variations
+*******************************/
+/*-------------- Compact
+---------------*/
+/* line 165, ../../sass/semantic-ui/message.scss */
+.ui.compact.message { display: inline-block; }
+
+/*-------------- Attached
+---------------*/
+/* line 173, ../../sass/semantic-ui/message.scss */
+.ui.attached.message { margin-bottom: -1px; border-radius: 0.2857rem 0.2857rem 0em 0em; box-shadow: 0em 0em 0em 1px rgba(0, 0, 0, 0.1) inset; margin-left: -1px; margin-right: -1px; }
+
+/* line 180, ../../sass/semantic-ui/message.scss */
+.ui.attached + .ui.attached.message:not(.top):not(.bottom) { margin-top: -1px; border-radius: 0em; }
+
+/* line 184, ../../sass/semantic-ui/message.scss */
+.ui.bottom.attached.message { margin-top: -1px; border-radius: 0em 0em 0.2857rem 0.2857rem; box-shadow: 0em 0em 0em 1px rgba(0, 0, 0, 0.1) inset, 0px 1px 2px 0 rgba(0, 0, 0, 0.05); }
+
+/* line 189, ../../sass/semantic-ui/message.scss */
+.ui.bottom.attached.message:not(:last-child) { margin-bottom: 1em; }
+
+/* line 192, ../../sass/semantic-ui/message.scss */
+.ui.attached.icon.message { display: block; width: auto; }
+
+/*-------------- Icon
+---------------*/
+/* line 201, ../../sass/semantic-ui/message.scss */
+.ui.icon.message { display: table; width: 100%; }
+
+/* line 205, ../../sass/semantic-ui/message.scss */
+.ui.icon.message > .icon:not(.close) { display: table-cell; width: auto; vertical-align: middle; font-size: 3em; opacity: 0.8; }
+
+/* line 212, ../../sass/semantic-ui/message.scss */
+.ui.icon.message > .content { display: table-cell; width: 100%; vertical-align: middle; }
+
+/* line 217, ../../sass/semantic-ui/message.scss */
+.ui.icon.message .icon:not(.close) + .content { padding-left: 1.5rem; }
+
+/* line 220, ../../sass/semantic-ui/message.scss */
+.ui.icon.message .circular.icon { width: 1em; }
+
+/* line 223, ../../sass/semantic-ui/message.scss */
+.ui.icon.message .circular.icon + .content { width: auto; padding-left: 2em; }
+
+/*-------------- Floating
+---------------*/
+/* line 232, ../../sass/semantic-ui/message.scss */
+.ui.floating.message { box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(39, 41, 43, 0.15) inset; }
+
+/*-------------- Colors
+---------------*/
+/* line 240, ../../sass/semantic-ui/message.scss */
+.ui.black.message { background-color: #1b1c1d; color: #ffffff; }
+
+/*-------------- Types
+---------------*/
+/* Positive */
+/* line 251, ../../sass/semantic-ui/message.scss */
+.ui.positive.message { background-color: #eeffe7; color: #3c763d; }
+
+/* line 255, ../../sass/semantic-ui/message.scss */
+.ui.positive.message, .ui.attached.positive.message { box-shadow: 0px 0px 0px 1px #b7caa7 inset, 0px 1px 2px 0 rgba(0, 0, 0, 0.05); }
+
+/* line 259, ../../sass/semantic-ui/message.scss */
+.ui.positive.message .header { color: #356e36; }
+
+/* Negative */
+/* line 264, ../../sass/semantic-ui/message.scss */
+.ui.negative.message { background-color: #fff0f0; color: #a94442; }
+
+/* line 268, ../../sass/semantic-ui/message.scss */
+.ui.negative.message, .ui.attached.negative.message { box-shadow: 0px 0px 0px 1px #dbb1b1 inset, 0px 1px 2px 0 rgba(0, 0, 0, 0.05); }
+
+/* line 272, ../../sass/semantic-ui/message.scss */
+.ui.negative.message .header { color: #912d2b; }
+
+/* Info */
+/* line 277, ../../sass/semantic-ui/message.scss */
+.ui.info.message { background-color: #e9faff; color: #337b92; }
+
+/* line 281, ../../sass/semantic-ui/message.scss */
+.ui.info.message, .ui.attached.info.message { box-shadow: 0px 0px 0px 1px #aad6df inset, 0px 1px 2px 0 rgba(0, 0, 0, 0.05); }
+
+/* line 285, ../../sass/semantic-ui/message.scss */
+.ui.info.message .header { color: #297187; }
+
+/* Warning */
+/* line 290, ../../sass/semantic-ui/message.scss */
+.ui.warning.message { background-color: #fffbe6; color: #876a38; }
+
+/* line 294, ../../sass/semantic-ui/message.scss */
+.ui.warning.message, .ui.attached.warning.message { box-shadow: 0px 0px 0px 1px #d9caab inset, 0px 1px 2px 0 rgba(0, 0, 0, 0.05); }
+
+/* line 298, ../../sass/semantic-ui/message.scss */
+.ui.warning.message .header { color: #825c01; }
+
+/* Error */
+/* line 303, ../../sass/semantic-ui/message.scss */
+.ui.error.message { background-color: #fff0f0; color: #a94442; }
+
+/* line 307, ../../sass/semantic-ui/message.scss */
+.ui.error.message, .ui.attached.error.message { box-shadow: 0px 0px 0px 1px #dbb1b1 inset, 0px 1px 2px 0 rgba(0, 0, 0, 0.05); }
+
+/* line 311, ../../sass/semantic-ui/message.scss */
+.ui.error.message .header { color: #912d2b; }
+
+/* Success */
+/* line 316, ../../sass/semantic-ui/message.scss */
+.ui.success.message { background-color: #eeffe7; color: #3c763d; }
+
+/* line 320, ../../sass/semantic-ui/message.scss */
+.ui.success.message, .ui.attached.success.message { box-shadow: 0px 0px 0px 1px #b7caa7 inset, 0px 1px 2px 0 rgba(0, 0, 0, 0.05); }
+
+/* line 324, ../../sass/semantic-ui/message.scss */
+.ui.success.message .header { color: #356e36; }
+
+/* Colors */
+/* line 329, ../../sass/semantic-ui/message.scss */
+.ui.inverted.message, .ui.black.message { background-color: #1b1c1d; color: #ffffff; }
+
+/* line 334, ../../sass/semantic-ui/message.scss */
+.ui.blue.message { background-color: #dff0ff; color: #3b83c0; }
+
+/* line 338, ../../sass/semantic-ui/message.scss */
+.ui.blue.message .header { color: #3576ac; }
+
+/* line 341, ../../sass/semantic-ui/message.scss */
+.ui.green.message { background-color: #ebffed; color: #1ebc30; }
+
+/* line 345, ../../sass/semantic-ui/message.scss */
+.ui.green.message .header { color: #1aa62a; }
+
+/* line 348, ../../sass/semantic-ui/message.scss */
+.ui.orange.message { background-color: #ffedde; color: #e07b53; }
+
+/* line 352, ../../sass/semantic-ui/message.scss */
+.ui.orange.message .header { color: #dc6a3d; }
+
+/* line 355, ../../sass/semantic-ui/message.scss */
+.ui.pink.message { background-color: #ffe3fb; color: #d9499a; }
+
+/* line 359, ../../sass/semantic-ui/message.scss */
+.ui.pink.message .header { color: #d5348e; }
+
+/* line 362, ../../sass/semantic-ui/message.scss */
+.ui.purple.message { background-color: #eae7ff; color: #564f8a; }
+
+/* line 366, ../../sass/semantic-ui/message.scss */
+.ui.purple.message .header { color: #4c467a; }
+
+/* line 369, ../../sass/semantic-ui/message.scss */
+.ui.red.message { background-color: #ffe8e6; color: #d95c5c; }
+
+/* line 373, ../../sass/semantic-ui/message.scss */
+.ui.red.message .header { color: #d44747; }
+
+/* line 376, ../../sass/semantic-ui/message.scss */
+.ui.teal.message { background-color: #e9ffff; color: #10a3a3; }
+
+/* line 380, ../../sass/semantic-ui/message.scss */
+.ui.teal.message .header { color: #0e8c8c; }
+
+/* line 383, ../../sass/semantic-ui/message.scss */
+.ui.yellow.message { background-color: #fff8db; color: #b58105; }
+
+/* line 387, ../../sass/semantic-ui/message.scss */
+.ui.yellow.message .header { color: #9c6f04; }
+
+/*-------------- Sizes
+---------------*/
+/* line 395, ../../sass/semantic-ui/message.scss */
+.ui.small.message { font-size: 0.92857143em; }
+
+/* line 398, ../../sass/semantic-ui/message.scss */
+.ui.message { font-size: 1em; }
+
+/* line 401, ../../sass/semantic-ui/message.scss */
+.ui.large.message { font-size: 1.14285714em; }
+
+/* line 404, ../../sass/semantic-ui/message.scss */
+.ui.huge.message { font-size: 1.42857143em; }
+
+/* line 407, ../../sass/semantic-ui/message.scss */
+.ui.massive.message { font-size: 1.71428571em; }
+
+/******************************* Theme Overrides
+*******************************/
+/******************************* User Variable Overrides
+*******************************/
